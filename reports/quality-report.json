@@ -1,0 +1,479 @@
+{
+  "canonical_path": "data/canonical",
+  "dataset_version": "1.0.0",
+  "generated_on": "2026-08-15",
+  "issues": [
+    {
+      "code": "PLEIADES_COORDINATE_OFFSET",
+      "message": "Local and Pleiades representative points differ by 639.99 metres.",
+      "recommendation": "Keep the measured difference visible and review only with monument-specific evidence.",
+      "record_id": "sanctuary-apollonia-pontica-apollo-ietros-sanctuary",
+      "severity": "warning",
+      "table": "places"
+    },
+    {
+      "code": "PROXY_GEOMETRY",
+      "message": "The point is intentionally an approximate proxy, not a surveyed footprint.",
+      "recommendation": "Replace only with a monument-specific coordinate supported by an authoritative source.",
+      "record_id": "place-sanctuary-apollonia-pontica-apollo-ietros-sanctuary",
+      "severity": "warning",
+      "table": "places"
+    },
+    {
+      "code": "PROXY_GEOMETRY",
+      "message": "The point is intentionally an approximate proxy, not a surveyed footprint.",
+      "recommendation": "Replace only with a monument-specific coordinate supported by an authoritative source.",
+      "record_id": "place-sanctuary-chersonesos-parthenos-sanctuary",
+      "severity": "warning",
+      "table": "places"
+    },
+    {
+      "code": "PROXY_GEOMETRY",
+      "message": "The point is intentionally an approximate proxy, not a surveyed footprint.",
+      "recommendation": "Replace only with a monument-specific coordinate supported by an authoritative source.",
+      "record_id": "place-sanctuary-golgoi-aphrodite-sanctuary",
+      "severity": "warning",
+      "table": "places"
+    },
+    {
+      "code": "PROXY_GEOMETRY",
+      "message": "The point is intentionally an approximate proxy, not a surveyed footprint.",
+      "recommendation": "Replace only with a monument-specific coordinate supported by an authoritative source.",
+      "record_id": "place-sanctuary-histria-sacred-zone",
+      "severity": "warning",
+      "table": "places"
+    },
+    {
+      "code": "PROXY_GEOMETRY",
+      "message": "The point is intentionally an approximate proxy, not a surveyed footprint.",
+      "recommendation": "Replace only with a monument-specific coordinate supported by an authoritative source.",
+      "record_id": "place-sanctuary-magnesia-artemis-leukophryene",
+      "severity": "warning",
+      "table": "places"
+    },
+    {
+      "code": "PROXY_GEOMETRY",
+      "message": "The point is intentionally an approximate proxy, not a surveyed footprint.",
+      "recommendation": "Replace only with a monument-specific coordinate supported by an authoritative source.",
+      "record_id": "place-sanctuary-naukratis-hellenion",
+      "severity": "warning",
+      "table": "places"
+    },
+    {
+      "code": "PROXY_GEOMETRY",
+      "message": "The point is intentionally an approximate proxy, not a surveyed footprint.",
+      "recommendation": "Replace only with a monument-specific coordinate supported by an authoritative source.",
+      "record_id": "place-sanctuary-olbia-apollo-delphinios-sanctuary",
+      "severity": "warning",
+      "table": "places"
+    },
+    {
+      "code": "PROXY_GEOMETRY",
+      "message": "The point is intentionally an approximate proxy, not a surveyed footprint.",
+      "recommendation": "Replace only with a monument-specific coordinate supported by an authoritative source.",
+      "record_id": "place-sanctuary-pantikapaion-apollo-ietros-sanctuary",
+      "severity": "warning",
+      "table": "places"
+    },
+    {
+      "code": "RETAINED_UNCERTAINTY",
+      "message": "The record is reviewed but intentionally retains medium confidence.",
+      "recommendation": "Revisit only when stronger entity-specific evidence becomes available.",
+      "record_id": "city-ptolemais-cyrenaica",
+      "severity": "warning",
+      "table": "entities"
+    },
+    {
+      "code": "RETAINED_UNCERTAINTY",
+      "message": "The record is reviewed but intentionally retains medium confidence.",
+      "recommendation": "Revisit only when stronger entity-specific evidence becomes available.",
+      "record_id": "colony-issa-vis",
+      "severity": "warning",
+      "table": "entities"
+    },
+    {
+      "code": "RETAINED_UNCERTAINTY",
+      "message": "The record is reviewed but intentionally retains medium confidence.",
+      "recommendation": "Revisit only when stronger entity-specific evidence becomes available.",
+      "record_id": "colony-myrina-aeolis",
+      "severity": "warning",
+      "table": "entities"
+    },
+    {
+      "code": "RETAINED_UNCERTAINTY",
+      "message": "The record is reviewed but intentionally retains medium confidence.",
+      "recommendation": "Revisit only when stronger entity-specific evidence becomes available.",
+      "record_id": "colony-phasis-city",
+      "severity": "warning",
+      "table": "entities"
+    },
+    {
+      "code": "RETAINED_UNCERTAINTY",
+      "message": "The record is reviewed but intentionally retains medium confidence.",
+      "recommendation": "Revisit only when stronger entity-specific evidence becomes available.",
+      "record_id": "kingdom-attalid-pergamon",
+      "severity": "warning",
+      "table": "entities"
+    },
+    {
+      "code": "RETAINED_UNCERTAINTY",
+      "message": "The record is reviewed but intentionally retains medium confidence.",
+      "recommendation": "Revisit only when stronger entity-specific evidence becomes available.",
+      "record_id": "kingdom-cappadocia-late-client",
+      "severity": "warning",
+      "table": "entities"
+    },
+    {
+      "code": "RETAINED_UNCERTAINTY",
+      "message": "The record is reviewed but intentionally retains medium confidence.",
+      "recommendation": "Revisit only when stronger entity-specific evidence becomes available.",
+      "record_id": "kingdom-commagene",
+      "severity": "warning",
+      "table": "entities"
+    },
+    {
+      "code": "RETAINED_UNCERTAINTY",
+      "message": "The record is reviewed but intentionally retains medium confidence.",
+      "recommendation": "Revisit only when stronger entity-specific evidence becomes available.",
+      "record_id": "kingdom-indo-greek-early",
+      "severity": "warning",
+      "table": "entities"
+    },
+    {
+      "code": "RETAINED_UNCERTAINTY",
+      "message": "The record is reviewed but intentionally retains medium confidence.",
+      "recommendation": "Revisit only when stronger entity-specific evidence becomes available.",
+      "record_id": "kingdom-indo-greek-late",
+      "severity": "warning",
+      "table": "entities"
+    },
+    {
+      "code": "RETAINED_UNCERTAINTY",
+      "message": "The record is reviewed but intentionally retains medium confidence.",
+      "recommendation": "Revisit only when stronger entity-specific evidence becomes available.",
+      "record_id": "sanctuary-akragas-concordia-temple-sanctuary",
+      "severity": "warning",
+      "table": "entities"
+    },
+    {
+      "code": "RETAINED_UNCERTAINTY",
+      "message": "The record is reviewed but intentionally retains medium confidence.",
+      "recommendation": "Revisit only when stronger entity-specific evidence becomes available.",
+      "record_id": "sanctuary-apollonia-pontica-apollo-ietros-sanctuary",
+      "severity": "warning",
+      "table": "entities"
+    },
+    {
+      "code": "RETAINED_UNCERTAINTY",
+      "message": "The record is reviewed but intentionally retains medium confidence.",
+      "recommendation": "Revisit only when stronger entity-specific evidence becomes available.",
+      "record_id": "sanctuary-chersonesos-parthenos-sanctuary",
+      "severity": "warning",
+      "table": "entities"
+    },
+    {
+      "code": "RETAINED_UNCERTAINTY",
+      "message": "The record is reviewed but intentionally retains medium confidence.",
+      "recommendation": "Revisit only when stronger entity-specific evidence becomes available.",
+      "record_id": "sanctuary-golgoi-aphrodite-sanctuary",
+      "severity": "warning",
+      "table": "entities"
+    },
+    {
+      "code": "RETAINED_UNCERTAINTY",
+      "message": "The record is reviewed but intentionally retains medium confidence.",
+      "recommendation": "Revisit only when stronger entity-specific evidence becomes available.",
+      "record_id": "sanctuary-histria-sacred-zone",
+      "severity": "warning",
+      "table": "entities"
+    },
+    {
+      "code": "RETAINED_UNCERTAINTY",
+      "message": "The record is reviewed but intentionally retains medium confidence.",
+      "recommendation": "Revisit only when stronger entity-specific evidence becomes available.",
+      "record_id": "sanctuary-magnesia-artemis-leukophryene",
+      "severity": "warning",
+      "table": "entities"
+    },
+    {
+      "code": "RETAINED_UNCERTAINTY",
+      "message": "The record is reviewed but intentionally retains medium confidence.",
+      "recommendation": "Revisit only when stronger entity-specific evidence becomes available.",
+      "record_id": "sanctuary-naukratis-hellenion",
+      "severity": "warning",
+      "table": "entities"
+    },
+    {
+      "code": "RETAINED_UNCERTAINTY",
+      "message": "The record is reviewed but intentionally retains medium confidence.",
+      "recommendation": "Revisit only when stronger entity-specific evidence becomes available.",
+      "record_id": "sanctuary-olbia-apollo-delphinios-sanctuary",
+      "severity": "warning",
+      "table": "entities"
+    },
+    {
+      "code": "RETAINED_UNCERTAINTY",
+      "message": "The record is reviewed but intentionally retains medium confidence.",
+      "recommendation": "Revisit only when stronger entity-specific evidence becomes available.",
+      "record_id": "sanctuary-pantikapaion-apollo-ietros-sanctuary",
+      "severity": "warning",
+      "table": "entities"
+    },
+    {
+      "code": "RETAINED_UNCERTAINTY",
+      "message": "The record is reviewed but intentionally retains medium confidence.",
+      "recommendation": "Revisit only when stronger entity-specific evidence becomes available.",
+      "record_id": "sanctuary-segesta-doric-temple-sanctuary",
+      "severity": "warning",
+      "table": "entities"
+    },
+    {
+      "code": "SOURCE_URL_ACCESS",
+      "message": "Source URL is unchecked; this is an accessibility warning, not a scholarly verdict.",
+      "recommendation": "Recheck periodically without discarding relevant institutional evidence.",
+      "record_id": "src-assets-5a2ee3f98c16",
+      "severity": "warning",
+      "table": "sources"
+    },
+    {
+      "code": "SOURCE_URL_ACCESS",
+      "message": "Source URL is unavailable; this is an accessibility warning, not a scholarly verdict.",
+      "recommendation": "Recheck periodically without discarding relevant institutional evidence.",
+      "record_id": "src-britishmuseum-4626abd5cbdd",
+      "severity": "warning",
+      "table": "sources"
+    },
+    {
+      "code": "SOURCE_URL_ACCESS",
+      "message": "Source URL is unavailable; this is an accessibility warning, not a scholarly verdict.",
+      "recommendation": "Recheck periodically without discarding relevant institutional evidence.",
+      "record_id": "src-britishmuseum-d101eb623c92",
+      "severity": "warning",
+      "table": "sources"
+    },
+    {
+      "code": "SOURCE_URL_ACCESS",
+      "message": "Source URL is unavailable; this is an accessibility warning, not a scholarly verdict.",
+      "recommendation": "Recheck periodically without discarding relevant institutional evidence.",
+      "record_id": "src-metmuseum-31540f5687cf",
+      "severity": "warning",
+      "table": "sources"
+    },
+    {
+      "code": "SOURCE_URL_ACCESS",
+      "message": "Source URL is unavailable; this is an accessibility warning, not a scholarly verdict.",
+      "recommendation": "Recheck periodically without discarding relevant institutional evidence.",
+      "record_id": "src-metmuseum-50fe20dc493f",
+      "severity": "warning",
+      "table": "sources"
+    },
+    {
+      "code": "SOURCE_URL_ACCESS",
+      "message": "Source URL is unavailable; this is an accessibility warning, not a scholarly verdict.",
+      "recommendation": "Recheck periodically without discarding relevant institutional evidence.",
+      "record_id": "src-metmuseum-89019924e8c3",
+      "severity": "warning",
+      "table": "sources"
+    },
+    {
+      "code": "SOURCE_URL_ACCESS",
+      "message": "Source URL is unavailable; this is an accessibility warning, not a scholarly verdict.",
+      "recommendation": "Recheck periodically without discarding relevant institutional evidence.",
+      "record_id": "src-metmuseum-9200258a95cb",
+      "severity": "warning",
+      "table": "sources"
+    },
+    {
+      "code": "SOURCE_URL_ACCESS",
+      "message": "Source URL is unavailable; this is an accessibility warning, not a scholarly verdict.",
+      "recommendation": "Recheck periodically without discarding relevant institutional evidence.",
+      "record_id": "src-museoarcheologicoreggiocalabria-a34e7a2bfa16",
+      "severity": "warning",
+      "table": "sources"
+    },
+    {
+      "code": "SOURCE_URL_ACCESS",
+      "message": "Source URL is unavailable; this is an accessibility warning, not a scholarly verdict.",
+      "recommendation": "Recheck periodically without discarding relevant institutional evidence.",
+      "record_id": "src-odysseus-00e2d87ae4a8",
+      "severity": "warning",
+      "table": "sources"
+    },
+    {
+      "code": "SOURCE_URL_ACCESS",
+      "message": "Source URL is unavailable; this is an accessibility warning, not a scholarly verdict.",
+      "recommendation": "Recheck periodically without discarding relevant institutional evidence.",
+      "record_id": "src-odysseus-589898851f92",
+      "severity": "warning",
+      "table": "sources"
+    },
+    {
+      "code": "SOURCE_URL_ACCESS",
+      "message": "Source URL is unavailable; this is an accessibility warning, not a scholarly verdict.",
+      "recommendation": "Recheck periodically without discarding relevant institutional evidence.",
+      "record_id": "src-odysseus-9e3ae0cba911",
+      "severity": "warning",
+      "table": "sources"
+    },
+    {
+      "code": "SOURCE_URL_ACCESS",
+      "message": "Source URL is unchecked; this is an accessibility warning, not a scholarly verdict.",
+      "recommendation": "Recheck periodically without discarding relevant institutional evidence.",
+      "record_id": "src-persee-a9866e5e43d7",
+      "severity": "warning",
+      "table": "sources"
+    },
+    {
+      "code": "SOURCE_URL_ACCESS",
+      "message": "Source URL is unavailable; this is an accessibility warning, not a scholarly verdict.",
+      "recommendation": "Recheck periodically without discarding relevant institutional evidence.",
+      "record_id": "src-pleiades-491572",
+      "severity": "warning",
+      "table": "sources"
+    },
+    {
+      "code": "SOURCE_URL_ACCESS",
+      "message": "Source URL is unavailable; this is an accessibility warning, not a scholarly verdict.",
+      "recommendation": "Recheck periodically without discarding relevant institutional evidence.",
+      "record_id": "src-pleiades-727070",
+      "severity": "warning",
+      "table": "sources"
+    },
+    {
+      "code": "SOURCE_URL_ACCESS",
+      "message": "Source URL is unavailable; this is an accessibility warning, not a scholarly verdict.",
+      "recommendation": "Recheck periodically without discarding relevant institutional evidence.",
+      "record_id": "src-websites-d5246844b076",
+      "severity": "warning",
+      "table": "sources"
+    }
+  ],
+  "metrics": {
+    "candidate_audit": {
+      "defer": 14,
+      "exclude": 1
+    },
+    "chronology": {
+      "by_basis": {
+        "cult_activity_window": 70,
+        "occupation_window": 119,
+        "political_phase": 37
+      },
+      "by_precision": {
+        "approximate": 206,
+        "broad_range": 9,
+        "disputed": 2,
+        "exact": 6,
+        "mixed": 3
+      },
+      "display_cutoff_count": 105
+    },
+    "coverage": {
+      "bilingual_entities_complete": 226,
+      "bilingual_entities_percent": 100.0,
+      "entities_with_all_source_scopes": 226,
+      "entities_with_all_source_scopes_percent": 100.0,
+      "pleiades_identifiers": 184,
+      "pleiades_reconciled_matched": 184
+    },
+    "entities": {
+      "by_class": {
+        "polity": 37,
+        "sanctuary": 70,
+        "settlement": 119
+      },
+      "by_collection": {
+        "city": 41,
+        "colony": 78,
+        "kingdom": 37,
+        "sanctuary": 70
+      },
+      "by_record_confidence": {
+        "high": 207,
+        "medium": 19
+      },
+      "by_review_state": {
+        "reviewed": 226
+      }
+    },
+    "geography": {
+      "by_country_iso3": {
+        "AFG": 3,
+        "ALB": 2,
+        "BGR": 4,
+        "CYP": 5,
+        "EGY": 6,
+        "ESP": 1,
+        "FRA": 1,
+        "GEO": 2,
+        "GRC": 87,
+        "HRV": 3,
+        "IRQ": 1,
+        "ITA": 31,
+        "LBY": 10,
+        "PAK": 3,
+        "ROU": 4,
+        "RUS": 2,
+        "TUR": 50,
+        "UKR": 11
+      },
+      "by_geometry_role": {
+        "proxy": 8,
+        "representative_center": 37,
+        "site": 181
+      },
+      "by_location_certainty": {
+        "high": 212,
+        "medium": 14
+      }
+    },
+    "relationships": {
+      "authority_targets": 238,
+      "by_predicate": {
+        "associated_with_settlement": 30,
+        "cult_of": 70,
+        "founded_from": 78,
+        "preceded_by": 37,
+        "representative_center": 37,
+        "ruled_by_dynasty": 37,
+        "succeeded_by": 37
+      },
+      "internal_targets": 88
+    },
+    "sources": {
+      "by_class": {
+        "excavation_project": 1,
+        "museum": 11,
+        "national_archaeological_service": 3,
+        "peer_reviewed_publication": 4,
+        "reference_work": 7,
+        "scholarly_gazetteer": 180,
+        "unesco": 6,
+        "university": 1
+      },
+      "by_url_status": {
+        "ok": 197,
+        "redirected": 1,
+        "unavailable": 13,
+        "unchecked": 2
+      },
+      "with_recorded_license": 180
+    },
+    "table_counts": {
+      "authorities": 312,
+      "chronologies": 226,
+      "entities": 226,
+      "entity_sources": 1589,
+      "external_ids": 184,
+      "names": 671,
+      "places": 226,
+      "relationships": 326,
+      "sources": 213
+    }
+  },
+  "summary": {
+    "errors": 0,
+    "status": "pass",
+    "warnings": 43
+  }
+}
