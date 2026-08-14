@@ -104,6 +104,77 @@
   }
 }
 
+@media (max-width: 47.49rem) {
+  .record-dialog,
+  .about-dialog {
+    width: 100vw;
+    height: 100dvh;
+    max-width: none;
+    max-height: none;
+    margin: 0;
+    border: 0;
+  }
+
+  .dialog-header {
+    min-height: var(--masthead-height-mobile);
+    padding: var(--space-sm) var(--space-md);
+  }
+
+  .dialog-header h2 {
+    font-size: 1.45rem;
+  }
+
+  .record-content,
+  .about-content {
+    max-height: calc(100dvh - var(--masthead-height-mobile));
+    padding: var(--space-md);
+    padding-bottom: calc(var(--space-xl) + env(safe-area-inset-bottom));
+  }
+
+  .record-definitions,
+  .relationship-list li {
+    grid-template-columns: minmax(0, 1fr);
+  }
+
+  .record-definitions dt {
+    padding-bottom: 0;
+    border-bottom: 0;
+    font-size: var(--text-caption);
+  }
+
+  .record-definitions dd {
+    padding-top: 0;
+  }
+
+  .relationship-list li {
+    align-items: start;
+    gap: var(--space-xs);
+    padding-block: var(--space-sm);
+  }
+
+  .relationship-target {
+    width: 100%;
+  }
+
+  .relationship-certainty {
+    justify-self: start;
+  }
+
+  .coordinate-copy {
+    align-items: flex-start;
+    flex-direction: column;
+    gap: var(--space-xs);
+  }
+
+  .coordinate-copy-label {
+    text-align: start;
+  }
+
+  .map-preview {
+    min-width: min(15rem, calc(100vw - 5rem));
+  }
+}
+
 @media (orientation: landscape) and (max-height: 35rem) and (max-width: 63.99rem) {
   :root {
     --sheet-height: min(86dvh, 30rem);

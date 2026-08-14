@@ -87,6 +87,12 @@ class FakeElement extends FakeNode {
     this.checked = false;
     this.value = '';
     this.id = '';
+    this.href = '';
+    this.target = '';
+    this.rel = '';
+    this.lang = '';
+    this.type = '';
+    this.tabIndex = 0;
   }
 
   get children() {
