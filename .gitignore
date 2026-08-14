@@ -7,3 +7,4 @@ build/
 .cache/
 *.tmp
 outputs/agw-data-foundation/preview-*.png
+outputs/**/*.inspect.ndjson

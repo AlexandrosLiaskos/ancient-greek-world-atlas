@@ -50,6 +50,31 @@ class EditorialGateTests(unittest.TestCase):
         self.assertTrue(all(row["decision"] in {"include", "defer", "exclude"} for row in candidates))
         self.assertTrue(all(row["reason_el"] and row["reason_en"] for row in candidates))
 
+    def test_curated_csv_rows_match_their_headers(self) -> None:
+        directories = [
+            ROOT / "data" / "canonical",
+            ROOT / "data" / "research",
+            ROOT / "data" / "vocabularies",
+            ROOT / "reports",
+        ]
+        for directory in directories:
+            for path in sorted(directory.glob("*.csv")):
+                with self.subTest(path=path.relative_to(ROOT).as_posix()), path.open(
+                    "r", encoding="utf-8-sig", newline=""
+                ) as handle:
+                    reader = csv.DictReader(handle)
+                    for line_number, row in enumerate(reader, start=2):
+                        self.assertNotIn(
+                            None,
+                            row,
+                            f"{path.name}:{line_number} has more fields than its header",
+                        )
+                        self.assertNotIn(
+                            None,
+                            row.values(),
+                            f"{path.name}:{line_number} has fewer fields than its header",
+                        )
+
 
 if __name__ == "__main__":
     unittest.main()

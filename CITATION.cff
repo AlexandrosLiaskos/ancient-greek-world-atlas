@@ -1,0 +1,21 @@
+cff-version: 1.2.0
+message: "If you use this dataset, please cite it using the metadata below and retain attribution for incorporated Pleiades data."
+title: "Ancient Greek World Atlas — Data Foundation"
+type: dataset
+version: 1.0.0
+date-released: 2026-08-15
+authors:
+  - family-names: Liaskos
+    given-names: Alexandros
+license: CC-BY-4.0
+keywords:
+  - ancient Greek world
+  - historical GIS
+  - gazetteer
+  - archaeology
+  - linked open data
+abstract: >-
+  A bilingual, source-aware and reproducible scholarly dataset of 226
+  settlements, sanctuaries and polities associated with the ancient Greek
+  world, with normalized chronology, spatial assertions, relationships,
+  citations and external gazetteer alignments.

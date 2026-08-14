@@ -1,0 +1,41 @@
+Ancient Greek World Atlas — Data License and Third-Party Notice
+
+Copyright © 2026 Alexandros Liaskos.
+
+Except for the third-party material identified below, the original dataset
+compilation, bilingual editorial text, controlled vocabularies, review
+decisions and other original data contributions in this repository are
+licensed under the Creative Commons Attribution 4.0 International License
+(CC BY 4.0):
+
+https://creativecommons.org/licenses/by/4.0/
+
+Attribution should identify “Ancient Greek World Atlas — Data Foundation”,
+Alexandros Liaskos, the release version and date, and provide a link to the
+repository or release when available. The supplied CITATION.cff contains the
+preferred citation metadata.
+
+Third-party material
+--------------------
+
+Pleiades place identifiers, names, temporal assertions and coordinate data
+remain copyright © the Pleiades contributors and are reused under the
+Creative Commons Attribution 3.0 License (CC BY 3.0):
+
+https://pleiades.stoa.org/downloads
+https://creativecommons.org/licenses/by/3.0/
+
+Each Pleiades alignment retains its canonical URI and source record so that
+attribution can travel with the data.
+
+The repository also contains citations, URLs and limited factual metadata for
+publications, museums, excavation projects and reference works. Those linked
+works remain under their respective rights and licenses. Their inclusion as
+scholarly evidence does not relicense their text, images or other content.
+
+No warranty
+-----------
+
+The data is provided “as is”, without warranties of any kind. Spatial points
+may be proxies or representative centres, and historical chronology and
+classification may retain explicitly recorded scholarly uncertainty.

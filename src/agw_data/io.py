@@ -7,8 +7,17 @@ from typing import Iterable, Mapping
 
 
 def read_csv(path: Path) -> list[dict[str, str]]:
-    with Path(path).open("r", encoding="utf-8-sig", newline="") as handle:
-        return [dict(row) for row in csv.DictReader(handle)]
+    path = Path(path)
+    rows: list[dict[str, str]] = []
+    with path.open("r", encoding="utf-8-sig", newline="") as handle:
+        reader = csv.DictReader(handle)
+        for line_number, row in enumerate(reader, start=2):
+            if None in row:
+                raise ValueError(f"{path.name}:{line_number} has more fields than its header")
+            if any(value is None for value in row.values()):
+                raise ValueError(f"{path.name}:{line_number} has fewer fields than its header")
+            rows.append(dict(row))
+    return rows
 
 
 def load_table_contract(root: Path) -> dict[str, dict]:
