@@ -26,6 +26,8 @@ The application will have no mandatory build step. Development scripts may valid
 6. **Mobile preserves both contexts.** The catalogue remains usable in a tall bottom sheet while the map stays visible behind it.
 7. **No decorative filler.** The first release does not fabricate imagery, hotlink media, or display empty gallery placeholders.
 
+The approved visual direction is **The Cartographic Workbench**, documented in `DESIGN.md`. Its restrained neutral palette, fixed tabbed register, map-contained legend, and compact anchored preview are the implementation contract; mock data and decorative basemap texture are not.
+
 ## 4. Information architecture
 
 ### 4.1 Global masthead
@@ -290,4 +292,3 @@ Release is blocked by broken internal links, missing public translations, a blan
 - no measurement, drawing, or general GIS analysis toolkit;
 - no general-purpose statistical query builder;
 - no frontend framework unless a verified implementation constraint later requires one.
-

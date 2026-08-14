@@ -130,26 +130,26 @@ Copy-Item -LiteralPath '..\Ancient Greek Wonders\assets\fonts\OFL-GFS-Solomos.tx
 
 - [ ] **Step 4: Implement the editorial design tokens and responsive shell**
 
-Define the exact core variables in `tokens.css` and use them throughout the remaining stylesheets:
+Define the exact core variables in `tokens.css` and use them throughout the remaining stylesheets. These values implement the approved palette in `DESIGN.md` and deliberately avoid a parchment/cream surface:
 
 ```css
 :root {
-  --paper: #f5f1e8;
-  --surface: #fffdf8;
-  --ink: #191814;
-  --muted: #68645b;
-  --rule: #c9c1b2;
-  --accent: #1f6248;
-  --settlement: #245f8f;
-  --sanctuary: #9a542e;
-  --polity: #665095;
-  --danger: #9d342b;
+  --color-canvas: oklch(97.53% 0.004 106.47);
+  --color-surface: oklch(100% 0 0);
+  --color-ink: oklch(21.01% 0.0066 134.98);
+  --color-muted: oklch(43% 0.012 150);
+  --color-rule: oklch(83.80% 0.0088 128.58);
+  --color-accent: oklch(42.57% 0.0791 164.27);
+  --color-settlement: oklch(49.15% 0.0892 239.53);
+  --color-sanctuary: oklch(51.34% 0.1087 41.28);
+  --color-polity: oklch(48.74% 0.0882 298.13);
+  --color-error: oklch(48% 0.14 26);
   --sidebar-width: 25rem;
-  --masthead-height: 5.5rem;
-  --ui-font: Inter, Arial, sans-serif;
+  --masthead-height: 5rem;
+  --ui-font: system-ui, 'Segoe UI', Arial, sans-serif;
   --editorial-font: Georgia, 'Times New Roman', serif;
   --title-font: 'GFS Solomos', Georgia, serif;
-  --focus-ring: 0 0 0 3px rgb(31 98 72 / 28%);
+  --focus-ring: 0 0 0 3px oklch(42.57% 0.0791 164.27 / 28%);
 }
 ```
 
