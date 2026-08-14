@@ -4,7 +4,7 @@
   }
 
   .masthead {
-    grid-template-columns: minmax(3rem, 1fr) auto minmax(3rem, 1fr);
+    grid-template-columns: minmax(7rem, 1fr) minmax(0, auto) minmax(7rem, 1fr);
     padding: var(--space-sm) var(--space-lg);
   }
 
@@ -16,10 +16,10 @@
 
   .masthead h1 {
     padding-inline: var(--space-lg);
-    overflow: visible;
-    font-size: 2.75rem;
+    overflow: hidden;
+    font-size: clamp(2rem, 3.1vw, 2.75rem);
     text-align: center;
-    text-overflow: clip;
+    text-overflow: ellipsis;
   }
 
   .masthead-actions {
@@ -46,6 +46,10 @@
     transform: none;
     visibility: visible;
     transition: none;
+  }
+
+  .tool-tabs {
+    display: grid;
   }
 
   .sheet-grip,

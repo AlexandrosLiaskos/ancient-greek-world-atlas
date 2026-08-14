@@ -9,9 +9,11 @@
     "test:data": "python -m unittest discover -s tests -v",
     "validate:html": "html-validate index.html",
     "test": "npm run test:web && npm run test:data && npm run validate:html",
+    "test:e2e": "playwright test",
     "serve": "npx --yes serve . -l 4173"
   },
   "devDependencies": {
+    "@playwright/test": "1.62.1",
     "html-validate": "10.4.0"
   }
 }

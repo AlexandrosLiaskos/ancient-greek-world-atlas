@@ -8,3 +8,6 @@ build/
 *.tmp
 outputs/agw-data-foundation/preview-*.png
 outputs/**/*.inspect.ndjson
+playwright-report/
+test-results/
+blob-report/

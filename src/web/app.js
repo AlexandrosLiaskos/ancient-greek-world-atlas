@@ -195,6 +195,7 @@ export async function bootstrap(options = {}) {
   let mapUnavailable = false;
   let destroyed = false;
   let lastDetailsTrigger = null;
+  let detailsReturnTarget = null;
   let renderedDetailKey = '';
   let lastMobileTrigger = null;
 
@@ -205,6 +206,32 @@ export async function bootstrap(options = {}) {
   };
 
   const dispatch = (action) => store.dispatch(action);
+  const rememberDetailsTrigger = (trigger) => {
+    lastDetailsTrigger = trigger;
+    const entityId = trigger?.dataset?.entityId;
+    if (entityId) {
+      detailsReturnTarget = {
+        entityId,
+        containerId: trigger.closest?.('[id]')?.id ?? null,
+      };
+      return;
+    }
+    detailsReturnTarget = { element: trigger };
+  };
+  const resolveDetailsTrigger = () => {
+    if (detailsReturnTarget?.entityId) {
+      const container = detailsReturnTarget.containerId
+        ? document.getElementById(detailsReturnTarget.containerId)
+        : null;
+      const candidates = container?.querySelectorAll?.('[data-entity-id]') ?? [];
+      return [...candidates].find((candidate) => (
+        candidate.dataset.entityId === detailsReturnTarget.entityId
+      )) ?? null;
+    }
+    return detailsReturnTarget?.element?.isConnected
+      ? detailsReturnTarget.element
+      : lastDetailsTrigger;
+  };
   const legendElements = {
     settlement: elements.legendSettlementCount,
     sanctuary: elements.legendSanctuaryCount,
@@ -225,7 +252,7 @@ export async function bootstrap(options = {}) {
       legendElements,
       leaflet,
       onSelect(entityId) {
-        lastDetailsTrigger = elements.mapElement;
+        rememberDetailsTrigger(elements.mapElement);
         dispatch({ type: 'entity/select', entityId });
       },
       onPreview() {},
@@ -280,7 +307,7 @@ export async function bootstrap(options = {}) {
       onPreview() {},
       onLeavePreview() { mapController?.closePreview(); },
       onOpenDetails(entityId, trigger) {
-        lastDetailsTrigger = trigger ?? document.activeElement ?? elements.resultList;
+        rememberDetailsTrigger(trigger ?? document.activeElement ?? elements.resultList);
         dispatch({ type: 'entity/select', entityId });
         if (window.innerWidth < 760) dispatch({ type: 'sheet/close' });
         mapController?.setSelected(entityId);
@@ -306,9 +333,12 @@ export async function bootstrap(options = {}) {
         );
         renderedDetailKey = detailKey;
       }
-      if (!elements.recordDialog.open) openDetails(elements.recordDialog, lastDetailsTrigger);
+      if (!elements.recordDialog.open) {
+        openDetails(elements.recordDialog, resolveDetailsTrigger());
+      }
     } else if (elements.recordDialog?.open) {
-      closeDetails(elements.recordDialog);
+      closeDetails(elements.recordDialog, resolveDetailsTrigger());
+      detailsReturnTarget = null;
       renderedDetailKey = '';
     }
 

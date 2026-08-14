@@ -354,10 +354,9 @@ export function openDetails(dialog, trigger = null) {
   closeButton?.focus();
 }
 
-export function closeDetails(dialog) {
+export function closeDetails(dialog, restoreTarget = null) {
   if (dialog.open) dialog.close();
-  const trigger = dialogTriggers.get(dialog);
+  const trigger = restoreTarget ?? dialogTriggers.get(dialog);
   dialogTriggers.delete(dialog);
   if (trigger?.isConnected) trigger.focus();
 }
-
