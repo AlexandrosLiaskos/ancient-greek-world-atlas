@@ -182,6 +182,23 @@ def _load_entity_source_overrides(root: Path) -> dict[str, dict[str, str]]:
     return {row["entity_id"]: row for row in read_csv(path)}
 
 
+def _load_entity_overrides(root: Path) -> dict[str, dict[str, str]]:
+    path = root / "data" / "research" / "entity-overrides.csv"
+    if not path.exists():
+        return {}
+    return {row["entity_id"]: row for row in read_csv(path)}
+
+
+def _load_relationship_overrides(root: Path) -> dict[str, list[dict[str, str]]]:
+    path = root / "data" / "research" / "relationship-overrides.csv"
+    grouped: dict[str, list[dict[str, str]]] = defaultdict(list)
+    if not path.exists():
+        return grouped
+    for row in read_csv(path):
+        grouped[row["subject_entity_id"]].append(row)
+    return grouped
+
+
 def _effective_source_urls(
     row: dict[str, str],
     overrides: dict[str, dict[str, str]],
@@ -231,6 +248,8 @@ def build_release(raw_path: Path, root: Path) -> dict[str, list[dict[str, str]]]
     countries = _country_map(root)
     source_checks, source_overrides, pleiades_records = _load_source_research(root)
     entity_source_overrides = _load_entity_source_overrides(root)
+    entity_overrides = _load_entity_overrides(root)
+    relationship_overrides = _load_relationship_overrides(root)
 
     source_urls = sorted(
         {
@@ -281,6 +300,16 @@ def build_release(raw_path: Path, root: Path) -> dict[str, list[dict[str, str]]]
         entity_override = editorial["entities"].get(entity["entity_id"], {})
         if entity_override.get("description_en"):
             entity["description_en"] = normalize_text(entity_override["description_en"])
+        structured_override = entity_overrides.get(entity["entity_id"], {})
+        for field in (
+            "location_certainty",
+            "record_confidence",
+            "review_state",
+            "last_reviewed",
+            "reviewer",
+        ):
+            if normalize_text(structured_override.get(field, "")):
+                entity[field] = normalize_text(structured_override[field])
         entity["translation_status"] = "machine_assisted_reviewed"
         entities.append(entity)
     entity_by_id = {row["entity_id"]: row for row in entities}
@@ -297,10 +326,13 @@ def build_release(raw_path: Path, root: Path) -> dict[str, list[dict[str, str]]]
 
     for legacy in legacy_rows:
         entity_id = normalize_text(legacy["id"])
+        structured_override = entity_overrides.get(entity_id, {})
         primary_url, secondary_url = _effective_source_urls(legacy, entity_source_overrides)
         source = source_by_url[primary_url]
         source_id = source["source_id"]
-        review_state = map_review_state(legacy["review_status"])
+        review_state = normalize_text(structured_override.get("review_state", "")) or map_review_state(
+            legacy["review_status"]
+        )
 
         names.extend(
             [
@@ -351,8 +383,14 @@ def build_release(raw_path: Path, root: Path) -> dict[str, list[dict[str, str]]]
             )
 
         country = countries[normalize_text(legacy["modern_country_iso3"])]
-        role = normalize_text(legacy["geometry_role"])
-        if normalize_text(legacy["spatial_note_el"]):
+        effective_legacy = dict(legacy)
+        for field in ("geometry_role", "location_certainty", "spatial_note_el", "coordinate_source"):
+            if normalize_text(structured_override.get(field, "")):
+                effective_legacy[field] = normalize_text(structured_override[field])
+        role = normalize_text(effective_legacy["geometry_role"])
+        if normalize_text(structured_override.get("spatial_note_en", "")):
+            spatial_note_en = normalize_text(structured_override["spatial_note_en"])
+        elif normalize_text(effective_legacy["spatial_note_el"]):
             if role == "representative_center":
                 center = translated(legacy["representative_center_el"], "relation_labels")
                 spatial_note_en = (
@@ -370,12 +408,13 @@ def build_release(raw_path: Path, root: Path) -> dict[str, list[dict[str, str]]]
             spatial_note_en = ""
         places.append(
             normalize_place(
-                legacy,
+                effective_legacy,
                 country=country,
                 source_id=source_id,
                 spatial_note_en=spatial_note_en,
             )
         )
+        places[-1]["review_state"] = review_state
         chronologies.append(
             {
                 "chronology_id": f"chronology-{entity_id}-primary",
@@ -429,6 +468,33 @@ def build_release(raw_path: Path, root: Path) -> dict[str, list[dict[str, str]]]
                     "certainty": normalize_text(legacy["location_certainty"]) if predicate == "representative_center" else "medium",
                     "source_id": source_id,
                     "migration_evidence_el": f"{field}: {label_el}",
+                    "review_state": review_state,
+                }
+            )
+
+        for relation_override in relationship_overrides.get(entity_id, []):
+            predicate = normalize_text(relation_override["predicate"])
+            object_entity_id = normalize_text(relation_override["object_entity_id"])
+            target = entity_by_id.get(object_entity_id)
+            if target is None:
+                raise ValueError(
+                    f"Relationship override for {entity_id} targets missing entity {object_entity_id}"
+                )
+            relationship_key = hashlib.sha256(
+                f"{entity_id}|{predicate}|{object_entity_id}".encode("utf-8")
+            ).hexdigest()[:12]
+            relationships.append(
+                {
+                    "relationship_id": f"rel-{relationship_key}",
+                    "subject_entity_id": entity_id,
+                    "predicate": predicate,
+                    "object_entity_id": object_entity_id,
+                    "object_authority_id": "",
+                    "object_label_el": target["preferred_name_el"],
+                    "object_label_en": target["preferred_name_en"],
+                    "certainty": normalize_text(relation_override.get("certainty", "")) or "high",
+                    "source_id": source_id,
+                    "migration_evidence_el": normalize_text(relation_override.get("reason_el", "")),
                     "review_state": review_state,
                 }
             )

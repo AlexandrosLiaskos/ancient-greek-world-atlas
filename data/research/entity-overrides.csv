@@ -1,0 +1,20 @@
+entity_id,review_state,record_confidence,location_certainty,geometry_role,spatial_note_el,spatial_note_en,last_reviewed,reviewer
+city-ptolemais-cyrenaica,reviewed,medium,medium,site,,,2026-08-15,Codex-assisted scholarly review
+colony-myrina-aeolis,reviewed,medium,medium,site,,,2026-08-15,Codex-assisted scholarly review
+colony-issa-vis,reviewed,medium,medium,site,,,2026-08-15,Codex-assisted scholarly review
+colony-phasis-city,reviewed,medium,medium,site,,,2026-08-15,Codex-assisted scholarly review
+kingdom-indo-greek-early,reviewed,medium,high,representative_center,,,2026-08-15,Codex-assisted scholarly review
+kingdom-indo-greek-late,reviewed,medium,high,representative_center,,,2026-08-15,Codex-assisted scholarly review
+kingdom-cappadocia-late-client,reviewed,medium,high,representative_center,,,2026-08-15,Codex-assisted scholarly review
+kingdom-commagene,reviewed,medium,high,representative_center,,,2026-08-15,Codex-assisted scholarly review
+kingdom-attalid-pergamon,reviewed,medium,high,representative_center,,,2026-08-15,Codex-assisted scholarly review
+sanctuary-naukratis-hellenion,reviewed,medium,medium,proxy,,,2026-08-15,Codex-assisted scholarly review
+sanctuary-apollonia-pontica-apollo-ietros-sanctuary,reviewed,medium,medium,proxy,,,2026-08-15,Codex-assisted scholarly review
+sanctuary-magnesia-artemis-leukophryene,reviewed,medium,medium,proxy,,,2026-08-15,Codex-assisted scholarly review
+sanctuary-pantikapaion-apollo-ietros-sanctuary,reviewed,medium,medium,proxy,,,2026-08-15,Codex-assisted scholarly review
+sanctuary-golgoi-aphrodite-sanctuary,reviewed,medium,medium,proxy,"Το σημείο αποδίδει προσεγγιστικά το ιερό στην περιοχή των Γόλγων και όχι αποτυπωμένο περίγραμμα του μνημείου.",The point approximately locates the sanctuary in the Golgoi area and is not a surveyed monument footprint.,2026-08-15,Codex-assisted scholarly review
+sanctuary-segesta-doric-temple-sanctuary,reviewed,medium,medium,site,,,2026-08-15,Codex-assisted scholarly review
+sanctuary-akragas-concordia-temple-sanctuary,reviewed,medium,medium,site,,,2026-08-15,Codex-assisted scholarly review
+sanctuary-olbia-apollo-delphinios-sanctuary,reviewed,medium,medium,proxy,"Το σημείο αποδίδει προσεγγιστικά το πολυφασικό τέμενος κοντά στην αγορά της Ολβίας και όχι αποτυπωμένο περίγραμμα.",The point approximately locates the multi-phase precinct near the Olbian agora and is not a surveyed footprint.,2026-08-15,Codex-assisted scholarly review
+sanctuary-histria-sacred-zone,reviewed,medium,medium,proxy,,,2026-08-15,Codex-assisted scholarly review
+sanctuary-chersonesos-parthenos-sanctuary,reviewed,medium,medium,proxy,"Το σημείο αποδίδει προσεγγιστικά την ακρόπολη της Χερσονήσου· το ακριβές περίγραμμα του ιερού δεν έχει αποκατασταθεί με βεβαιότητα.",The point approximately marks the Chersonesos acropolis; the sanctuary's exact footprint has not been securely reconstructed.,2026-08-15,Codex-assisted scholarly review

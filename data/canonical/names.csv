@@ -89,9 +89,9 @@ name-city-pherae-thessaly-grc-ancient,city-pherae-thessaly,Φεραί,grc,Grek,a
 name-city-piraeus-el-preferred,city-piraeus,Πειραιάς,el,Grek,preferred,1,,,src-pleiades-580062,reviewed
 name-city-piraeus-en-preferred,city-piraeus,Piraeus,en,Latn,preferred,1,,,src-pleiades-580062,reviewed
 name-city-piraeus-grc-ancient,city-piraeus,Πειραιεύς,grc,Grek,ancient,0,,,src-pleiades-580062,reviewed
-name-city-ptolemais-cyrenaica-el-preferred,city-ptolemais-cyrenaica,Πτολεμαΐδα Κυρηναϊκής,el,Grek,preferred,1,,,src-pleiades-373879,needs_review
-name-city-ptolemais-cyrenaica-en-preferred,city-ptolemais-cyrenaica,Ptolemais of Cyrenaica,en,Latn,preferred,1,,,src-pleiades-373879,needs_review
-name-city-ptolemais-cyrenaica-grc-ancient,city-ptolemais-cyrenaica,Πτολεμαΐς,grc,Grek,ancient,0,,,src-pleiades-373879,needs_review
+name-city-ptolemais-cyrenaica-el-preferred,city-ptolemais-cyrenaica,Πτολεμαΐδα Κυρηναϊκής,el,Grek,preferred,1,,,src-pleiades-373879,reviewed
+name-city-ptolemais-cyrenaica-en-preferred,city-ptolemais-cyrenaica,Ptolemais of Cyrenaica,en,Latn,preferred,1,,,src-pleiades-373879,reviewed
+name-city-ptolemais-cyrenaica-grc-ancient,city-ptolemais-cyrenaica,Πτολεμαΐς,grc,Grek,ancient,0,,,src-pleiades-373879,reviewed
 name-city-pydna-el-preferred,city-pydna,Πύδνα,el,Grek,preferred,1,,,src-pleiades-491703,reviewed
 name-city-pydna-en-preferred,city-pydna,Pydna,en,Latn,preferred,1,,,src-pleiades-491703,reviewed
 name-city-pydna-grc-ancient,city-pydna,Πύδνα,grc,Grek,ancient,0,,,src-pleiades-491703,reviewed
@@ -236,9 +236,9 @@ name-colony-histria-pontica-grc-ancient,colony-histria-pontica,Ἰστρίη,grc
 name-colony-iasos-el-preferred,colony-iasos,Ιασός,el,Grek,preferred,1,,,src-pleiades-599664,reviewed
 name-colony-iasos-en-preferred,colony-iasos,Iasos,en,Latn,preferred,1,,,src-pleiades-599664,reviewed
 name-colony-iasos-grc-ancient,colony-iasos,Ἰασός,grc,Grek,ancient,0,,,src-pleiades-599664,reviewed
-name-colony-issa-vis-el-preferred,colony-issa-vis,Ίσσα,el,Grek,preferred,1,,,src-armus-4dde844bac8f,needs_review
-name-colony-issa-vis-en-preferred,colony-issa-vis,Issa,en,Latn,preferred,1,,,src-armus-4dde844bac8f,needs_review
-name-colony-issa-vis-grc-ancient,colony-issa-vis,Ἴσσα,grc,Grek,ancient,0,,,src-armus-4dde844bac8f,needs_review
+name-colony-issa-vis-el-preferred,colony-issa-vis,Ίσσα,el,Grek,preferred,1,,,src-armus-4dde844bac8f,reviewed
+name-colony-issa-vis-en-preferred,colony-issa-vis,Issa,en,Latn,preferred,1,,,src-armus-4dde844bac8f,reviewed
+name-colony-issa-vis-grc-ancient,colony-issa-vis,Ἴσσα,grc,Grek,ancient,0,,,src-armus-4dde844bac8f,reviewed
 name-colony-lampsacus-el-preferred,colony-lampsacus,Λάμψακος,el,Grek,preferred,1,,,src-pleiades-501570,reviewed
 name-colony-lampsacus-en-preferred,colony-lampsacus,Lampsacus,en,Latn,preferred,1,,,src-pleiades-501570,reviewed
 name-colony-lampsacus-grc-ancient,colony-lampsacus,Λάμψακος,grc,Grek,ancient,0,,,src-pleiades-501570,reviewed
@@ -266,9 +266,9 @@ name-colony-metapontum-grc-ancient,colony-metapontum,Μεταπόντιον,grc,
 name-colony-miletus-el-preferred,colony-miletus,Μίλητος,el,Grek,preferred,1,,,src-pleiades-599799,reviewed
 name-colony-miletus-en-preferred,colony-miletus,Miletus,en,Latn,preferred,1,,,src-pleiades-599799,reviewed
 name-colony-miletus-grc-ancient,colony-miletus,Μίλητος,grc,Grek,ancient,0,,,src-pleiades-599799,reviewed
-name-colony-myrina-aeolis-el-preferred,colony-myrina-aeolis,Μύρινα,el,Grek,preferred,1,,,src-pleiades-550756,needs_review
-name-colony-myrina-aeolis-en-preferred,colony-myrina-aeolis,Myrina,en,Latn,preferred,1,,,src-pleiades-550756,needs_review
-name-colony-myrina-aeolis-grc-ancient,colony-myrina-aeolis,Μύρινα,grc,Grek,ancient,0,,,src-pleiades-550756,needs_review
+name-colony-myrina-aeolis-el-preferred,colony-myrina-aeolis,Μύρινα,el,Grek,preferred,1,,,src-pleiades-550756,reviewed
+name-colony-myrina-aeolis-en-preferred,colony-myrina-aeolis,Myrina,en,Latn,preferred,1,,,src-pleiades-550756,reviewed
+name-colony-myrina-aeolis-grc-ancient,colony-myrina-aeolis,Μύρινα,grc,Grek,ancient,0,,,src-pleiades-550756,reviewed
 name-colony-naucratis-el-preferred,colony-naucratis,Ναύκρατις,el,Grek,preferred,1,,,src-pleiades-727169,reviewed
 name-colony-naucratis-en-preferred,colony-naucratis,Naucratis,en,Latn,preferred,1,,,src-pleiades-727169,reviewed
 name-colony-naucratis-grc-ancient,colony-naucratis,Ναύκρατις,grc,Grek,ancient,0,,,src-pleiades-727169,reviewed
@@ -296,9 +296,9 @@ name-colony-pharos-hvar-grc-ancient,colony-pharos-hvar,Φάρος,grc,Grek,ancie
 name-colony-phaselis-el-preferred,colony-phaselis,Φάσηλις,el,Grek,preferred,1,,,src-pleiades-639051,reviewed
 name-colony-phaselis-en-preferred,colony-phaselis,Phaselis,en,Latn,preferred,1,,,src-pleiades-639051,reviewed
 name-colony-phaselis-grc-ancient,colony-phaselis,Φάσηλις,grc,Grek,ancient,0,,,src-pleiades-639051,reviewed
-name-colony-phasis-city-el-preferred,colony-phasis-city,Φάσις,el,Grek,preferred,1,,,src-pleiades-857275,needs_review
-name-colony-phasis-city-en-preferred,colony-phasis-city,Phasis,en,Latn,preferred,1,,,src-pleiades-857275,needs_review
-name-colony-phasis-city-grc-ancient,colony-phasis-city,Φᾶσις,grc,Grek,ancient,0,,,src-pleiades-857275,needs_review
+name-colony-phasis-city-el-preferred,colony-phasis-city,Φάσις,el,Grek,preferred,1,,,src-pleiades-857275,reviewed
+name-colony-phasis-city-en-preferred,colony-phasis-city,Phasis,en,Latn,preferred,1,,,src-pleiades-857275,reviewed
+name-colony-phasis-city-grc-ancient,colony-phasis-city,Φᾶσις,grc,Grek,ancient,0,,,src-pleiades-857275,reviewed
 name-colony-philippi-el-preferred,colony-philippi,Φίλιπποι,el,Grek,preferred,1,,,src-pleiades-501482,reviewed
 name-colony-philippi-en-preferred,colony-philippi,Philippi,en,Latn,preferred,1,,,src-pleiades-501482,reviewed
 name-colony-philippi-grc-ancient,colony-philippi,Φίλιπποι,grc,Grek,ancient,0,,,src-pleiades-501482,reviewed
@@ -362,9 +362,9 @@ name-kingdom-alexander-empire-grc-ancient,kingdom-alexander-empire,Ἀλέξαν
 name-kingdom-athens-mycenaean-el-preferred,kingdom-athens-mycenaean,Μυκηναϊκό κέντρο της Αθήνας,el,Grek,preferred,1,,,src-whc-228f1be9c035,reviewed
 name-kingdom-athens-mycenaean-en-preferred,kingdom-athens-mycenaean,Mycenaean Athens Polity,en,Latn,preferred,1,,,src-whc-228f1be9c035,reviewed
 name-kingdom-athens-mycenaean-grc-ancient,kingdom-athens-mycenaean,Ἀθῆναι,grc,Grek,ancient,0,,,src-whc-228f1be9c035,reviewed
-name-kingdom-attalid-pergamon-el-preferred,kingdom-attalid-pergamon,Βασίλειο της Περγάμου των Ατταλιδών,el,Grek,preferred,1,,,src-metmuseum-50fe20dc493f,needs_review
-name-kingdom-attalid-pergamon-en-preferred,kingdom-attalid-pergamon,Attalid Kingdom of Pergamon,en,Latn,preferred,1,,,src-metmuseum-50fe20dc493f,needs_review
-name-kingdom-attalid-pergamon-grc-ancient,kingdom-attalid-pergamon,Βασιλεία τῶν Ἀτταλιδῶν,grc,Grek,ancient,0,,,src-metmuseum-50fe20dc493f,needs_review
+name-kingdom-attalid-pergamon-el-preferred,kingdom-attalid-pergamon,Βασίλειο της Περγάμου των Ατταλιδών,el,Grek,preferred,1,,,src-metmuseum-50fe20dc493f,reviewed
+name-kingdom-attalid-pergamon-en-preferred,kingdom-attalid-pergamon,Attalid Kingdom of Pergamon,en,Latn,preferred,1,,,src-metmuseum-50fe20dc493f,reviewed
+name-kingdom-attalid-pergamon-grc-ancient,kingdom-attalid-pergamon,Βασιλεία τῶν Ἀτταλιδῶν,grc,Grek,ancient,0,,,src-metmuseum-50fe20dc493f,reviewed
 name-kingdom-bithynia-el-preferred,kingdom-bithynia,Βασίλειο της Βιθυνίας,el,Grek,preferred,1,,,src-attalus-1b40f4436114,reviewed
 name-kingdom-bithynia-en-preferred,kingdom-bithynia,Kingdom of Bithynia,en,Latn,preferred,1,,,src-attalus-1b40f4436114,reviewed
 name-kingdom-bithynia-grc-ancient,kingdom-bithynia,Βιθυνία,grc,Grek,ancient,0,,,src-attalus-1b40f4436114,reviewed
@@ -380,12 +380,12 @@ name-kingdom-bosporus-spartocid-grc-ancient,kingdom-bosporus-spartocid,Βασί�
 name-kingdom-cappadocia-ariarathid-el-preferred,kingdom-cappadocia-ariarathid,Βασίλειο της Καππαδοκίας των Αριαραθιδών,el,Grek,preferred,1,,,src-iranicaonline-0624b0b64cf3,reviewed
 name-kingdom-cappadocia-ariarathid-en-preferred,kingdom-cappadocia-ariarathid,Ariarathid Kingdom of Cappadocia,en,Latn,preferred,1,,,src-iranicaonline-0624b0b64cf3,reviewed
 name-kingdom-cappadocia-ariarathid-grc-ancient,kingdom-cappadocia-ariarathid,Καππαδοκία,grc,Grek,ancient,0,,,src-iranicaonline-0624b0b64cf3,reviewed
-name-kingdom-cappadocia-late-client-el-preferred,kingdom-cappadocia-late-client,Ύστερο Βασίλειο της Καππαδοκίας,el,Grek,preferred,1,,,src-iranicaonline-0624b0b64cf3,needs_review
-name-kingdom-cappadocia-late-client-en-preferred,kingdom-cappadocia-late-client,Late Kingdom of Cappadocia,en,Latn,preferred,1,,,src-iranicaonline-0624b0b64cf3,needs_review
-name-kingdom-cappadocia-late-client-grc-ancient,kingdom-cappadocia-late-client,Καππαδοκία,grc,Grek,ancient,0,,,src-iranicaonline-0624b0b64cf3,needs_review
-name-kingdom-commagene-el-preferred,kingdom-commagene,Βασίλειο της Κομμαγηνής,el,Grek,preferred,1,,,src-whc-758c2c416617,needs_review
-name-kingdom-commagene-en-preferred,kingdom-commagene,Kingdom of Commagene,en,Latn,preferred,1,,,src-whc-758c2c416617,needs_review
-name-kingdom-commagene-grc-ancient,kingdom-commagene,Κομμαγηνή,grc,Grek,ancient,0,,,src-whc-758c2c416617,needs_review
+name-kingdom-cappadocia-late-client-el-preferred,kingdom-cappadocia-late-client,Ύστερο Βασίλειο της Καππαδοκίας,el,Grek,preferred,1,,,src-iranicaonline-0624b0b64cf3,reviewed
+name-kingdom-cappadocia-late-client-en-preferred,kingdom-cappadocia-late-client,Late Kingdom of Cappadocia,en,Latn,preferred,1,,,src-iranicaonline-0624b0b64cf3,reviewed
+name-kingdom-cappadocia-late-client-grc-ancient,kingdom-cappadocia-late-client,Καππαδοκία,grc,Grek,ancient,0,,,src-iranicaonline-0624b0b64cf3,reviewed
+name-kingdom-commagene-el-preferred,kingdom-commagene,Βασίλειο της Κομμαγηνής,el,Grek,preferred,1,,,src-whc-758c2c416617,reviewed
+name-kingdom-commagene-en-preferred,kingdom-commagene,Kingdom of Commagene,en,Latn,preferred,1,,,src-whc-758c2c416617,reviewed
+name-kingdom-commagene-grc-ancient,kingdom-commagene,Κομμαγηνή,grc,Grek,ancient,0,,,src-whc-758c2c416617,reviewed
 name-kingdom-cyrene-battiad-el-preferred,kingdom-cyrene-battiad,Βασίλειο της Κυρήνης των Βαττιαδών,el,Grek,preferred,1,,,src-whc-52a1efeb60e3,reviewed
 name-kingdom-cyrene-battiad-en-preferred,kingdom-cyrene-battiad,Battiad Kingdom of Cyrene,en,Latn,preferred,1,,,src-whc-52a1efeb60e3,reviewed
 name-kingdom-cyrene-battiad-grc-ancient,kingdom-cyrene-battiad,Κυρήνη,grc,Grek,ancient,0,,,src-whc-52a1efeb60e3,reviewed
@@ -404,10 +404,10 @@ name-kingdom-greco-bactrian-eucratid-grc-ancient,kingdom-greco-bactrian-eucratid
 name-kingdom-greco-bactrian-euthydemid-el-preferred,kingdom-greco-bactrian-euthydemid,Ελληνοβακτριανό Βασίλειο — Ευθυδημίδες,el,Grek,preferred,1,,,src-iranicaonline-d4697d4d5c1a,reviewed
 name-kingdom-greco-bactrian-euthydemid-en-preferred,kingdom-greco-bactrian-euthydemid,Greco-Bactrian Kingdom — Euthydemid Phase,en,Latn,preferred,1,,,src-iranicaonline-d4697d4d5c1a,reviewed
 name-kingdom-greco-bactrian-euthydemid-grc-ancient,kingdom-greco-bactrian-euthydemid,Βακτριανή,grc,Grek,ancient,0,,,src-iranicaonline-d4697d4d5c1a,reviewed
-name-kingdom-indo-greek-early-el-preferred,kingdom-indo-greek-early,Πρώιμο Ινδοελληνικό Βασίλειο,el,Grek,preferred,1,,,src-iranicaonline-612dff96c99c,needs_review
-name-kingdom-indo-greek-early-en-preferred,kingdom-indo-greek-early,Early Indo-Greek Kingdom,en,Latn,preferred,1,,,src-iranicaonline-612dff96c99c,needs_review
-name-kingdom-indo-greek-late-el-preferred,kingdom-indo-greek-late,Ύστερα Ινδοελληνικά Βασίλεια,el,Grek,preferred,1,,,src-iranicaonline-612dff96c99c,needs_review
-name-kingdom-indo-greek-late-en-preferred,kingdom-indo-greek-late,Late Indo-Greek Kingdoms,en,Latn,preferred,1,,,src-iranicaonline-612dff96c99c,needs_review
+name-kingdom-indo-greek-early-el-preferred,kingdom-indo-greek-early,Πρώιμο Ινδοελληνικό Βασίλειο,el,Grek,preferred,1,,,src-iranicaonline-612dff96c99c,reviewed
+name-kingdom-indo-greek-early-en-preferred,kingdom-indo-greek-early,Early Indo-Greek Kingdom,en,Latn,preferred,1,,,src-iranicaonline-612dff96c99c,reviewed
+name-kingdom-indo-greek-late-el-preferred,kingdom-indo-greek-late,Ύστερα Ινδοελληνικά Βασίλεια,el,Grek,preferred,1,,,src-iranicaonline-612dff96c99c,reviewed
+name-kingdom-indo-greek-late-en-preferred,kingdom-indo-greek-late,Late Indo-Greek Kingdoms,en,Latn,preferred,1,,,src-iranicaonline-612dff96c99c,reviewed
 name-kingdom-indo-greek-menandrid-el-preferred,kingdom-indo-greek-menandrid,Ινδοελληνικό Βασίλειο του Μενάνδρου,el,Grek,preferred,1,,,src-iranicaonline-612dff96c99c,reviewed
 name-kingdom-indo-greek-menandrid-en-preferred,kingdom-indo-greek-menandrid,Indo-Greek Kingdom — Menander Phase,en,Latn,preferred,1,,,src-iranicaonline-612dff96c99c,reviewed
 name-kingdom-iolcos-palatial-el-preferred,kingdom-iolcos-palatial,Ανακτορικό κράτος της Ιωλκού,el,Grek,preferred,1,,,src-odysseus-589898851f92,reviewed
@@ -467,8 +467,8 @@ name-kingdom-tiryns-palatial-grc-ancient,kingdom-tiryns-palatial,Τίρυνς,gr
 name-sanctuary-aegina-aphaia-sanctuary-el-preferred,sanctuary-aegina-aphaia-sanctuary,Ιερό της Αφαίας στην Αίγινα,el,Grek,preferred,1,,,src-pleiades-579872,reviewed
 name-sanctuary-aegina-aphaia-sanctuary-en-preferred,sanctuary-aegina-aphaia-sanctuary,Sanctuary of Aphaia on Aegina,en,Latn,preferred,1,,,src-pleiades-579872,reviewed
 name-sanctuary-aegina-aphaia-sanctuary-grc-ancient,sanctuary-aegina-aphaia-sanctuary,Ἀφαίας ἱερόν,grc,Grek,ancient,0,,,src-pleiades-579872,reviewed
-name-sanctuary-akragas-concordia-temple-sanctuary-el-preferred,sanctuary-akragas-concordia-temple-sanctuary,Ναός της Ομόνοιας στον Ακράγαντα,el,Grek,preferred,1,,,src-pleiades-943504072,needs_review
-name-sanctuary-akragas-concordia-temple-sanctuary-en-preferred,sanctuary-akragas-concordia-temple-sanctuary,Temple of Concordia at Akragas,en,Latn,preferred,1,,,src-pleiades-943504072,needs_review
+name-sanctuary-akragas-concordia-temple-sanctuary-el-preferred,sanctuary-akragas-concordia-temple-sanctuary,Ναός της Ομόνοιας στον Ακράγαντα,el,Grek,preferred,1,,,src-pleiades-943504072,reviewed
+name-sanctuary-akragas-concordia-temple-sanctuary-en-preferred,sanctuary-akragas-concordia-temple-sanctuary,Temple of Concordia at Akragas,en,Latn,preferred,1,,,src-pleiades-943504072,reviewed
 name-sanctuary-alexandria-serapeum-el-preferred,sanctuary-alexandria-serapeum,Σεραπείο Αλεξάνδρειας,el,Grek,preferred,1,,,src-pleiades-182618516,reviewed
 name-sanctuary-alexandria-serapeum-en-preferred,sanctuary-alexandria-serapeum,Serapeum of Alexandria,en,Latn,preferred,1,,,src-pleiades-182618516,reviewed
 name-sanctuary-alexandria-serapeum-grc-ancient,sanctuary-alexandria-serapeum,Σαραπεῖον,grc,Grek,ancient,0,,,src-pleiades-182618516,reviewed
@@ -478,9 +478,9 @@ name-sanctuary-amyklaion-apollo-sanctuary-grc-ancient,sanctuary-amyklaion-apollo
 name-sanctuary-aphrodisias-aphrodite-sanctuary-el-preferred,sanctuary-aphrodisias-aphrodite-sanctuary,Ιερό της Αφροδίτης στην Αφροδισιάδα,el,Grek,preferred,1,,,src-aphrodisias-excavations-68b8b8553e48,reviewed
 name-sanctuary-aphrodisias-aphrodite-sanctuary-en-preferred,sanctuary-aphrodisias-aphrodite-sanctuary,Sanctuary of Aphrodite at Aphrodisias,en,Latn,preferred,1,,,src-aphrodisias-excavations-68b8b8553e48,reviewed
 name-sanctuary-aphrodisias-aphrodite-sanctuary-grc-ancient,sanctuary-aphrodisias-aphrodite-sanctuary,Ἀφροδίτης ἱερόν,grc,Grek,ancient,0,,,src-aphrodisias-excavations-68b8b8553e48,reviewed
-name-sanctuary-apollonia-pontica-apollo-ietros-sanctuary-el-preferred,sanctuary-apollonia-pontica-apollo-ietros-sanctuary,Ιερό του Απόλλωνα Ιητρού στην Απολλωνία Ποντική,el,Grek,preferred,1,,,src-pleiades-216706,needs_review
-name-sanctuary-apollonia-pontica-apollo-ietros-sanctuary-en-preferred,sanctuary-apollonia-pontica-apollo-ietros-sanctuary,Sanctuary of Apollo Ietros at Apollonia Pontica,en,Latn,preferred,1,,,src-pleiades-216706,needs_review
-name-sanctuary-apollonia-pontica-apollo-ietros-sanctuary-grc-ancient,sanctuary-apollonia-pontica-apollo-ietros-sanctuary,Ἀπόλλων Ἰητρός,grc,Grek,ancient,0,,,src-pleiades-216706,needs_review
+name-sanctuary-apollonia-pontica-apollo-ietros-sanctuary-el-preferred,sanctuary-apollonia-pontica-apollo-ietros-sanctuary,Ιερό του Απόλλωνα Ιητρού στην Απολλωνία Ποντική,el,Grek,preferred,1,,,src-pleiades-216706,reviewed
+name-sanctuary-apollonia-pontica-apollo-ietros-sanctuary-en-preferred,sanctuary-apollonia-pontica-apollo-ietros-sanctuary,Sanctuary of Apollo Ietros at Apollonia Pontica,en,Latn,preferred,1,,,src-pleiades-216706,reviewed
+name-sanctuary-apollonia-pontica-apollo-ietros-sanctuary-grc-ancient,sanctuary-apollonia-pontica-apollo-ietros-sanctuary,Ἀπόλλων Ἰητρός,grc,Grek,ancient,0,,,src-pleiades-216706,reviewed
 name-sanctuary-argive-heraion-el-preferred,sanctuary-argive-heraion,Αργείο Ηραίο,el,Grek,preferred,1,,,src-pleiades-570289,reviewed
 name-sanctuary-argive-heraion-en-preferred,sanctuary-argive-heraion,Argive Heraion,en,Latn,preferred,1,,,src-pleiades-570289,reviewed
 name-sanctuary-argive-heraion-grc-ancient,sanctuary-argive-heraion,Ἡραῖον τὸ Ἀργεῖον,grc,Grek,ancient,0,,,src-pleiades-570289,reviewed
@@ -493,9 +493,9 @@ name-sanctuary-bassae-apollo-epikourios-grc-ancient,sanctuary-bassae-apollo-epik
 name-sanctuary-brauron-artemis-sanctuary-el-preferred,sanctuary-brauron-artemis-sanctuary,Ιερό της Αρτέμιδος στη Βραυρώνα,el,Grek,preferred,1,,,src-pleiades-579879,reviewed
 name-sanctuary-brauron-artemis-sanctuary-en-preferred,sanctuary-brauron-artemis-sanctuary,Sanctuary of Artemis at Brauron,en,Latn,preferred,1,,,src-pleiades-579879,reviewed
 name-sanctuary-brauron-artemis-sanctuary-grc-ancient,sanctuary-brauron-artemis-sanctuary,Βραυρών,grc,Grek,ancient,0,,,src-pleiades-579879,reviewed
-name-sanctuary-chersonesos-parthenos-sanctuary-el-preferred,sanctuary-chersonesos-parthenos-sanctuary,Ιερό της Παρθένου στη Χερσόνησο,el,Grek,preferred,1,,,src-whc-329a28f5c851,needs_review
-name-sanctuary-chersonesos-parthenos-sanctuary-en-preferred,sanctuary-chersonesos-parthenos-sanctuary,Sanctuary of Parthenos at Tauric Chersonesos,en,Latn,preferred,1,,,src-whc-329a28f5c851,needs_review
-name-sanctuary-chersonesos-parthenos-sanctuary-grc-ancient,sanctuary-chersonesos-parthenos-sanctuary,Παρθένου ἱερόν,grc,Grek,ancient,0,,,src-whc-329a28f5c851,needs_review
+name-sanctuary-chersonesos-parthenos-sanctuary-el-preferred,sanctuary-chersonesos-parthenos-sanctuary,Ιερό της Παρθένου στη Χερσόνησο,el,Grek,preferred,1,,,src-whc-329a28f5c851,reviewed
+name-sanctuary-chersonesos-parthenos-sanctuary-en-preferred,sanctuary-chersonesos-parthenos-sanctuary,Sanctuary of Parthenos at Tauric Chersonesos,en,Latn,preferred,1,,,src-whc-329a28f5c851,reviewed
+name-sanctuary-chersonesos-parthenos-sanctuary-grc-ancient,sanctuary-chersonesos-parthenos-sanctuary,Παρθένου ἱερόν,grc,Grek,ancient,0,,,src-whc-329a28f5c851,reviewed
 name-sanctuary-claros-apollo-oracle-el-preferred,sanctuary-claros-apollo-oracle,Μαντείο του Απόλλωνα στην Κλάρο,el,Grek,preferred,1,,,src-pleiades-599719,reviewed
 name-sanctuary-claros-apollo-oracle-en-preferred,sanctuary-claros-apollo-oracle,Oracle of Apollo at Claros,en,Latn,preferred,1,,,src-pleiades-599719,reviewed
 name-sanctuary-claros-apollo-oracle-grc-ancient,sanctuary-claros-apollo-oracle,Κλάρος,grc,Grek,ancient,0,,,src-pleiades-599719,reviewed
@@ -543,17 +543,17 @@ name-sanctuary-epidauros-asklepios-sanctuary-grc-ancient,sanctuary-epidauros-ask
 name-sanctuary-foce-del-sele-heraion-el-preferred,sanctuary-foce-del-sele-heraion,Ηραίο στις εκβολές του Σέλε,el,Grek,preferred,1,,,src-pleiades-442610,reviewed
 name-sanctuary-foce-del-sele-heraion-en-preferred,sanctuary-foce-del-sele-heraion,Heraion at Foce del Sele,en,Latn,preferred,1,,,src-pleiades-442610,reviewed
 name-sanctuary-foce-del-sele-heraion-grc-ancient,sanctuary-foce-del-sele-heraion,Ἡραῖον Ποσειδωνίας,grc,Grek,ancient,0,,,src-pleiades-442610,reviewed
-name-sanctuary-golgoi-aphrodite-sanctuary-el-preferred,sanctuary-golgoi-aphrodite-sanctuary,Ιερό της Αφροδίτης Γολγίας,el,Grek,preferred,1,,,src-pleiades-707470,needs_review
-name-sanctuary-golgoi-aphrodite-sanctuary-en-preferred,sanctuary-golgoi-aphrodite-sanctuary,Sanctuary of Aphrodite Golgia,en,Latn,preferred,1,,,src-pleiades-707470,needs_review
-name-sanctuary-golgoi-aphrodite-sanctuary-grc-ancient,sanctuary-golgoi-aphrodite-sanctuary,Γόλγοι,grc,Grek,ancient,0,,,src-pleiades-707470,needs_review
+name-sanctuary-golgoi-aphrodite-sanctuary-el-preferred,sanctuary-golgoi-aphrodite-sanctuary,Ιερό της Αφροδίτης Γολγίας,el,Grek,preferred,1,,,src-pleiades-707470,reviewed
+name-sanctuary-golgoi-aphrodite-sanctuary-en-preferred,sanctuary-golgoi-aphrodite-sanctuary,Sanctuary of Aphrodite Golgia,en,Latn,preferred,1,,,src-pleiades-707470,reviewed
+name-sanctuary-golgoi-aphrodite-sanctuary-grc-ancient,sanctuary-golgoi-aphrodite-sanctuary,Γόλγοι,grc,Grek,ancient,0,,,src-pleiades-707470,reviewed
 name-sanctuary-gyroulas-demeter-sanctuary-el-preferred,sanctuary-gyroulas-demeter-sanctuary,Ιερό Δήμητρας και Απόλλωνα στον Γύρουλα,el,Grek,preferred,1,,,src-pleiades-599631,reviewed
 name-sanctuary-gyroulas-demeter-sanctuary-en-preferred,sanctuary-gyroulas-demeter-sanctuary,Sanctuary of Demeter and Apollo at Gyroulas,en,Latn,preferred,1,,,src-pleiades-599631,reviewed
 name-sanctuary-hierapolis-ploutonion-el-preferred,sanctuary-hierapolis-ploutonion,Πλουτώνιο Ιεράπολης,el,Grek,preferred,1,,,src-pleiades-232079424,reviewed
 name-sanctuary-hierapolis-ploutonion-en-preferred,sanctuary-hierapolis-ploutonion,Ploutonion at Hierapolis,en,Latn,preferred,1,,,src-pleiades-232079424,reviewed
 name-sanctuary-hierapolis-ploutonion-grc-ancient,sanctuary-hierapolis-ploutonion,Πλουτώνιον,grc,Grek,ancient,0,,,src-pleiades-232079424,reviewed
-name-sanctuary-histria-sacred-zone-el-preferred,sanctuary-histria-sacred-zone,Ιερή ζώνη της Ιστρίας,el,Grek,preferred,1,,,src-pleiades-216839,needs_review
-name-sanctuary-histria-sacred-zone-en-preferred,sanctuary-histria-sacred-zone,Sacred Zone of Histria,en,Latn,preferred,1,,,src-pleiades-216839,needs_review
-name-sanctuary-histria-sacred-zone-grc-ancient,sanctuary-histria-sacred-zone,Ἰστρίη,grc,Grek,ancient,0,,,src-pleiades-216839,needs_review
+name-sanctuary-histria-sacred-zone-el-preferred,sanctuary-histria-sacred-zone,Ιερή ζώνη της Ιστρίας,el,Grek,preferred,1,,,src-pleiades-216839,reviewed
+name-sanctuary-histria-sacred-zone-en-preferred,sanctuary-histria-sacred-zone,Sacred Zone of Histria,en,Latn,preferred,1,,,src-pleiades-216839,reviewed
+name-sanctuary-histria-sacred-zone-grc-ancient,sanctuary-histria-sacred-zone,Ἰστρίη,grc,Grek,ancient,0,,,src-pleiades-216839,reviewed
 name-sanctuary-hyria-dionysos-sanctuary-el-preferred,sanctuary-hyria-dionysos-sanctuary,Ιερό του Διονύσου στα Ύρια Νάξου,el,Grek,preferred,1,,,src-pleiades-599661,reviewed
 name-sanctuary-hyria-dionysos-sanctuary-en-preferred,sanctuary-hyria-dionysos-sanctuary,Sanctuary of Dionysos at Hyria,en,Latn,preferred,1,,,src-pleiades-599661,reviewed
 name-sanctuary-hyria-dionysos-sanctuary-grc-ancient,sanctuary-hyria-dionysos-sanctuary,Ὕρια,grc,Grek,ancient,0,,,src-pleiades-599661,reviewed
@@ -587,9 +587,9 @@ name-sanctuary-lindos-athena-sanctuary-grc-ancient,sanctuary-lindos-athena-sanct
 name-sanctuary-locri-mannella-persephone-sanctuary-el-preferred,sanctuary-locri-mannella-persephone-sanctuary,Ιερό της Περσεφόνης στη Mannella,el,Grek,preferred,1,,,src-museoarcheologicoreggiocalabria-a34e7a2bfa16,reviewed
 name-sanctuary-locri-mannella-persephone-sanctuary-en-preferred,sanctuary-locri-mannella-persephone-sanctuary,Sanctuary of Persephone at Mannella,en,Latn,preferred,1,,,src-museoarcheologicoreggiocalabria-a34e7a2bfa16,reviewed
 name-sanctuary-locri-mannella-persephone-sanctuary-grc-ancient,sanctuary-locri-mannella-persephone-sanctuary,Περσεφόνειον,grc,Grek,ancient,0,,,src-museoarcheologicoreggiocalabria-a34e7a2bfa16,reviewed
-name-sanctuary-magnesia-artemis-leukophryene-el-preferred,sanctuary-magnesia-artemis-leukophryene,Ιερό της Αρτέμιδος Λευκοφρυηνής,el,Grek,preferred,1,,,src-pleiades-599778,needs_review
-name-sanctuary-magnesia-artemis-leukophryene-en-preferred,sanctuary-magnesia-artemis-leukophryene,Sanctuary of Artemis Leukophryene,en,Latn,preferred,1,,,src-pleiades-599778,needs_review
-name-sanctuary-magnesia-artemis-leukophryene-grc-ancient,sanctuary-magnesia-artemis-leukophryene,Ἀρτέμιδος Λευκοφρυηνῆς ἱερόν,grc,Grek,ancient,0,,,src-pleiades-599778,needs_review
+name-sanctuary-magnesia-artemis-leukophryene-el-preferred,sanctuary-magnesia-artemis-leukophryene,Ιερό της Αρτέμιδος Λευκοφρυηνής,el,Grek,preferred,1,,,src-pleiades-599778,reviewed
+name-sanctuary-magnesia-artemis-leukophryene-en-preferred,sanctuary-magnesia-artemis-leukophryene,Sanctuary of Artemis Leukophryene,en,Latn,preferred,1,,,src-pleiades-599778,reviewed
+name-sanctuary-magnesia-artemis-leukophryene-grc-ancient,sanctuary-magnesia-artemis-leukophryene,Ἀρτέμιδος Λευκοφρυηνῆς ἱερόν,grc,Grek,ancient,0,,,src-pleiades-599778,reviewed
 name-sanctuary-menelaion-sparta-el-preferred,sanctuary-menelaion-sparta,Μενελάειο,el,Grek,preferred,1,,,src-pleiades-570477,reviewed
 name-sanctuary-menelaion-sparta-en-preferred,sanctuary-menelaion-sparta,Menelaion Sanctuary,en,Latn,preferred,1,,,src-pleiades-570477,reviewed
 name-sanctuary-menelaion-sparta-grc-ancient,sanctuary-menelaion-sparta,Μενελάειον,grc,Grek,ancient,0,,,src-pleiades-570477,reviewed
@@ -599,15 +599,15 @@ name-sanctuary-metapontum-tavole-palatine-heraion-grc-ancient,sanctuary-metapont
 name-sanctuary-mount-lykaion-zeus-sanctuary-el-preferred,sanctuary-mount-lykaion-zeus-sanctuary,Ιερό του Λυκαίου Διός,el,Grek,preferred,1,,,src-pleiades-570764,reviewed
 name-sanctuary-mount-lykaion-zeus-sanctuary-en-preferred,sanctuary-mount-lykaion-zeus-sanctuary,Sanctuary of Zeus on Mount Lykaion,en,Latn,preferred,1,,,src-pleiades-570764,reviewed
 name-sanctuary-mount-lykaion-zeus-sanctuary-grc-ancient,sanctuary-mount-lykaion-zeus-sanctuary,Λύκαιον,grc,Grek,ancient,0,,,src-pleiades-570764,reviewed
-name-sanctuary-naukratis-hellenion-el-preferred,sanctuary-naukratis-hellenion,Ελλήνιο της Ναυκράτιδος,el,Grek,preferred,1,,,src-britishmuseum-4626abd5cbdd,needs_review
-name-sanctuary-naukratis-hellenion-en-preferred,sanctuary-naukratis-hellenion,Hellenion at Naukratis,en,Latn,preferred,1,,,src-britishmuseum-4626abd5cbdd,needs_review
-name-sanctuary-naukratis-hellenion-grc-ancient,sanctuary-naukratis-hellenion,Ἑλλήνιον,grc,Grek,ancient,0,,,src-britishmuseum-4626abd5cbdd,needs_review
+name-sanctuary-naukratis-hellenion-el-preferred,sanctuary-naukratis-hellenion,Ελλήνιο της Ναυκράτιδος,el,Grek,preferred,1,,,src-britishmuseum-4626abd5cbdd,reviewed
+name-sanctuary-naukratis-hellenion-en-preferred,sanctuary-naukratis-hellenion,Hellenion at Naukratis,en,Latn,preferred,1,,,src-britishmuseum-4626abd5cbdd,reviewed
+name-sanctuary-naukratis-hellenion-grc-ancient,sanctuary-naukratis-hellenion,Ἑλλήνιον,grc,Grek,ancient,0,,,src-britishmuseum-4626abd5cbdd,reviewed
 name-sanctuary-nemea-zeus-sanctuary-el-preferred,sanctuary-nemea-zeus-sanctuary,Ιερό του Νεμείου Διός,el,Grek,preferred,1,,,src-pleiades-570504,reviewed
 name-sanctuary-nemea-zeus-sanctuary-en-preferred,sanctuary-nemea-zeus-sanctuary,Sanctuary of Nemean Zeus,en,Latn,preferred,1,,,src-pleiades-570504,reviewed
 name-sanctuary-nemea-zeus-sanctuary-grc-ancient,sanctuary-nemea-zeus-sanctuary,Νεμέα,grc,Grek,ancient,0,,,src-pleiades-570504,reviewed
-name-sanctuary-olbia-apollo-delphinios-sanctuary-el-preferred,sanctuary-olbia-apollo-delphinios-sanctuary,Ιερό του Απόλλωνα Δελφινίου στην Ολβία,el,Grek,preferred,1,,,src-penn-a97aa05ea214,needs_review
-name-sanctuary-olbia-apollo-delphinios-sanctuary-en-preferred,sanctuary-olbia-apollo-delphinios-sanctuary,Sanctuary of Apollo Delphinios at Olbia Pontica,en,Latn,preferred,1,,,src-penn-a97aa05ea214,needs_review
-name-sanctuary-olbia-apollo-delphinios-sanctuary-grc-ancient,sanctuary-olbia-apollo-delphinios-sanctuary,Ἀπόλλωνος Δελφινίου τέμενος,grc,Grek,ancient,0,,,src-penn-a97aa05ea214,needs_review
+name-sanctuary-olbia-apollo-delphinios-sanctuary-el-preferred,sanctuary-olbia-apollo-delphinios-sanctuary,Ιερό του Απόλλωνα Δελφινίου στην Ολβία,el,Grek,preferred,1,,,src-penn-a97aa05ea214,reviewed
+name-sanctuary-olbia-apollo-delphinios-sanctuary-en-preferred,sanctuary-olbia-apollo-delphinios-sanctuary,Sanctuary of Apollo Delphinios at Olbia Pontica,en,Latn,preferred,1,,,src-penn-a97aa05ea214,reviewed
+name-sanctuary-olbia-apollo-delphinios-sanctuary-grc-ancient,sanctuary-olbia-apollo-delphinios-sanctuary,Ἀπόλλωνος Δελφινίου τέμενος,grc,Grek,ancient,0,,,src-penn-a97aa05ea214,reviewed
 name-sanctuary-olympia-zeus-sanctuary-el-preferred,sanctuary-olympia-zeus-sanctuary,Ιερό του Δία στην Ολυμπία,el,Grek,preferred,1,,,src-pleiades-570531,reviewed
 name-sanctuary-olympia-zeus-sanctuary-en-preferred,sanctuary-olympia-zeus-sanctuary,Sanctuary of Zeus at Olympia,en,Latn,preferred,1,,,src-pleiades-570531,reviewed
 name-sanctuary-olympia-zeus-sanctuary-grc-ancient,sanctuary-olympia-zeus-sanctuary,Ὀλυμπία,grc,Grek,ancient,0,,,src-pleiades-570531,reviewed
@@ -620,9 +620,9 @@ name-sanctuary-palaepaphos-aphrodite-sanctuary-grc-ancient,sanctuary-palaepaphos
 name-sanctuary-panionion-poseidon-sanctuary-el-preferred,sanctuary-panionion-poseidon-sanctuary,Πανιώνιο,el,Grek,preferred,1,,,src-pleiades-599855,reviewed
 name-sanctuary-panionion-poseidon-sanctuary-en-preferred,sanctuary-panionion-poseidon-sanctuary,Panionion Sanctuary,en,Latn,preferred,1,,,src-pleiades-599855,reviewed
 name-sanctuary-panionion-poseidon-sanctuary-grc-ancient,sanctuary-panionion-poseidon-sanctuary,Πανιώνιον,grc,Grek,ancient,0,,,src-pleiades-599855,reviewed
-name-sanctuary-pantikapaion-apollo-ietros-sanctuary-el-preferred,sanctuary-pantikapaion-apollo-ietros-sanctuary,Ιερό του Απόλλωνα Ιητρού στο Παντικάπαιο,el,Grek,preferred,1,,,src-pleiades-854719,needs_review
-name-sanctuary-pantikapaion-apollo-ietros-sanctuary-en-preferred,sanctuary-pantikapaion-apollo-ietros-sanctuary,Sanctuary of Apollo Ietros at Pantikapaion,en,Latn,preferred,1,,,src-pleiades-854719,needs_review
-name-sanctuary-pantikapaion-apollo-ietros-sanctuary-grc-ancient,sanctuary-pantikapaion-apollo-ietros-sanctuary,Ἀπόλλωνος Ἰητροῦ ἱερόν,grc,Grek,ancient,0,,,src-pleiades-854719,needs_review
+name-sanctuary-pantikapaion-apollo-ietros-sanctuary-el-preferred,sanctuary-pantikapaion-apollo-ietros-sanctuary,Ιερό του Απόλλωνα Ιητρού στο Παντικάπαιο,el,Grek,preferred,1,,,src-pleiades-854719,reviewed
+name-sanctuary-pantikapaion-apollo-ietros-sanctuary-en-preferred,sanctuary-pantikapaion-apollo-ietros-sanctuary,Sanctuary of Apollo Ietros at Pantikapaion,en,Latn,preferred,1,,,src-pleiades-854719,reviewed
+name-sanctuary-pantikapaion-apollo-ietros-sanctuary-grc-ancient,sanctuary-pantikapaion-apollo-ietros-sanctuary,Ἀπόλλωνος Ἰητροῦ ἱερόν,grc,Grek,ancient,0,,,src-pleiades-854719,reviewed
 name-sanctuary-perachora-heraion-el-preferred,sanctuary-perachora-heraion,Ηραίο Περαχώρας,el,Grek,preferred,1,,,src-pleiades-570288,reviewed
 name-sanctuary-perachora-heraion-en-preferred,sanctuary-perachora-heraion,Heraion of Perachora,en,Latn,preferred,1,,,src-pleiades-570288,reviewed
 name-sanctuary-perachora-heraion-grc-ancient,sanctuary-perachora-heraion,Ἥρας Ἀκραίας ἱερόν,grc,Grek,ancient,0,,,src-pleiades-570288,reviewed
@@ -644,8 +644,8 @@ name-sanctuary-samothrace-great-gods-sanctuary-grc-ancient,sanctuary-samothrace-
 name-sanctuary-sardis-artemis-sanctuary-el-preferred,sanctuary-sardis-artemis-sanctuary,Ιερό της Αρτέμιδος στις Σάρδεις,el,Grek,preferred,1,,,src-pleiades-66376536,reviewed
 name-sanctuary-sardis-artemis-sanctuary-en-preferred,sanctuary-sardis-artemis-sanctuary,Sanctuary of Artemis at Sardis,en,Latn,preferred,1,,,src-pleiades-66376536,reviewed
 name-sanctuary-sardis-artemis-sanctuary-grc-ancient,sanctuary-sardis-artemis-sanctuary,Ἀρτέμιδος ἱερόν ἐν Σάρδεσι,grc,Grek,ancient,0,,,src-pleiades-66376536,reviewed
-name-sanctuary-segesta-doric-temple-sanctuary-el-preferred,sanctuary-segesta-doric-temple-sanctuary,Δωρικός ναός της Έγεστας,el,Grek,preferred,1,,,src-pleiades-963441586,needs_review
-name-sanctuary-segesta-doric-temple-sanctuary-en-preferred,sanctuary-segesta-doric-temple-sanctuary,Doric Temple of Segesta,en,Latn,preferred,1,,,src-pleiades-963441586,needs_review
+name-sanctuary-segesta-doric-temple-sanctuary-el-preferred,sanctuary-segesta-doric-temple-sanctuary,Δωρικός ναός της Έγεστας,el,Grek,preferred,1,,,src-pleiades-963441586,reviewed
+name-sanctuary-segesta-doric-temple-sanctuary-en-preferred,sanctuary-segesta-doric-temple-sanctuary,Doric Temple of Segesta,en,Latn,preferred,1,,,src-pleiades-963441586,reviewed
 name-sanctuary-selinous-demeter-malophoros-sanctuary-el-preferred,sanctuary-selinous-demeter-malophoros-sanctuary,Ιερό της Δήμητρας Μαλοφόρου στον Σελινούντα,el,Grek,preferred,1,,,src-pleiades-502577471,reviewed
 name-sanctuary-selinous-demeter-malophoros-sanctuary-en-preferred,sanctuary-selinous-demeter-malophoros-sanctuary,Sanctuary of Demeter Malophoros at Selinus,en,Latn,preferred,1,,,src-pleiades-502577471,reviewed
 name-sanctuary-selinous-demeter-malophoros-sanctuary-grc-ancient,sanctuary-selinous-demeter-malophoros-sanctuary,Δήμητρος Μαλοφόρου ἱερόν,grc,Grek,ancient,0,,,src-pleiades-502577471,reviewed
