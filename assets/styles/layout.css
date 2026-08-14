@@ -254,3 +254,27 @@ dialog::backdrop {
   color: var(--color-accent);
   font-weight: 650;
 }
+
+.app-error {
+  position: fixed;
+  z-index: var(--z-toast);
+  inset: 50% auto auto 50%;
+  width: min(calc(100% - 2rem), 34rem);
+  padding: var(--space-xl);
+  transform: translate(-50%, -50%);
+  border: 1px solid var(--color-error);
+  background: var(--color-surface);
+  box-shadow: var(--shadow-overlay);
+}
+
+.app-error h2 {
+  margin: 0 0 var(--space-sm);
+  font-family: var(--font-editorial);
+  font-size: var(--text-heading);
+  font-weight: 400;
+}
+
+.app-error p {
+  margin: 0 0 var(--space-lg);
+  color: var(--color-muted);
+}

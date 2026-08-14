@@ -93,6 +93,7 @@ class FakeElement extends FakeNode {
     this.lang = '';
     this.type = '';
     this.tabIndex = 0;
+    this.open = false;
   }
 
   get children() {
@@ -168,6 +169,34 @@ class FakeElement extends FakeNode {
     return true;
   }
 
+  focus() {
+    this.ownerDocument.activeElement = this;
+  }
+
+  remove() {
+    if (!this.parentNode) return;
+    this.parentNode.childNodes = this.parentNode.childNodes.filter((child) => child !== this);
+    this.parentNode = null;
+  }
+
+  closest(selector) {
+    let current = this;
+    while (current) {
+      if (matchesSelector(current, selector)) return current;
+      current = current.parentNode;
+    }
+    return null;
+  }
+
+  showModal() {
+    this.open = true;
+  }
+
+  close() {
+    this.open = false;
+    this.dispatchEvent({ type: 'close' });
+  }
+
   cloneNode(deep = false) {
     const clone = new FakeElement(this.tagName, this.ownerDocument);
     clone.className = this.className;
@@ -208,13 +237,46 @@ class FakeElement extends FakeNode {
 
 export function installDOM() {
   const document = {
+    activeElement: null,
+    title: '',
+    listeners: new Map(),
     createElement(tagName) {
       return new FakeElement(tagName, document);
     },
     createTextNode(value) {
       return new FakeText(value, document);
     },
+    getElementById(id) {
+      if (document.documentElement.id === id) return document.documentElement;
+      return document.documentElement.querySelector(`#${id}`);
+    },
+    querySelector(selector) {
+      if (matchesSelector(document.documentElement, selector)) return document.documentElement;
+      return document.documentElement.querySelector(selector);
+    },
+    querySelectorAll(selector) {
+      const matches = matchesSelector(document.documentElement, selector) ? [document.documentElement] : [];
+      return [...matches, ...document.documentElement.querySelectorAll(selector)];
+    },
+    addEventListener(type, listener) {
+      if (!document.listeners.has(type)) document.listeners.set(type, []);
+      document.listeners.get(type).push(listener);
+    },
+    execCommand() {
+      return true;
+    },
   };
+  document.documentElement = document.createElement('html');
+  document.head = document.createElement('head');
+  document.body = document.createElement('body');
+  document.documentElement.append(document.head, document.body);
   globalThis.document = document;
   return document;
+}
+
+export function appendElement(document, tagName, id, parent = document.body) {
+  const element = document.createElement(tagName);
+  if (id) element.id = id;
+  parent.append(element);
+  return element;
 }

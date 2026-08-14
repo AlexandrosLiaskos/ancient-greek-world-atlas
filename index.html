@@ -73,15 +73,15 @@
               </li>
             </ul>
             <div id="empty-state" class="empty-state" hidden>
-              <h3>Δεν βρέθηκαν εγγραφές</h3>
-              <p>Αλλάξτε την αναζήτηση ή καθαρίστε τα φίλτρα για να εμφανιστεί ξανά ο κατάλογος.</p>
+              <h3 id="empty-title">Δεν βρέθηκαν εγγραφές</h3>
+              <p id="empty-body">Αλλάξτε την αναζήτηση ή καθαρίστε τα φίλτρα για να εμφανιστεί ξανά ο κατάλογος.</p>
               <button id="empty-reset" class="primary-button" type="button">Καθαρισμός φίλτρων</button>
             </div>
           </section>
 
           <section id="panel-filters" class="task-panel" role="tabpanel" aria-labelledby="tab-filters" hidden>
             <header class="panel-heading">
-              <h2>Φίλτρα</h2>
+              <h2 id="filters-heading">Φίλτρα</h2>
               <button id="reset-filters" class="text-button" type="button" disabled>Καθαρισμός</button>
             </header>
             <div id="active-filter-chips" class="filter-chips" role="group" aria-label="Ενεργά φίλτρα"></div>
@@ -94,9 +94,9 @@
           </section>
 
           <section id="panel-search" class="task-panel" role="tabpanel" aria-labelledby="tab-search" hidden>
-            <header class="panel-heading"><h2>Αναζήτηση</h2></header>
+            <header class="panel-heading"><h2 id="search-heading">Αναζήτηση</h2></header>
             <div id="search-form" class="search-form" role="search">
-              <label for="search-input">Όνομα, τόπος ή λέξη</label>
+              <label id="search-label" for="search-input">Όνομα, τόπος ή λέξη</label>
               <div class="search-field">
                 <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="10.5" cy="10.5" r="6.5"></circle><path d="m15.5 15.5 4 4"></path></svg>
                 <input id="search-input" name="q" type="search" autocomplete="off" spellcheck="false" placeholder="π.χ. Αθήνα, Athenae, Ιωνία">
@@ -109,10 +109,10 @@
 
           <section id="panel-statistics" class="task-panel" role="tabpanel" aria-labelledby="tab-statistics" hidden>
             <header class="panel-heading">
-              <h2>Στατιστικά</h2>
+              <h2 id="statistics-heading">Στατιστικά</h2>
               <span id="statistics-count">226 εγγραφές</span>
             </header>
-            <p class="panel-intro">Οι κατανομές ενημερώνονται μαζί με τον ορατό κατάλογο.</p>
+            <p id="statistics-intro" class="panel-intro">Οι κατανομές ενημερώνονται μαζί με τον ορατό κατάλογο.</p>
             <div id="statistics-content" class="statistics-content" aria-busy="true">
               <div class="panel-skeleton" aria-hidden="true"><span></span><span></span><span></span><span></span></div>
             </div>
@@ -124,21 +124,21 @@
         <div id="map" aria-label="Διαδραστικός χάρτης" tabindex="0"></div>
         <div id="map-loading" class="map-message">
           <span class="map-loading-mark" aria-hidden="true"></span>
-          <span>Προετοιμασία χάρτη…</span>
+          <span id="map-loading-label">Προετοιμασία χάρτη…</span>
         </div>
         <div id="map-error" class="map-message map-error" role="status" hidden></div>
 
         <section id="map-legend" class="map-legend" aria-label="Υπόμνημα χάρτη">
           <button id="legend-toggle" class="legend-heading" type="button" aria-expanded="true" aria-controls="legend-content">
-            <span>Υπόμνημα</span>
+            <span id="legend-label">Υπόμνημα</span>
             <svg viewBox="0 0 24 24" aria-hidden="true"><path d="m7 14 5-5 5 5"></path></svg>
           </button>
           <div id="legend-content" class="legend-content">
-            <div class="legend-row"><i class="legend-symbol marker-settlement" aria-hidden="true"></i><span>Οικισμοί</span><b id="legend-settlement-count">119</b></div>
-            <div class="legend-row"><i class="legend-symbol marker-sanctuary" aria-hidden="true"></i><span>Ιερά</span><b id="legend-sanctuary-count">70</b></div>
-            <div class="legend-row"><i class="legend-symbol marker-polity" aria-hidden="true"></i><span>Πολιτείες</span><b id="legend-polity-count">37</b></div>
-            <div class="legend-row"><i class="legend-cluster" aria-hidden="true">12</i><span>Συγκέντρωση</span></div>
-            <div class="legend-note"><i class="legend-uncertain" aria-hidden="true"></i><span>Προσεγγιστικό ή αντιπροσωπευτικό σημείο</span></div>
+            <div class="legend-row"><i class="legend-symbol marker-settlement" aria-hidden="true"></i><span id="legend-settlement-label">Οικισμοί</span><b id="legend-settlement-count">119</b></div>
+            <div class="legend-row"><i class="legend-symbol marker-sanctuary" aria-hidden="true"></i><span id="legend-sanctuary-label">Ιερά</span><b id="legend-sanctuary-count">70</b></div>
+            <div class="legend-row"><i class="legend-symbol marker-polity" aria-hidden="true"></i><span id="legend-polity-label">Πολιτείες</span><b id="legend-polity-count">37</b></div>
+            <div class="legend-row"><i class="legend-cluster" aria-hidden="true">12</i><span id="legend-cluster-label">Συγκέντρωση</span></div>
+            <div class="legend-note"><i class="legend-uncertain" aria-hidden="true"></i><span id="legend-uncertain-label">Προσεγγιστικό ή αντιπροσωπευτικό σημείο</span></div>
           </div>
         </section>
 
@@ -182,10 +182,16 @@
         </button>
       </div>
       <div class="about-content">
-        <p>Ο Άτλας του Αρχαίου Ελληνικού Κόσμου παρουσιάζει 226 τεκμηριωμένους οικισμούς, ιερά και πολιτείες σε ένα δίγλωσσο γεωγραφικό ευρετήριο.</p>
-        <p>Τα σημεία δηλώνουν αρχαιολογικές θέσεις, τεκμηριωμένες προσεγγίσεις ή αντιπροσωπευτικά κέντρα· δεν αποτελούν πολιτικά όρια.</p>
+        <p id="about-intro">Ο Άτλας του Αρχαίου Ελληνικού Κόσμου παρουσιάζει 226 τεκμηριωμένους οικισμούς, ιερά και πολιτείες σε ένα δίγλωσσο γεωγραφικό ευρετήριο.</p>
+        <p id="about-spatial">Τα σημεία δηλώνουν αρχαιολογικές θέσεις, τεκμηριωμένες προσεγγίσεις ή αντιπροσωπευτικά κέντρα· δεν αποτελούν πολιτικά όρια.</p>
       </div>
     </dialog>
+
+    <section id="app-error" class="app-error" role="alert" hidden>
+      <h2 id="app-error-title">Τα δεδομένα δεν φορτώθηκαν</h2>
+      <p id="app-error-body">Ελέγξτε τη σύνδεση ή ανοίξτε ξανά τη σελίδα.</p>
+      <button id="retry-load" class="primary-button" type="button">Νέα προσπάθεια</button>
+    </section>
 
     <div id="app-status" class="visually-hidden" role="status" aria-live="polite" aria-atomic="true"></div>
   </div>
