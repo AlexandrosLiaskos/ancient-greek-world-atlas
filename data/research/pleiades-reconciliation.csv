@@ -1,0 +1,185 @@
+entity_id,pleiades_id,status,local_longitude,local_latitude,pleiades_longitude,pleiades_latitude,distance_m,geometry_role,local_location_certainty,pleiades_title,pleiades_modified,retrieved_on,decision
+city-alexandria-egypt,727070,matched,29.909773,31.201435,29.909773,31.201435,0.00,site,high,Alexandria,2026-08-05T20:54:58Z,2026-08-15,retain_local_and_report_distance
+city-argos,570106,matched,22.72038,37.631047,22.720380240841404,37.63104688932719,0.02,site,high,Argos,2026-05-12T21:03:39Z,2026-08-15,retain_local_and_report_distance
+city-epidaurus-city,570228,matched,23.160156,37.633463,23.16015635,37.6334625,0.06,site,high,Epidauros,2024-06-01T16:22:42Z,2026-08-15,retain_local_and_report_distance
+city-mantinea,570459,matched,22.392578,37.617379,22.3925775,37.6173785,0.07,site,high,Mantineia/Antigoneia,2024-02-05T16:49:39Z,2026-08-15,retain_local_and_report_distance
+city-megalopolis,570467,matched,22.126396,37.414271,22.126396162110474,37.414271210950176,0.03,site,high,Megalopolis,2026-07-24T13:05:11Z,2026-08-15,retain_local_and_report_distance
+city-tegea,570707,matched,22.420672,37.455301,22.420672,37.455301,0.00,site,high,Tegea,2025-08-03T12:43:28Z,2026-08-15,retain_local_and_report_distance
+city-athens-attica,579885,matched,23.723914,37.971637,23.723914356100423,37.97163725472171,0.04,site,high,Athenae,2026-08-11T13:59:57Z,2026-08-15,retain_local_and_report_distance
+city-piraeus,580062,matched,23.644609,37.937222,23.644609,37.937222,0.00,site,high,Peiraieus/Piraeus,2025-07-06T01:41:00Z,2026-08-15,retain_local_and_report_distance
+city-patrae,570567,matched,21.738518,38.243265,21.738518,38.243265,0.00,site,high,Patra(e),2024-03-22T10:06:47Z,2026-08-15,retain_local_and_report_distance
+city-thebes-boeotia,541138,matched,23.317653,38.319949,23.317653433333334,38.319948833333335,0.04,site,high,Thebai/Thebae,2026-03-27T19:58:04Z,2026-08-15,retain_local_and_report_distance
+city-eretria-euboea,579925,matched,23.794721,38.399917,23.79472107553096,38.39991690381873,0.01,site,high,Eretria (Euboea),2026-04-28T20:10:11Z,2026-08-15,retain_local_and_report_distance
+city-chalcis-euboea,540703,matched,23.621937,38.457139,23.621937,38.457139,0.00,site,high,Chalcis,2024-02-25T02:21:56Z,2026-08-15,retain_local_and_report_distance
+city-larissa-thessaly,540905,matched,22.42097,39.634851,22.42097025,39.634851,0.02,site,high,Larissa,2026-01-08T04:53:46Z,2026-08-15,retain_local_and_report_distance
+city-pherae-thessaly,541044,matched,22.753851,39.379043,22.753851,39.379043,0.00,site,high,Pherai,2025-04-27T02:30:46Z,2026-08-15,retain_local_and_report_distance
+city-smyrna,550893,matched,27.141387,38.417196,27.141387,38.41719605,0.01,site,high,Smyrna/Eurydikeia,2024-09-06T21:55:36Z,2026-08-15,retain_local_and_report_distance
+city-samos-city,599925,matched,26.944483,37.68825,26.944483,37.68825,0.00,site,high,Samos (settlement),2025-02-03T01:51:15Z,2026-08-15,retain_local_and_report_distance
+city-chios-city,550496,matched,26.132979,38.372239,26.132979,38.3722387,0.03,site,high,Chios (settlement),2023-08-29T14:40:52Z,2026-08-15,retain_local_and_report_distance
+city-corinth,570182,matched,22.878614,37.905642,22.878614390874485,37.90564164345828,0.05,site,high,Corinthus/Korinthos,2026-02-09T03:04:08Z,2026-08-15,retain_local_and_report_distance
+city-sicyon,570668,matched,22.712193,37.983819,22.712193310834493,37.983819217860635,0.04,site,high,Sicyon/Demetrias,2025-07-15T03:33:20Z,2026-08-15,retain_local_and_report_distance
+city-gortyn,589796,matched,24.946943,35.062107,24.946943,35.062107,0.00,site,high,Gortyn(a),2025-12-14T20:12:33Z,2026-08-15,retain_local_and_report_distance
+city-knossos,589872,matched,25.163106,35.297847,25.163106,35.297847,0.00,site,high,Knosos/Col. Iulia Nobilis Cnosos,2025-12-14T02:52:58Z,2026-08-15,retain_local_and_report_distance
+city-thera-city,599971,matched,25.47843,36.363279,25.47843030068955,36.363279190867146,0.03,site,high,Thera,2023-12-06T23:38:10Z,2026-08-15,retain_local_and_report_distance
+city-naxos-cyclades,599821,matched,25.377595,37.103871,25.377595,37.103871,0.00,site,high,Naxos (settlement),2024-09-04T20:35:51Z,2026-08-15,retain_local_and_report_distance
+city-ptolemais-cyrenaica,373879,matched,20.95385,32.707134,20.953849594556235,32.70713418580762,0.04,site,medium,Ptolemais/Barkes Limen,2024-10-21T02:04:10Z,2026-08-15,retain_local_and_report_distance
+city-kos-city,599728,matched,27.289914,36.893601,27.289914000000003,36.893601000000004,0.00,site,high,Kos (settlement),2023-09-18T22:18:07Z,2026-08-15,retain_local_and_report_distance
+city-sparta,570685,matched,22.424672,37.081782,22.424672282445528,37.0817824552019,0.06,site,high,Sparta,2026-03-20T21:09:51Z,2026-08-15,retain_local_and_report_distance
+city-mytilene,550763,matched,26.547048,39.110475,26.547048,39.110475,0.00,site,high,Mytilene,2026-01-08T19:01:02Z,2026-08-15,retain_local_and_report_distance
+city-demetrias,540730,matched,22.924029,39.343481,22.924029,39.343481,0.00,site,high,Demetrias (Magnesian),2026-07-29T16:01:21Z,2026-08-15,retain_local_and_report_distance
+city-aigai-macedonia,491512,matched,22.321872,40.480092,22.321872,40.480092,0.00,site,high,Aigeai,2026-03-06T21:45:02Z,2026-08-15,retain_local_and_report_distance
+city-dion,491572,matched,22.491437,40.176388,22.4914368240037,40.17638805619207,0.02,site,high,Dion,2024-09-12T21:17:21Z,2026-08-15,retain_local_and_report_distance
+city-thessalonica,491741,matched,22.952885,40.628342,22.952885000000002,40.628342,0.00,site,high,Thessalonica,2025-11-27T14:50:56Z,2026-08-15,retain_local_and_report_distance
+city-pella,491687,matched,22.51822477,40.75435965,22.518224765547643,40.75435964572732,0.00,site,high,Pella/Diokletianoupolis,2024-10-30T20:42:12Z,2026-08-15,retain_local_and_report_distance
+city-pydna,491703,matched,22.614991,40.397569,22.614990909899834,40.39756878405579,0.03,site,high,Pydna,2025-04-30T17:41:40Z,2026-08-15,retain_local_and_report_distance
+city-megara,570468,matched,23.340163,37.985078,23.340163,37.985078,0.00,site,high,Megara,2025-07-06T13:39:36Z,2026-08-15,retain_local_and_report_distance
+city-messene,570479,matched,21.920048,37.175304,21.92004754482477,37.17530438825155,0.06,site,high,Messene,2026-07-24T14:21:32Z,2026-08-15,retain_local_and_report_distance
+city-pergamum,550812,matched,27.184167,39.1325,27.184167,39.1325,0.00,site,high,Pergamum,2026-05-06T21:49:05Z,2026-08-15,retain_local_and_report_distance
+city-lindos,589913,matched,28.088298,36.091299,28.08829847292692,36.09129941859426,0.06,site,high,Lindos,2023-09-27T16:06:15Z,2026-08-15,retain_local_and_report_distance
+city-rhodes-city,590030,matched,28.227611,36.443113,28.227611,36.443113,0.00,site,high,Rhodos (settlement),2025-06-04T07:05:14Z,2026-08-15,retain_local_and_report_distance
+city-aegina-city,579853,matched,23.423668,37.750149,23.423668,37.750149,0.00,site,high,Aigina (settlement),2026-07-01T20:05:27Z,2026-08-15,retain_local_and_report_distance
+city-antioch-orontes,658381,matched,36.183214,36.222551,36.183214,36.222551499999994,0.06,site,high,Antiochia/Theoupolis,2026-03-30T15:28:12Z,2026-08-15,retain_local_and_report_distance
+city-olynthus,491678,matched,23.354261,40.295242,23.354261495598436,40.29524194804742,0.04,site,high,Olynthos,2025-09-14T15:41:27Z,2026-08-15,retain_local_and_report_distance
+colony-cyme-aeolis,550506,matched,26.938319,38.760193,26.93831935498348,38.76019281854948,0.04,site,high,Cyme,2023-04-11T22:06:35Z,2026-08-15,retain_local_and_report_distance
+colony-myrina-aeolis,550756,matched,26.980202,38.846976,26.9802024,38.8469759,0.04,site,medium,Myrina/Sebastopolis,2025-10-09T03:32:18Z,2026-08-15,retain_local_and_report_distance
+colony-chalcedon,520988,matched,29.025789,40.983393,29.025789,40.983393,0.00,site,high,Chalcedon,2024-07-02T15:40:54Z,2026-08-15,retain_local_and_report_distance
+colony-heraclea-pontica,844944,matched,31.417414,41.283255,31.417413666666665,41.28325533333334,0.05,site,high,Heraclea,2025-02-05T17:04:11Z,2026-08-15,retain_local_and_report_distance
+colony-massalia,148127,matched,5.382499,43.296854,5.382499,43.296854,0.00,site,high,Massalia/Massilia,2026-02-28T22:23:19Z,2026-08-15,retain_local_and_report_distance
+colony-tragurion,197555,matched,16.25063,43.517639,16.25063,43.517639,0.00,site,high,Tragurium,2026-05-30T20:21:58Z,2026-08-15,retain_local_and_report_distance
+colony-pharos-hvar,197433,matched,16.601041,43.184286,16.601041,43.184286,0.00,site,high,Pharus,2020-11-15T15:52:07Z,2026-08-15,retain_local_and_report_distance
+colony-naucratis,727169,matched,30.591928,30.900508,30.5919275,30.900508000000002,0.05,site,high,Naucratis,2024-05-18T16:11:08Z,2026-08-15,retain_local_and_report_distance
+colony-ambracia,530794,matched,20.990093,39.154924,20.990092500000003,39.1549245,0.07,site,high,Ambracia,2026-03-07T22:05:50Z,2026-08-15,retain_local_and_report_distance
+colony-corcyra,530834,matched,19.906703,39.60813,19.906703,39.60813,0.00,site,high,Corcyra (settlement),2026-05-23T01:51:08Z,2026-08-15,retain_local_and_report_distance
+colony-byzantium,520985,matched,28.973881,41.005902,28.973881499999997,41.005902,0.04,site,high,Byzantium,2025-10-29T14:08:36Z,2026-08-15,retain_local_and_report_distance
+colony-apollonia-pontica,216706,matched,27.694272,42.420355,27.694272,42.420355,0.00,site,high,Apollonia Pontica/Sozopolis,2023-09-10T02:55:13Z,2026-08-15,retain_local_and_report_distance
+colony-mesembria,216882,matched,27.724443,42.65958,27.7244435,42.659580000000005,0.04,site,high,Mesembria,2025-02-01T15:02:23Z,2026-08-15,retain_local_and_report_distance
+colony-odessos,216904,matched,27.913472,43.20616,27.913472499999997,43.206160499999996,0.07,site,high,Odessus,2025-09-25T10:49:55Z,2026-08-15,retain_local_and_report_distance
+colony-emporion-iberia,246382,matched,3.114549,42.13342,3.1145495,42.13342,0.04,site,high,Emporiae,2022-01-10T20:12:23Z,2026-08-15,retain_local_and_report_distance
+colony-apollonia-illyria,481728,matched,19.46926,40.720191,19.4692599749515,40.720191210002326,0.02,site,high,Apollonia,2026-07-30T17:38:53Z,2026-08-15,retain_local_and_report_distance
+colony-epidamnos,481818,matched,19.447355,41.316342,19.447355,41.3163425,0.06,site,high,Dyrr(h)achium/Epidamnos,2024-11-30T02:25:47Z,2026-08-15,retain_local_and_report_distance
+colony-erythrae-ionia,550535,matched,26.480833,38.382778,26.480833,38.382778,0.00,site,high,Erythrai,2024-10-02T19:23:44Z,2026-08-15,retain_local_and_report_distance
+colony-ephesus,599612,matched,27.342403,37.940164,27.34240298195866,37.940164271971945,0.03,site,high,Ephesus/Arsinoe(ia),2026-06-09T20:41:22Z,2026-08-15,retain_local_and_report_distance
+colony-clazomenae,550651,matched,26.78662,38.373048,26.786619843401766,38.37304775054337,0.03,site,high,Klazomenai (later),2023-08-29T15:49:37Z,2026-08-15,retain_local_and_report_distance
+colony-colophon,599577,matched,27.148308,38.108253,27.1483085,38.108253,0.04,site,high,Colophon,2025-10-29T00:01:57Z,2026-08-15,retain_local_and_report_distance
+colony-miletus,599799,matched,27.278808,37.530464,27.27880848386269,37.53046444003695,0.06,site,high,Miletus,2026-01-23T04:23:23Z,2026-08-15,retain_local_and_report_distance
+colony-priene,599905,matched,27.296584,37.66078,27.296583668668113,37.66078027653997,0.04,site,high,Priene/‘Lince’?,2026-01-23T03:50:13Z,2026-08-15,retain_local_and_report_distance
+colony-teos,550913,matched,26.785014,38.177262,26.785014,38.177262,0.00,site,high,Teos,2024-09-21T00:57:25Z,2026-08-15,retain_local_and_report_distance
+colony-phocaea,550823,matched,26.75656,38.6703,26.75656,38.6703,0.00,site,high,Phocaea,2023-09-12T23:45:16Z,2026-08-15,retain_local_and_report_distance
+colony-magnesia-maeander,599778,matched,27.523178,37.849862,27.523178440779834,37.84986234353824,0.05,site,high,Magnesia ad Maeandrum/Leukophrys,2025-10-29T00:20:45Z,2026-08-15,retain_local_and_report_distance
+colony-halicarnassus,599636,matched,27.422151,37.040401,27.4221505,37.040400500000004,0.07,site,high,Halicarnassus/Halikarnassos,2026-01-19T19:25:49Z,2026-08-15,retain_local_and_report_distance
+colony-iasos,599664,matched,27.58487,37.279196,27.58487049000233,37.27919629293001,0.05,site,high,Iasos,2026-03-17T20:26:32Z,2026-08-15,retain_local_and_report_distance
+colony-cnidus,599575,matched,27.372839,36.68818,27.3728385,36.688179500000004,0.07,site,high,Cnidus (Tekir),2025-10-11T00:19:01Z,2026-08-15,retain_local_and_report_distance
+colony-panticapaeum,854719,matched,36.46858,45.350983,36.468579681475774,45.35098337503432,0.05,site,high,Pantikapaion/Bosp(h)orus,2025-01-14T02:26:04Z,2026-08-15,retain_local_and_report_distance
+colony-phanagoria,854724,matched,36.959668,45.276258,36.95966825,45.27625825,0.03,site,high,Phanagor(e)ia,2025-08-23T00:41:03Z,2026-08-15,retain_local_and_report_distance
+colony-dioscurias,857107,matched,41.011175,42.998331,41.01117505,42.998330949999996,0.01,site,high,Dioscurias/Sebastopolis,2023-06-10T23:52:47Z,2026-08-15,retain_local_and_report_distance
+colony-phasis-city,857275,matched,41.692323,42.135867,41.6923225,42.135867000000005,0.04,site,medium,Phasis (settlement),2024-09-07T18:54:32Z,2026-08-15,retain_local_and_report_distance
+colony-apollonia-cyrenaica,373732,matched,21.970831,32.902344,21.970830693141515,32.90234355046499,0.06,site,high,Apollonia/Sozousa,2023-09-17T00:57:04Z,2026-08-15,retain_local_and_report_distance
+colony-barca-cyrenaica,373750,matched,20.871743,32.499653,20.87174333333333,32.499653333333335,0.05,site,high,Barke,2026-02-27T17:11:13Z,2026-08-15,retain_local_and_report_distance
+colony-euesperides,373786,matched,20.096022,32.145666,20.096022,32.145666,0.00,site,high,Euesperides,2024-05-13T14:00:50Z,2026-08-15,retain_local_and_report_distance
+colony-cyrene,373778,matched,21.856539,32.820027,21.856538513413255,32.82002662733894,0.06,site,high,Cyrene,2026-06-25T01:30:59Z,2026-08-15,retain_local_and_report_distance
+colony-taucheira,373736,matched,20.567298,32.536399,20.567297666666665,32.536399333333335,0.05,site,high,Arsinoe/Taucheira,2024-05-06T00:42:28Z,2026-08-15,retain_local_and_report_distance
+colony-phaselis,639051,matched,30.552167,36.523492,30.552166525760224,36.523492188585934,0.05,site,high,Phaselis,2020-11-07T12:17:52Z,2026-08-15,retain_local_and_report_distance
+colony-tanais,825397,matched,39.335671,47.268688,39.33567056699745,47.26868779057921,0.04,site,high,Tanais,2024-12-24T20:29:20Z,2026-08-15,retain_local_and_report_distance
+colony-amphipolis,501347,matched,23.841579,40.825811,23.841579432345075,40.82581148078865,0.06,site,high,Amphipolis,2026-03-08T03:10:29Z,2026-08-15,retain_local_and_report_distance
+colony-philippi,501482,matched,24.284637,41.012651,24.284637286816082,41.012651339626466,0.04,site,high,Krenides/Philippi/Col. Augusta Iulia Philippensis,2026-03-04T19:08:15Z,2026-08-15,retain_local_and_report_distance
+colony-taras,442810,matched,17.233042,40.473787,17.2330416,40.4737866,0.06,site,high,Taras/Tarentum/Neptunia,2026-06-21T23:24:52Z,2026-08-15,retain_local_and_report_distance
+colony-croton,452317,matched,17.127966,39.081167,17.127966,39.0811675,0.06,site,high,Croto(n),2025-07-12T21:23:36Z,2026-08-15,retain_local_and_report_distance
+colony-locri-epizephyrii,452369,matched,16.24434,38.226296,16.244339500000002,38.226295500000006,0.07,site,high,Lokroi Epizephyrioi,2026-05-31T14:52:55Z,2026-08-15,retain_local_and_report_distance
+colony-rhegion,452416,matched,15.64393,38.109279,15.64393,38.109279,0.00,site,high,Rhegion/Regium,2025-05-14T16:42:53Z,2026-08-15,retain_local_and_report_distance
+colony-cumae-campania,432808,matched,14.056381,40.84795,14.0563813,40.847949650000004,0.05,site,high,Cumae/Kyme (Campanian),2024-07-09T13:36:21Z,2026-08-15,retain_local_and_report_distance
+colony-neapolis-campania,433014,matched,14.25287,40.839995,14.25287,40.839995,0.00,site,high,Parthenope/Neapolis,2026-06-04T15:35:37Z,2026-08-15,retain_local_and_report_distance
+colony-elea-velia,452488,matched,15.156157,40.160501,15.156156847539265,40.16050073721131,0.03,site,high,Velia/Elea,2025-07-31T00:50:03Z,2026-08-15,retain_local_and_report_distance
+colony-metapontum,442658,matched,16.824332,40.383641,16.824331523620337,40.38364140322288,0.06,site,high,Metapontum,2025-10-02T03:32:17Z,2026-08-15,retain_local_and_report_distance
+colony-poseidonia,442733,matched,15.005079,40.420848,15.005078600555327,40.420848339395185,0.05,site,high,Poseidonia/Paestum,2026-07-17T14:18:07Z,2026-08-15,retain_local_and_report_distance
+colony-sybaris,452457,matched,16.494262,39.717328,16.494262352883187,39.71732767319154,0.05,site,high,Sybaris/Thurii/Copia,2025-06-24T23:07:21Z,2026-08-15,retain_local_and_report_distance
+colony-cyzicus,511218,matched,27.883191,40.385565,27.883191,40.3855645,0.06,site,high,Cyzicus,2024-10-16T20:23:33Z,2026-08-15,retain_local_and_report_distance
+colony-sinope,857321,matched,35.143037,42.025776,35.143037,42.025776,0.00,site,high,Sinope,2024-05-01T19:50:05Z,2026-08-15,retain_local_and_report_distance
+colony-ancona,413014,matched,13.516073,43.618993,13.516072666666666,43.618992666666664,0.05,site,high,Ancon(a),2026-07-01T13:03:39Z,2026-08-15,retain_local_and_report_distance
+colony-amisus,857024,matched,36.3313,41.292721,36.3313,41.292721,0.00,site,high,Amisus/Peiraieus,2026-03-08T03:00:08Z,2026-08-15,retain_local_and_report_distance
+colony-trapezus,857359,matched,39.723312,41.004269,39.7233115,41.0042695,0.07,site,high,Trapezus,2025-11-20T15:27:20Z,2026-08-15,retain_local_and_report_distance
+colony-akragas,462086,matched,13.585475,37.290594,13.585475,37.290594,0.00,site,high,Akragas/Agrigentum,2026-04-06T18:19:00Z,2026-08-15,retain_local_and_report_distance
+colony-gela,462214,matched,14.258471,37.063092,14.258470500000001,37.063092499999996,0.07,site,high,Gela,2024-07-11T19:05:00Z,2026-08-15,retain_local_and_report_distance
+colony-zancle-messana,462538,matched,15.556634,38.192251,15.556634,38.192251,0.00,site,high,Zancle/Messana,2026-06-05T01:03:52Z,2026-08-15,retain_local_and_report_distance
+colony-himera,462244,matched,13.822344,37.969837,13.822343795481169,37.969836616449996,0.05,site,high,Himera,2026-01-15T19:42:37Z,2026-08-15,retain_local_and_report_distance
+colony-catana,462270,matched,15.088142,37.502959,15.088142,37.502959,0.00,site,high,Katane/Catina,2025-04-30T17:25:38Z,2026-08-15,retain_local_and_report_distance
+colony-leontinoi,462279,matched,14.998115,37.285478,14.998115,37.285478,0.00,site,high,Leontini,2026-05-11T01:03:41Z,2026-08-15,retain_local_and_report_distance
+colony-megara-hyblaea,462307,matched,15.182285,37.203801,15.18228457840718,37.20380112977294,0.04,site,high,Megara Hyblaia,2025-07-12T17:23:47Z,2026-08-15,retain_local_and_report_distance
+colony-naxos-sicily,462386,matched,15.267795,37.822487,15.2677947,37.82248715,0.03,site,high,Naxos (settlement),2024-07-09T18:38:46Z,2026-08-15,retain_local_and_report_distance
+colony-selinus,462489,matched,12.824893,37.588282,12.824893086483907,37.58828165591654,0.04,site,high,Selinus,2026-03-09T14:15:50Z,2026-08-15,retain_local_and_report_distance
+colony-syracuse,462503,matched,15.283336,37.070079,15.283335658142617,37.070078971013665,0.03,site,high,Syracusae/Syrakousai,2026-05-11T14:30:51Z,2026-08-15,retain_local_and_report_distance
+colony-tyras,226800,matched,30.350134,46.200755,30.350134,46.2007555,0.06,site,high,Tyras/Ophioussa,2022-02-26T03:31:47Z,2026-08-15,retain_local_and_report_distance
+colony-olbia-pontica,226546,matched,31.905857,46.692386,31.905856770389157,46.692385663937046,0.04,site,high,Borysthenes/Olbia,2024-02-29T04:51:25Z,2026-08-15,retain_local_and_report_distance
+colony-histria-pontica,216839,matched,28.775129,44.547787,28.77512875,44.547787400000004,0.05,site,high,Histria,2024-07-09T23:31:18Z,2026-08-15,retain_local_and_report_distance
+colony-callatis,216744,matched,28.58275,43.817152,28.58275,43.817152,0.00,site,high,Callatis,2025-03-08T17:27:24Z,2026-08-15,retain_local_and_report_distance
+colony-tomis,217016,matched,28.649738,44.172856,28.6497375,44.172856499999995,0.07,site,high,Tomis,2022-04-01T15:47:49Z,2026-08-15,retain_local_and_report_distance
+colony-theodosia-crimea,854743,matched,35.378768,45.04609,35.378768,45.04609,0.00,site,high,Theodosia,2025-08-22T21:46:38Z,2026-08-15,retain_local_and_report_distance
+colony-chersonesus-taurica,226564,matched,33.492258,44.611093,33.492258004926946,44.61109288197437,0.01,site,high,Chersonesos,2023-09-17T23:37:46Z,2026-08-15,retain_local_and_report_distance
+colony-assos,550463,matched,26.336352,39.490135,26.336351701762013,39.49013546086826,0.06,site,high,Assos/Apollonia,2023-04-05T18:39:24Z,2026-08-15,retain_local_and_report_distance
+colony-abydos,501325,matched,26.411313,40.194216,26.411312762572948,40.194215640043836,0.04,site,high,Abydos,2025-03-15T16:00:55Z,2026-08-15,retain_local_and_report_distance
+colony-lampsacus,501570,matched,26.699162,40.346685,26.699162,40.346685,0.00,site,high,Pityoussa/Lampsacus,2024-05-24T14:24:23Z,2026-08-15,retain_local_and_report_distance
+kingdom-lysimachid,501458,matched,26.7508,40.5482,26.75081,40.548232,3.66,representative_center,high,Kardia/Lysimacheia,2025-11-04T19:55:44Z,2026-08-15,retain_local_and_report_distance
+sanctuary-aegina-aphaia-sanctuary,579872,matched,23.53324757,37.75437629,23.533247566603762,37.75437629088428,0.00,site,high,Temple of Aphaia on Aegina,2021-03-07T19:08:45Z,2026-08-15,retain_local_and_report_distance
+sanctuary-alexandria-serapeum,182618516,matched,29.896944,31.181944,29.896944,31.181944,0.00,site,high,Serapeum of Alexandria,2026-05-24T20:43:22Z,2026-08-15,retain_local_and_report_distance
+sanctuary-thermon-apollo-sanctuary,728329645,matched,21.66809773,38.55975222,21.668097731124995,38.55975221599652,0.00,site,high,Temple of Apollo at Thermos,2026-07-10T20:07:22Z,2026-08-15,retain_local_and_report_distance
+sanctuary-argive-heraion,570289,matched,22.77477164,37.69209411,22.774771642852013,37.69209410714744,0.00,site,high,Heraion (Argolis),2026-03-08T17:46:25Z,2026-08-15,retain_local_and_report_distance
+sanctuary-epidauros-asklepios-sanctuary,570127,matched,23.07426419,37.59830234,23.074264194567963,37.598302342957034,0.00,site,high,Sanctuary of Asklepios at Epidauros,2026-06-29T17:57:04Z,2026-08-15,retain_local_and_report_distance
+sanctuary-tegea-athena-alea-sanctuary,372843530,matched,22.4203967,37.45548013,22.420396704425567,37.45548012994524,0.00,site,high,Temple of Athena Alea at Tegea,2026-02-16T02:01:22Z,2026-08-15,retain_local_and_report_distance
+sanctuary-mount-lykaion-zeus-sanctuary,570764,matched,21.992287,37.4492021,21.992287,37.4492021,0.00,site,high,Sanctuary of Zeus Lykaios,2026-02-20T04:14:37Z,2026-08-15,retain_local_and_report_distance
+sanctuary-bassae-apollo-epikourios,570148,matched,21.90032237,37.42964395,21.90032237307956,37.42964394536577,0.00,site,high,Bassai,2026-08-08T18:04:32Z,2026-08-15,retain_local_and_report_distance
+sanctuary-athens-acropolis-sacred-center,638356144,matched,23.7264385,37.97164709,23.72643849988276,37.97164709028832,0.00,site,high,Acropolis of Athens,2025-03-31T20:30:36Z,2026-08-15,retain_local_and_report_distance
+sanctuary-brauron-artemis-sanctuary,579879,matched,23.99371274,37.92615476,23.99371274265728,37.92615475869865,0.00,site,high,Brauron/sanctuary of Artemis Brauronia,2026-03-08T15:52:09Z,2026-08-15,retain_local_and_report_distance
+sanctuary-eleusis-demeter-sanctuary,579910,matched,23.53759132,38.04144845,23.53759132113631,38.041448453048936,0.00,site,high,Demeter Sanctuary (Eleusis),2025-10-01T21:14:42Z,2026-08-15,retain_local_and_report_distance
+sanctuary-sounion-poseidon-sanctuary,580086,matched,24.02458985,37.65021167,24.024589850895737,37.65021167460787,0.00,site,high,Temple of Poseidon at Sounion,2026-08-08T18:07:12Z,2026-08-15,retain_local_and_report_distance
+sanctuary-lemnos-kabeirion,550604,matched,25.34165894,39.97934773,25.341658936838236,39.97934773011464,0.00,site,high,Kabeireion,2023-05-22T16:01:24Z,2026-08-15,retain_local_and_report_distance
+sanctuary-croton-hera-lacinia-sanctuary,452332,matched,17.20494715,39.0276924,17.20494715,39.0276924,0.00,site,high,Temple of Hera Lacinia,2025-11-01T08:24:33Z,2026-08-15,retain_local_and_report_distance
+sanctuary-kos-asklepieion,599528,matched,27.25718605,36.87572129,27.257186045992462,36.875721287361216,0.00,site,high,Asklepieion (Kos),2024-10-15T20:30:12Z,2026-08-15,retain_local_and_report_distance
+sanctuary-olympia-zeus-sanctuary,570531,matched,21.6308144,37.6386835,21.630814397906708,37.63868350172758,0.00,site,high,Olympia,2026-07-19T01:01:51Z,2026-08-15,retain_local_and_report_distance
+sanctuary-dodona-zeus-oracle,530843,matched,20.78773144,39.54643627,20.78773144481574,39.54643627193697,0.00,site,high,Dodona (Epirus),2022-06-07T22:53:33Z,2026-08-15,retain_local_and_report_distance
+sanctuary-apollonia-pontica-apollo-ietros-sanctuary,216706,matched,27.6938,42.4261,27.694272,42.420355,639.99,proxy,medium,Apollonia Pontica/Sozopolis,2023-09-10T02:55:13Z,2026-08-15,retain_local_and_report_distance
+sanctuary-samothrace-great-gods-sanctuary,501511,matched,25.53017343,40.50081363,25.530173426307933,40.500813632053124,0.00,site,high,"Megaloi Theoi (sanctuary, Samothrace)",2023-12-18T22:56:11Z,2026-08-15,retain_local_and_report_distance
+sanctuary-ephesus-artemis-sanctuary,873985034,matched,27.36372473,37.9497522,27.3637247296314,37.94975219958587,0.00,site,high,Temple of Artemis at Ephesus,2026-04-07T03:04:59Z,2026-08-15,retain_local_and_report_distance
+sanctuary-samos-heraion,599641,matched,26.88591701,37.67196784,26.88591701429735,37.67196784111074,0.00,site,high,Heraion,2023-11-16T19:50:58Z,2026-08-15,retain_local_and_report_distance
+sanctuary-priene-athena-polias-sanctuary,298577312,matched,27.29661487,37.65924143,27.296614867560347,37.659241425042254,0.00,site,high,The Temple of Athena Polias at Priene,2025-02-23T19:18:36Z,2026-08-15,retain_local_and_report_distance
+sanctuary-magnesia-artemis-leukophryene,599778,matched,27.52317844,37.84986234,27.523178440779834,37.84986234353824,0.00,proxy,medium,Magnesia ad Maeandrum/Leukophrys,2025-10-29T00:20:45Z,2026-08-15,retain_local_and_report_distance
+sanctuary-didyma-apollo-oracle,599593,matched,27.25638824,37.38496812,27.256388244827644,37.38496811945307,0.00,site,high,Didyma/Branchidai/Ioustinianopolis,2026-03-08T17:24:17Z,2026-08-15,retain_local_and_report_distance
+sanctuary-claros-apollo-oracle,599719,matched,27.19296631,38.00473241,27.192966314833726,38.004732411705554,0.00,site,high,Klaros,2024-05-24T14:51:10Z,2026-08-15,retain_local_and_report_distance
+sanctuary-panionion-poseidon-sanctuary,599855,matched,27.329993,37.703924,27.329993,37.703924,0.00,site,high,Panionion,2024-03-09T00:12:20Z,2026-08-15,retain_local_and_report_distance
+sanctuary-lagina-hekate-sanctuary,376215160,matched,28.03948,37.3785444,28.03948,37.3785444,0.00,site,high,Hekateion,2020-11-24T21:11:43Z,2026-08-15,retain_local_and_report_distance
+sanctuary-labraunda-zeus-sanctuary,599745,matched,27.81999008,37.41890062,27.819990075096726,37.418900617981386,0.00,site,high,Labraunda,2024-05-06T03:16:26Z,2026-08-15,retain_local_and_report_distance
+sanctuary-pantikapaion-apollo-ietros-sanctuary,854719,matched,36.46945,45.35095,36.468579681475774,45.35098337503432,68.11,proxy,medium,Pantikapaion/Bosp(h)orus,2025-01-14T02:26:04Z,2026-08-15,retain_local_and_report_distance
+sanctuary-perachora-heraion,570288,matched,22.85281872,38.02810774,22.852818722677043,38.02810774060178,0.00,site,high,Heraion,2025-12-28T19:26:18Z,2026-08-15,retain_local_and_report_distance
+sanctuary-nemea-zeus-sanctuary,570504,matched,22.71067954,37.80905853,22.710679536483795,37.80905853069708,0.00,site,high,Nemea,2024-06-05T18:52:36Z,2026-08-15,retain_local_and_report_distance
+sanctuary-isthmia-poseidon-sanctuary,570316,matched,22.9931345,37.9158035,22.9931345,37.9158035,0.00,site,high,Isthmia,2026-07-06T17:22:39Z,2026-08-15,retain_local_and_report_distance
+sanctuary-crete-idaion-antron,589817,matched,24.8289925,35.2082103,24.8289925,35.2082103,0.00,site,high,Idaion Antron,2021-06-23T16:22:27Z,2026-08-15,retain_local_and_report_distance
+sanctuary-crete-iuktas-peak-sanctuary,559217802,matched,25.11438939,35.29160551,25.114389393619206,35.29160551219514,0.00,site,high,Iuktas,2025-11-12T12:49:31Z,2026-08-15,retain_local_and_report_distance
+sanctuary-gyroulas-demeter-sanctuary,599631,matched,25.43123428,37.02911178,25.431234275,37.029111775,0.00,site,high,Gyroulas,2020-07-16T16:02:46Z,2026-08-15,retain_local_and_report_distance
+sanctuary-tinos-poseidon-amphitrite-sanctuary,590006,matched,25.14288517,37.55168814,25.14288516604842,37.55168814441538,0.00,site,high,Temple of Poseidon and Amphitrite on Tenos,2025-10-14T22:37:27Z,2026-08-15,retain_local_and_report_distance
+sanctuary-delos-apollo-sanctuary,599506,matched,25.268868,37.3993075,25.268867999999998,37.3993075,0.00,site,high,Sanctuary of Apollo on Delos,2024-11-13T16:41:45Z,2026-08-15,retain_local_and_report_distance
+sanctuary-despotiko-apollo-sanctuary,854812387,matched,25.01547138,36.97026271,25.01547137649937,36.97026270538114,0.00,site,high,Mandra (Despotiko),2023-11-30T22:55:16Z,2026-08-15,retain_local_and_report_distance
+sanctuary-hyria-dionysos-sanctuary,599661,matched,25.38067653,37.07762788,25.380676528974732,37.0776278769985,0.00,site,high,Hyria (Naxos),2025-02-03T22:21:07Z,2026-08-15,retain_local_and_report_distance
+sanctuary-golgoi-aphrodite-sanctuary,707470,matched,33.620066,35.087379,33.620066,35.087379,0.00,site,medium,Aphrodite Golgia,2025-08-20T01:11:21Z,2026-08-15,retain_local_and_report_distance
+sanctuary-palaepaphos-aphrodite-sanctuary,828989863,matched,32.5736088,34.7068294,32.5736088,34.7068294,0.00,site,high,Sanctuary of Aphrodite Paphia,2024-04-06T19:26:08Z,2026-08-15,retain_local_and_report_distance
+sanctuary-kourion-apollo-hylates-sanctuary,707476,matched,32.8636043,34.67270936,32.86360429721392,34.67270936350735,0.00,site,high,"Apollo Hylates, T.",2023-02-19T03:34:46Z,2026-08-15,retain_local_and_report_distance
+sanctuary-cyrene-apollo-sanctuary,464482220,matched,21.85251663,32.82351143,21.85251663440144,32.8235114309894,0.00,site,high,Sanctuary of Apollo at Cyrene,2019-02-02T02:58:52Z,2026-08-15,retain_local_and_report_distance
+sanctuary-cyrene-zeus-sanctuary,103565779,matched,21.86244367,32.82234007,21.862443667900745,32.82234007327918,0.00,site,high,Temple of Zeus at Cyrene,2025-02-08T02:54:05Z,2026-08-15,retain_local_and_report_distance
+sanctuary-amyklaion-apollo-sanctuary,73644851,matched,22.45026506,37.03631128,22.450265058319555,37.03631128303086,0.00,site,high,Sanctuary of Apollo,2023-09-25T17:51:41Z,2026-08-15,retain_local_and_report_distance
+sanctuary-menelaion-sparta,570477,matched,22.4534818,37.0657435,22.4534818,37.0657435,0.00,site,high,Menelaion,2024-03-23T15:18:48Z,2026-08-15,retain_local_and_report_distance
+sanctuary-foce-del-sele-heraion,442610,matched,14.97002056,40.48838686,14.970020562551403,40.48838685920082,0.00,site,high,Temple of Hera at Foce del Sele,2026-03-08T17:41:06Z,2026-08-15,retain_local_and_report_distance
+sanctuary-metapontum-tavole-palatine-heraion,442611,matched,16.81677139,40.41607388,16.816771386529926,40.416073878766184,0.00,site,high,Hera temple,2025-07-11T11:53:04Z,2026-08-15,retain_local_and_report_distance
+sanctuary-siwa-amun-zeus-oracle,716520,matched,25.54350736,29.2051738,25.5435073558627,29.205173796098382,0.00,site,high,Ammon,2025-03-03T02:47:45Z,2026-08-15,retain_local_and_report_distance
+sanctuary-sardis-artemis-sanctuary,66376536,matched,28.03117478,38.47976506,28.03117478470277,38.479765061426654,0.00,site,high,Temple of Artemis at Sardis,2026-04-07T03:27:05Z,2026-08-15,retain_local_and_report_distance
+sanctuary-letoon-lycian-sanctuary,638958,matched,29.28956479,36.33171047,29.289564791223324,36.33171046743071,0.00,site,high,Letoon,2024-03-10T14:25:23Z,2026-08-15,retain_local_and_report_distance
+sanctuary-pergamon-asklepieion,550459,matched,27.16563039,39.11886849,27.1656303931536,39.11886849118463,0.00,site,high,Asklepieion,2025-10-31T14:25:04Z,2026-08-15,retain_local_and_report_distance
+sanctuary-oropos-amphiareion,540628,matched,23.84564,38.29100503,23.845639996035622,38.29100502569067,0.00,site,high,Amphiareion,2025-10-24T02:32:52Z,2026-08-15,retain_local_and_report_distance
+sanctuary-lindos-athena-sanctuary,414067217,matched,28.08844826,36.09101074,28.0884482619594,36.09101073954695,0.00,site,high,Temple of Athena Lindia,2026-03-09T20:03:45Z,2026-08-15,retain_local_and_report_distance
+sanctuary-rhodes-zeus-atabyrios-sanctuary,590099,matched,27.86460035,36.2068373,27.86460035,36.2068373,0.00,site,high,Zeus Atabyrios (temple),2024-12-03T15:31:47Z,2026-08-15,retain_local_and_report_distance
+sanctuary-segesta-doric-temple-sanctuary,963441586,matched,12.832405,37.94147,12.832405,37.94147,0.00,site,medium,Doric temple of Segesta,2024-02-27T22:31:05Z,2026-08-15,retain_local_and_report_distance
+sanctuary-selinous-demeter-malophoros-sanctuary,502577471,matched,12.81694173,37.58686508,12.816941730400163,37.58686507723378,0.00,site,high,"Temple of Demeter at the Sanctuary of Demeter Malophoros, Selinus",2026-08-08T18:17:49Z,2026-08-15,retain_local_and_report_distance
+sanctuary-akragas-concordia-temple-sanctuary,943504072,matched,13.59207237,37.28965596,13.59207237479486,37.28965595669671,0.00,site,medium,"Temple of Concordia, Agrigento",2025-01-29T17:19:46Z,2026-08-15,retain_local_and_report_distance
+sanctuary-syracuse-apollo-sanctuary,418729933,matched,15.29302272,37.06391256,15.29302272319641,37.063912564594546,0.00,site,high,Temple of Apollo at Syracuse,2020-10-25T04:26:23Z,2026-08-15,retain_local_and_report_distance
+sanctuary-histria-sacred-zone,216839,matched,28.77513,44.54779,28.77512875,44.547787400000004,0.31,proxy,medium,Histria,2024-07-09T23:31:18Z,2026-08-15,retain_local_and_report_distance
+sanctuary-smintheion-apollo-sanctuary,550892,matched,26.1177415,39.5362071,26.11774149528415,39.536207099825425,0.00,site,high,Smintheion,2026-04-07T03:24:14Z,2026-08-15,retain_local_and_report_distance
+sanctuary-hierapolis-ploutonion,232079424,matched,29.1270484,37.926248,29.1270484,37.926248,0.00,site,high,Ploutonion at Hierapolis,2018-05-14T23:13:05Z,2026-08-15,retain_local_and_report_distance
+sanctuary-kalapodi-artemis-apollo-sanctuary,955675680,matched,22.89541692,38.63651295,22.895416920890334,38.6365129474098,0.00,site,high,Temple of Artemis and Apollo,2026-06-30T19:04:51Z,2026-08-15,retain_local_and_report_distance
+sanctuary-delphi-athena-pronaia-sanctuary,513711610,matched,22.5083745,38.48012669,22.508374504732384,38.48012668875978,0.00,site,high,Temple of Athena Pronaia,2026-05-19T14:49:33Z,2026-08-15,retain_local_and_report_distance
+sanctuary-delphi-apollo-sanctuary,540726,matched,22.501169,38.482289,22.501169,38.482289,0.00,site,high,Delphi,2026-05-19T14:12:07Z,2026-08-15,retain_local_and_report_distance

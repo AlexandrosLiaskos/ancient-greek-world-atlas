@@ -4,13 +4,13 @@ deity_or_cult-agnoste-theoteta,deity_or_cult,Άγνωστη θεότητα,Unkno
 deity_or_cult-ammon-zeys-ammon,deity_or_cult,Άμμων/Ζευς Άμμων,Ammon/Zeus Ammon,,src-pleiades-716520,reviewed
 deity_or_cult-amphiaraos-kai-ygeia,deity_or_cult,Αμφιάραος και Υγεία,Amphiaraos and Hygieia,,src-pleiades-540628,reviewed
 deity_or_cult-aphaia,deity_or_cult,Αφαία,Aphaia,,src-pleiades-579872,reviewed
-deity_or_cult-aphrodite-aphrodisias,deity_or_cult,Αφροδίτη Αφροδισιάς,Aphrodite of Aphrodisias,,src-aphrodisias-excavations-c69862729c7d,reviewed
+deity_or_cult-aphrodite-aphrodisias,deity_or_cult,Αφροδίτη Αφροδισιάς,Aphrodite of Aphrodisias,,src-aphrodisias-excavations-68b8b8553e48,reviewed
 deity_or_cult-aphrodite-golgia,deity_or_cult,Αφροδίτη Γολγία,Aphrodite Golgia,,src-pleiades-707470,needs_review
 deity_or_cult-aphrodite-paphia,deity_or_cult,Αφροδίτη Παφία,Aphrodite Paphia,,src-pleiades-828989863,reviewed
 deity_or_cult-apollon,deity_or_cult,Απόλλων,Apollo,,src-pleiades-418729933,reviewed
 deity_or_cult-apollon-amyklaios-kai-yakinthos,deity_or_cult,Απόλλων Αμυκλαίος και Υάκινθος,Apollo Amyklaios and Hyakinthos,,src-pleiades-73644851,reviewed
 deity_or_cult-apollon-artemis-kai-leto,deity_or_cult,"Απόλλων, Άρτεμις και Λητώ","Apollo, Artemis and Leto",,src-pleiades-599506,reviewed
-deity_or_cult-apollon-delphinios-zeys-kai-athena,deity_or_cult,"Απόλλων Δελφίνιος, Ζευς και Αθηνά","Apollo Delphinios, Zeus and Athena",,src-penn-fb29e85fcab7,needs_review
+deity_or_cult-apollon-delphinios-zeys-kai-athena,deity_or_cult,"Απόλλων Δελφίνιος, Ζευς και Αθηνά","Apollo Delphinios, Zeus and Athena",,src-penn-a97aa05ea214,needs_review
 deity_or_cult-apollon-didymaios,deity_or_cult,Απόλλων Διδυμαίος,Apollo Didymaios,,src-pleiades-599593,reviewed
 deity_or_cult-apollon-epikoyrios,deity_or_cult,Απόλλων Επικούριος,Apollo Epicurius,,src-pleiades-570148,reviewed
 deity_or_cult-apollon-ietros,deity_or_cult,Απόλλων Ιητρός,Apollo Iatros,,src-pleiades-216706,needs_review
@@ -53,8 +53,8 @@ deity_or_cult-koino-iero-ton-ellenikon-poleon,deity_or_cult,Κοινό ιερό 
 deity_or_cult-leto-apollon-kai-artemis,deity_or_cult,"Λητώ, Απόλλων και Άρτεμις","Leto, Apollo and Artemis",,src-pleiades-638958,reviewed
 deity_or_cult-megaloi-theoi-kabeiroi,deity_or_cult,Μεγάλοι Θεοί/Κάβειροι,Great Gods/Kabeiroi,,src-pleiades-501511,reviewed
 deity_or_cult-minoike-theoteta-koryphes,deity_or_cult,Μινωική θεότητα κορυφής,Minoan peak deity,,src-pleiades-559217802,reviewed
-deity_or_cult-parthenos,deity_or_cult,Παρθένος,Parthenos,,src-whc-9f55cde04df6,needs_review
-deity_or_cult-persephone-kai-ades,deity_or_cult,Περσεφόνη και Άδης,Persephone and Hades,,src-museoarcheologicoreggiocalabria-b6e43e041088,reviewed
+deity_or_cult-parthenos,deity_or_cult,Παρθένος,Parthenos,,src-whc-329a28f5c851,needs_review
+deity_or_cult-persephone-kai-ades,deity_or_cult,Περσεφόνη και Άδης,Persephone and Hades,,src-museoarcheologicoreggiocalabria-a34e7a2bfa16,reviewed
 deity_or_cult-ployton-kai-kore,deity_or_cult,Πλούτων και Κόρη,Plouton and Kore,,src-pleiades-232079424,reviewed
 deity_or_cult-poseidon-elikonios,deity_or_cult,Ποσειδών Ελικώνιος,Poseidon Helikonius,,src-pleiades-599855,reviewed
 deity_or_cult-poseidon-iatros-kai-amphitrite,deity_or_cult,Ποσειδών Ιατρός και Αμφιτρίτη,Poseidon Iatros and Amphitrite,,src-pleiades-590006,reviewed
@@ -70,110 +70,110 @@ deity_or_cult-zeys-olympios,deity_or_cult,Ζευς Ολύμπιος,Olympian Zeu
 dynasty-agathokles-kai-oikogeneia,dynasty,Αγαθοκλής και οικογένεια,Agathocles and his family,,src-britishmuseum-073d3f0a8ae4,reviewed
 dynasty-agnoste-mykenaike-dioiketike-elit,dynasty,Άγνωστη μυκηναϊκή διοικητική ελίτ,Unknown Mycenaean administrative elite,,src-odysseus-9e3ae0cba911,reviewed
 dynasty-agnoste-oi-aiolides-anekoyn-ste-mythike-paradose,dynasty,Άγνωστη· οι Αιολίδες ανήκουν στη μυθική παράδοση,Unknown; the Aeolians belong to the mythic tradition,,src-odysseus-589898851f92,reviewed
-dynasty-agnoste-oi-atreides-anekoyn-ste-mythike-paradose,dynasty,Άγνωστη· οι Ατρείδες ανήκουν στη μυθική παράδοση,Unknown; the Atreides belong to the mythic tradition,,src-whc-20fbbfc3302f,reviewed
-dynasty-agnoste-oi-erechtheides-anekoyn-ste-mythike-paradose,dynasty,Άγνωστη· οι Ερεχθείδες ανήκουν στη μυθική παράδοση,Unknown; the Erechtheids belong to mythic tradition,,src-whc-99e8b681505e,reviewed
-dynasty-agnoste-oi-labdakides-anekoyn-ste-mythike-paradose,dynasty,Άγνωστη· οι Λαβδακίδες ανήκουν στη μυθική παράδοση,Unknown; the Labdacids belong to mythic tradition,,src-mthv-3f5f755ed462,reviewed
-dynasty-agnoste-oi-minyes-anekoyn-kyrios-ste-mythike-paradose,dynasty,Άγνωστη· οι Μινύες ανήκουν κυρίως στη μυθική παράδοση,Unknown; the Minyas belong mainly to the mythic tradition,,src-mthv-3f5f755ed462,reviewed
+dynasty-agnoste-oi-atreides-anekoyn-ste-mythike-paradose,dynasty,Άγνωστη· οι Ατρείδες ανήκουν στη μυθική παράδοση,Unknown; the Atreides belong to the mythic tradition,,src-whc-6306f630553d,reviewed
+dynasty-agnoste-oi-erechtheides-anekoyn-ste-mythike-paradose,dynasty,Άγνωστη· οι Ερεχθείδες ανήκουν στη μυθική παράδοση,Unknown; the Erechtheids belong to mythic tradition,,src-whc-228f1be9c035,reviewed
+dynasty-agnoste-oi-labdakides-anekoyn-ste-mythike-paradose,dynasty,Άγνωστη· οι Λαβδακίδες ανήκουν στη μυθική παράδοση,Unknown; the Labdacids belong to mythic tradition,,src-mthv-715d665b63b5,reviewed
+dynasty-agnoste-oi-minyes-anekoyn-kyrios-ste-mythike-paradose,dynasty,Άγνωστη· οι Μινύες ανήκουν κυρίως στη μυθική παράδοση,Unknown; the Minyas belong mainly to the mythic tradition,,src-mthv-715d665b63b5,reviewed
 dynasty-agnoste-oi-neleides-anekoyn-ste-mythike-paradose,dynasty,Άγνωστη· οι Νηλείδες ανήκουν στη μυθική παράδοση,Unknown; the Neleids belong to mythic tradition,,src-odysseus-00e2d87ae4a8,reviewed
-dynasty-agnoste-oi-proitides-anekoyn-ste-mythike-paradose,dynasty,Άγνωστη· οι Προιτίδες ανήκουν στη μυθική παράδοση,Unknown; the Proitides belong to the mythic tradition,,src-whc-20fbbfc3302f,reviewed
+dynasty-agnoste-oi-proitides-anekoyn-ste-mythike-paradose,dynasty,Άγνωστη· οι Προιτίδες ανήκουν στη μυθική παράδοση,Unknown; the Proitides belong to the mythic tradition,,src-whc-6306f630553d,reviewed
 dynasty-aiakides,dynasty,Αιακίδες,Aeacids,,src-cambridge-96106a304cc6,reviewed
 dynasty-antigonides,dynasty,Αντιγονίδες,Antigonids,,src-metmuseum-50fe20dc493f,reviewed
 dynasty-antipatrides-kassandrides,dynasty,Αντιπατρίδες / Κασσανδρίδες,Antipatrids / Kassandrids,,src-metmuseum-50fe20dc493f,reviewed
-dynasty-archaianaktides,dynasty,Αρχαιανακτίδες,Archaeanactids,,src-iranicaonline-0f32c4ee76cf,reviewed
+dynasty-archaianaktides,dynasty,Αρχαιανακτίδες,Archaeanactids,,src-iranicaonline-4a607235e191,reviewed
 dynasty-argeades,dynasty,Αργεάδες,Argeads,,src-metmuseum-89019924e8c3,reviewed
-dynasty-argeades-temenides,dynasty,Αργεάδες / Τημενίδες,Argeads / Temenids,,src-whc-0aeb662441d4,reviewed
-dynasty-ariarathides,dynasty,Αριαραθίδες,Ariarathids,,src-iranicaonline-efe1d8ddd34e,reviewed
-dynasty-ariobarzanides-katopin-archelaos,dynasty,Αριοβαρζανίδες· κατόπιν Αρχέλαος,Ariobarzanids; later Archelaus,,src-iranicaonline-efe1d8ddd34e,needs_review
+dynasty-argeades-temenides,dynasty,Αργεάδες / Τημενίδες,Argeads / Temenids,,src-whc-fd006971700c,reviewed
+dynasty-ariarathides,dynasty,Αριαραθίδες,Ariarathids,,src-iranicaonline-0624b0b64cf3,reviewed
+dynasty-ariobarzanides-katopin-archelaos,dynasty,Αριοβαρζανίδες· κατόπιν Αρχέλαος,Ariobarzanids; later Archelaus,,src-iranicaonline-0624b0b64cf3,needs_review
 dynasty-attalides,dynasty,Ατταλίδες,Attalids,,src-metmuseum-50fe20dc493f,needs_review
-dynasty-battiades,dynasty,Βαττιάδες,Battiads,,src-whc-36affcfbdbb0,reviewed
+dynasty-battiades,dynasty,Βαττιάδες,Battiads,,src-whc-52a1efeb60e3,reviewed
 dynasty-diodotides,dynasty,Διοδοτίδες,Diodotids,,src-metmuseum-50fe20dc493f,reviewed
 dynasty-dynasteia-toy-zipoite-kai-ton-nikomedon,dynasty,Δυναστεία του Ζιποίτη και των Νικομηδών,Dynasty of Zipoetes and the Nicomedes,,src-attalus-1b40f4436114,reviewed
-dynasty-eykratides-kai-eliokleides,dynasty,Ευκρατίδες και Ήλιοκλείδες,Eucratids and Heliocleids,,src-iranicaonline-12958b1a4563,reviewed
-dynasty-eythydemides,dynasty,Ευθυδημίδες,Euthydemids,,src-iranicaonline-5997875976eb,reviewed
-dynasty-eythydemides-demetrides,dynasty,Ευθυδημίδες / Δημητρίδες,Euthydemids / Demetriads,,src-iranicaonline-2d20b536f2f7,needs_review
+dynasty-eykratides-kai-eliokleides,dynasty,Ευκρατίδες και Ήλιοκλείδες,Eucratids and Heliocleids,,src-iranicaonline-2bb61f112fc3,reviewed
+dynasty-eythydemides,dynasty,Ευθυδημίδες,Euthydemids,,src-iranicaonline-d4697d4d5c1a,reviewed
+dynasty-eythydemides-demetrides,dynasty,Ευθυδημίδες / Δημητρίδες,Euthydemids / Demetriads,,src-iranicaonline-612dff96c99c,needs_review
 dynasty-ieron-b-kai-ieronides,dynasty,Ιέρων Β΄ και Ιερωνίδες,Hieron II and the Hieronids,,src-britishmuseum-d101eb623c92,reviewed
 dynasty-lysimachides,dynasty,Λυσιμαχίδες,Lysimachids,,src-pleiades-501458,reviewed
-dynasty-magas-bracheia-diadoche-demetrioy-toy-kalloy,dynasty,Μάγας· βραχεία διαδοχή Δημητρίου του Καλλού,Magas; brief succession of Demetrius the Fair,,src-discovery-dd8bc12f19e5,reviewed
+dynasty-magas-bracheia-diadoche-demetrioy-toy-kalloy,dynasty,Μάγας· βραχεία διαδοχή Δημητρίου του Καλλού,Magas; brief succession of Demetrius the Fair,,src-persee-a9866e5e43d7,reviewed
 dynasty-mithridatides,dynasty,Μιθριδατίδες,Mithridatids,,src-metmuseum-50fe20dc493f,reviewed
-dynasty-mithridatides-toy-pontoy,dynasty,Μιθριδατίδες του Πόντου,Mithridatids of Pontus,,src-iranicaonline-0f32c4ee76cf,reviewed
-dynasty-oikos-toy-menandroy-kai-agathokleias,dynasty,Οίκος του Μενάνδρου και Αγαθοκλείας,House of Menander and Agathokleia,,src-iranicaonline-2d20b536f2f7,reviewed
-dynasty-orontides-erbandides,dynasty,Οροντίδες / Ερβανδίδες,Orontids / Ervandids,,src-whc-9d3804ad2081,needs_review
-dynasty-pollaples-periphereiakes-dynasteies,dynasty,Πολλαπλές περιφερειακές δυναστείες,Multiple regional dynasties,,src-iranicaonline-2d20b536f2f7,needs_review
+dynasty-mithridatides-toy-pontoy,dynasty,Μιθριδατίδες του Πόντου,Mithridatids of Pontus,,src-iranicaonline-4a607235e191,reviewed
+dynasty-oikos-toy-menandroy-kai-agathokleias,dynasty,Οίκος του Μενάνδρου και Αγαθοκλείας,House of Menander and Agathokleia,,src-iranicaonline-612dff96c99c,reviewed
+dynasty-orontides-erbandides,dynasty,Οροντίδες / Ερβανδίδες,Orontids / Ervandids,,src-whc-758c2c416617,needs_review
+dynasty-pollaples-periphereiakes-dynasteies,dynasty,Πολλαπλές περιφερειακές δυναστείες,Multiple regional dynasties,,src-iranicaonline-612dff96c99c,needs_review
 dynasty-ptolemaioi-lagides,dynasty,Πτολεμαίοι / Λαγίδες,Ptolemies / Lagids,,src-metmuseum-9200258a95cb,reviewed
 dynasty-seleykides,dynasty,Σελευκίδες,Seleucids,,src-metmuseum-31540f5687cf,reviewed
 dynasty-spartokides,dynasty,Σπαρτοκίδες,Spartocids,,src-encyclopediaofukraine-237e86aa1350,reviewed
 dynasty-teykrides-kai-istorikes-basilikes-grammes-metaxy-toys-oi-eyagorides,dynasty,"Τευκρίδες και ιστορικές βασιλικές γραμμές, μεταξύ τους οι Ευαγορίδες","Teucrids and historical royal lines, including the Evagorids",,src-uni-muenster-0a0030be4d2a,reviewed
 dynasty-topikes-paphiakes-basilikes-genees-nikokleides-sten-ystere-phase,dynasty,Τοπικές παφιακές βασιλικές γενεές· Νικοκλείδες στην ύστερη φάση,Local Paphian royal lines; the Nicocleids in the later phase,,src-websites-d5246844b076,reviewed
-polity-achaimenidike-satrapeia-kappadokias,polity,Αχαιμενιδική σατραπεία Καππαδοκίας,Achaemenid satrapy of Cappadocia,,src-iranicaonline-efe1d8ddd34e,reviewed
-polity-apoikiake-egkatastase-theraion-kai-topikes-libykes-koinotetes,polity,Αποικιακή εγκατάσταση Θηραίων και τοπικές λιβυκές κοινότητες,Colonial settlement of Thira and local Libyan communities,,src-whc-36affcfbdbb0,reviewed
+polity-achaimenidike-satrapeia-kappadokias,polity,Αχαιμενιδική σατραπεία Καππαδοκίας,Achaemenid satrapy of Cappadocia,,src-iranicaonline-0624b0b64cf3,reviewed
+polity-apoikiake-egkatastase-theraion-kai-topikes-libykes-koinotetes,polity,Αποικιακή εγκατάσταση Θηραίων και τοπικές λιβυκές κοινότητες,Colonial settlement of Thira and local Libyan communities,,src-whc-52a1efeb60e3,reviewed
 polity-argeades-kai-metalexandreia-antibasileia,polity,Αργεάδες και μεταλεξάνδρεια αντιβασιλεία,Argeades and post-Alexandrian regency,,src-metmuseum-50fe20dc493f,reviewed
-polity-aytokratoria-toy-alexandroy,polity,Αυτοκρατορία του Αλεξάνδρου,Alexander's Empire,,src-whc-0aeb662441d4,reviewed
+polity-aytokratoria-toy-alexandroy,polity,Αυτοκρατορία του Αλεξάνδρου,Alexander's Empire,,src-whc-fd006971700c,reviewed
 polity-aytokratoria-toy-alexandroy-kai-satrapeies-ton-diadochon,polity,Αυτοκρατορία του Αλεξάνδρου και σατραπείες των Διαδόχων,Empire of Alexander and satrapies of the Successors,,src-metmuseum-31540f5687cf,reviewed
-polity-basileio-tes-kappadokias-ton-ariarathidon,polity,Βασίλειο της Καππαδοκίας των Αριαραθιδών,Kingdom of Cappadocia of the Ariarathids,,src-iranicaonline-efe1d8ddd34e,needs_review
+polity-basileio-tes-kappadokias-ton-ariarathidon,polity,Βασίλειο της Καππαδοκίας των Αριαραθιδών,Kingdom of Cappadocia of the Ariarathids,,src-iranicaonline-0624b0b64cf3,needs_review
 polity-basileio-tes-makedonias-ton-argeadon,polity,Βασίλειο της Μακεδονίας των Αργεαδών,Kingdom of Macedonia of the Argeadians,,src-metmuseum-89019924e8c3,reviewed
 polity-basileio-toy-kimmerioy-bosporoy-ton-archaianaktidon,polity,Βασίλειο του Κιμμερίου Βοσπόρου των Αρχαιανακτιδών,Kingdom of the Cimmerian Bosphorus of the Archeanaktids,,src-encyclopediaofukraine-237e86aa1350,reviewed
-polity-basileio-toy-kimmerioy-bosporoy-ton-spartokidon,polity,Βασίλειο του Κιμμερίου Βοσπόρου των Σπαρτοκιδών,Kingdom of the Cimmerian Bosphorus of the Spartakids,,src-iranicaonline-0f32c4ee76cf,reviewed
-polity-bracheia-diadoche-demetrioy-toy-kalloy-kai-epanentaxe-stoys-ptolemaioys,polity,Βραχεία διαδοχή Δημητρίου του Καλλού και επανένταξη στους Πτολεμαίους,Brief succession of Demetrius the Fair and reintegration into the Ptolemaic kingdom,,src-discovery-dd8bc12f19e5,reviewed
+polity-basileio-toy-kimmerioy-bosporoy-ton-spartokidon,polity,Βασίλειο του Κιμμερίου Βοσπόρου των Σπαρτοκιδών,Kingdom of the Cimmerian Bosphorus of the Spartakids,,src-iranicaonline-4a607235e191,reviewed
+polity-bracheia-diadoche-demetrioy-toy-kalloy-kai-epanentaxe-stoys-ptolemaioys,polity,Βραχεία διαδοχή Δημητρίου του Καλλού και επανένταξη στους Πτολεμαίους,Brief succession of Demetrius the Fair and reintegration into the Ptolemaic kingdom,,src-persee-a9866e5e43d7,reviewed
 polity-bracheies-basileies-demetrioy-pyrroy-kai-lysimachoy,polity,"Βραχείες βασιλείες Δημητρίου, Πύρρου και Λυσιμάχου","Short reigns of Demetrius, Pyrrhus and Lysimachus",,src-metmuseum-50fe20dc493f,reviewed
-polity-ellenobaktriane-epektase-notia-toy-indokoys,polity,Ελληνοβακτριανή επέκταση νότια του Ινδοκούς,Greco-Bactrian expansion south of the Hindu Kush,,src-iranicaonline-2d20b536f2f7,needs_review
-polity-ellenobaktriano-basileio-ton-diodotidon,polity,Ελληνοβακτριανό Βασίλειο των Διοδοτιδών,Greco-Bactrian Kingdom of the Diodotids,,src-iranicaonline-5997875976eb,reviewed
+polity-ellenobaktriane-epektase-notia-toy-indokoys,polity,Ελληνοβακτριανή επέκταση νότια του Ινδοκούς,Greco-Bactrian expansion south of the Hindu Kush,,src-iranicaonline-612dff96c99c,needs_review
+polity-ellenobaktriano-basileio-ton-diodotidon,polity,Ελληνοβακτριανό Βασίλειο των Διοδοτιδών,Greco-Bactrian Kingdom of the Diodotids,,src-iranicaonline-d4697d4d5c1a,reviewed
 polity-ellenobaktriano-basileio-ton-eythydemidon,polity,Ελληνοβακτριανό Βασίλειο των Ευθυδημιδών,Greco-Bactrian Kingdom of the Euthydemides,,src-metmuseum-50fe20dc493f,reviewed
-polity-eykratidike-phase-ste-baktriane-kai-indoellenikoi-kladoi,polity,Ευκρατιδική φάση στη Βακτριανή και ινδοελληνικοί κλάδοι,Eucratid phase in Bactrian and Indo-Greek branches,,src-iranicaonline-5997875976eb,reviewed
+polity-eykratidike-phase-ste-baktriane-kai-indoellenikoi-kladoi,polity,Ευκρατιδική φάση στη Βακτριανή και ινδοελληνικοί κλάδοι,Eucratid phase in Bactrian and Indo-Greek branches,,src-iranicaonline-d4697d4d5c1a,reviewed
 polity-ieronymos-kai-katopin-romaike-kataktese,polity,Ιερώνυμος και κατόπιν ρωμαϊκή κατάκτηση,Hieronymus and subsequent Roman conquest,,src-britishmuseum-d101eb623c92,reviewed
-polity-indoelleniko-basileio-toy-menandroy-kai-antipales-grammes,polity,Ινδοελληνικό βασίλειο του Μενάνδρου και αντίπαλες γραμμές,Menander's Indo-Hellenic Kingdom and Rival Lines,,src-iranicaonline-2d20b536f2f7,needs_review
-polity-indoelleniko-basileio-toy-menandroy-kai-sygchrones-dynasteies,polity,Ινδοελληνικό βασίλειο του Μενάνδρου και σύγχρονες δυναστείες,Indo-Greek kingdom of Menander and contemporaneous dynasties,,src-iranicaonline-2d20b536f2f7,needs_review
-polity-indoskythika-kai-indoparthika-basileia,polity,Ινδοσκυθικά και ινδοπαρθικά βασίλεια,Indo-Scythian and Indo-Parthian kingdoms,,src-iranicaonline-2d20b536f2f7,needs_review
+polity-indoelleniko-basileio-toy-menandroy-kai-antipales-grammes,polity,Ινδοελληνικό βασίλειο του Μενάνδρου και αντίπαλες γραμμές,Menander's Indo-Hellenic Kingdom and Rival Lines,,src-iranicaonline-612dff96c99c,needs_review
+polity-indoelleniko-basileio-toy-menandroy-kai-sygchrones-dynasteies,polity,Ινδοελληνικό βασίλειο του Μενάνδρου και σύγχρονες δυναστείες,Indo-Greek kingdom of Menander and contemporaneous dynasties,,src-iranicaonline-612dff96c99c,needs_review
+polity-indoskythika-kai-indoparthika-basileia,polity,Ινδοσκυθικά και ινδοπαρθικά βασίλεια,Indo-Scythian and Indo-Parthian kingdoms,,src-iranicaonline-612dff96c99c,needs_review
 polity-kappadokike-satrapeia-kai-periphereiakes-dynasteies,polity,Καππαδοκική σατραπεία και περιφερειακές δυναστείες,Cappadocian satrapy and regional dynasties,,src-metmuseum-50fe20dc493f,reviewed
 polity-koino-ton-epeiroton,polity,Κοινό των Ηπειρωτών,Epirote League,,src-cambridge-96106a304cc6,reviewed
-polity-kyrenaike-politeia-me-me-monarchikoys-thesmoys,polity,Κυρηναϊκή πολιτεία με μη μοναρχικούς θεσμούς,Cyrenaic state with non-monarchical institutions,,src-whc-36affcfbdbb0,reviewed
-polity-kyriarchia-gioyetzi-kai-allon-nomadikon-omadon-ste-baktriane,polity,Κυριαρχία Γιουετζί και άλλων νομαδικών ομάδων στη Βακτριανή,Rule of the Yuezhi and other nomadic groups in Bactria,,src-iranicaonline-12958b1a4563,reviewed
-polity-mesoelladike-koinoteta-tes-akropoles,polity,Μεσοελλαδική κοινότητα της Ακρόπολης,Middle Helladic community of the Acropolis,,src-whc-99e8b681505e,reviewed
-polity-mesoelladikes-kai-proimes-mykenaikes-egemonies,polity,Μεσοελλαδικές και πρώιμες μυκηναϊκές ηγεμονίες,Middle Helladic and early Mycenaean hegemonies,,src-whc-20fbbfc3302f,reviewed
-polity-mesoelladikes-kai-proimes-mykenaikes-koinotetes,polity,Μεσοελλαδικές και πρώιμες μυκηναϊκές κοινότητες,Middle Helladic and early Mycenaean communities,,src-whc-20fbbfc3302f,reviewed
+polity-kyrenaike-politeia-me-me-monarchikoys-thesmoys,polity,Κυρηναϊκή πολιτεία με μη μοναρχικούς θεσμούς,Cyrenaic state with non-monarchical institutions,,src-whc-52a1efeb60e3,reviewed
+polity-kyriarchia-gioyetzi-kai-allon-nomadikon-omadon-ste-baktriane,polity,Κυριαρχία Γιουετζί και άλλων νομαδικών ομάδων στη Βακτριανή,Rule of the Yuezhi and other nomadic groups in Bactria,,src-iranicaonline-2bb61f112fc3,reviewed
+polity-mesoelladike-koinoteta-tes-akropoles,polity,Μεσοελλαδική κοινότητα της Ακρόπολης,Middle Helladic community of the Acropolis,,src-whc-228f1be9c035,reviewed
+polity-mesoelladikes-kai-proimes-mykenaikes-egemonies,polity,Μεσοελλαδικές και πρώιμες μυκηναϊκές ηγεμονίες,Middle Helladic and early Mycenaean hegemonies,,src-whc-6306f630553d,reviewed
+polity-mesoelladikes-kai-proimes-mykenaikes-koinotetes,polity,Μεσοελλαδικές και πρώιμες μυκηναϊκές κοινότητες,Middle Helladic and early Mycenaean communities,,src-whc-6306f630553d,reviewed
 polity-metabatikes-basileies-ste-makedonia-meta-toys-diadochoys,polity,Μεταβατικές βασιλείες στη Μακεδονία μετά τους Διαδόχους,Transitional kingdoms in Macedonia after the Successors,,src-metmuseum-50fe20dc493f,reviewed
 polity-metagathokleideia-astatheia-stis-syrakoyses,polity,Μεταγαθοκλείδεια αστάθεια στις Συρακούσες,Post-Agathoclean instability at Syracuse,,src-britishmuseum-073d3f0a8ae4,reviewed
 polity-metalexandreia-antibasileia-kai-basileia-ton-diadochon,polity,Μεταλεξάνδρεια αντιβασιλεία και βασίλεια των Διαδόχων,Post-Alexandrian viceroyalty and successor kingdoms,,src-metmuseum-89019924e8c3,reviewed
 polity-metanaktorike-krete-kai-periphereiaka-kentra,polity,Μετανακτορική Κρήτη και περιφερειακά κέντρα,Post-palatial Crete and regional centres,,src-odysseus-9e3ae0cba911,reviewed
-polity-metanaktorike-tiryntha-kai-argolikes-koinotetes,polity,Μετανακτορική Τίρυνθα και αργολικές κοινότητες,Post-palatial Tiryns and Argolic communities,,src-whc-20fbbfc3302f,reviewed
-polity-metanaktorikes-boiotikes-koinotetes,polity,Μετανακτορικές βοιωτικές κοινότητες,Post-palatial Boeotian communities,,src-mthv-3f5f755ed462,reviewed
-polity-metanaktorikes-koinotetes-tes-argolidas,polity,Μετανακτορικές κοινότητες της Αργολίδας,Post-palatial communities of Argolis,,src-whc-20fbbfc3302f,reviewed
+polity-metanaktorike-tiryntha-kai-argolikes-koinotetes,polity,Μετανακτορική Τίρυνθα και αργολικές κοινότητες,Post-palatial Tiryns and Argolic communities,,src-whc-6306f630553d,reviewed
+polity-metanaktorikes-boiotikes-koinotetes,polity,Μετανακτορικές βοιωτικές κοινότητες,Post-palatial Boeotian communities,,src-mthv-715d665b63b5,reviewed
+polity-metanaktorikes-koinotetes-tes-argolidas,polity,Μετανακτορικές κοινότητες της Αργολίδας,Post-palatial communities of Argolis,,src-whc-6306f630553d,reviewed
 polity-metanaktorikes-koinotetes-tes-messenias,polity,Μετανακτορικές κοινότητες της Μεσσηνίας,Post-palatial communities of Messenia,,src-odysseus-00e2d87ae4a8,reviewed
 polity-metanaktorikes-thessalikes-koinotetes,polity,Μετανακτορικές θεσσαλικές κοινότητες,Post-palatial Thessalian communities,,src-odysseus-589898851f92,reviewed
 polity-metapyrreia-politike-astatheia-stis-syrakoyses,polity,Μεταπύρρεια πολιτική αστάθεια στις Συρακούσες,Post-Pyrrhic political instability in Syracuse,,src-britishmuseum-d101eb623c92,reviewed
 polity-molossikes-phyletikes-egemonies,polity,Μολοσσικές φυλετικές ηγεμονίες,Molossian tribal hegemonies,,src-cambridge-96106a304cc6,reviewed
 polity-neoanaktoriko-minoiko-kratos-tes-knosoy,polity,Νεοανακτορικό μινωικό κράτος της Κνωσού,Neopalatial Minoan state of Knossos,,src-odysseus-9e3ae0cba911,reviewed
 polity-pontiake-mithridatike-phase-toy-bosporoy,polity,Ποντιακή-μιθριδατική φάση του Βοσπόρου,Pontic–Mithridatic phase of the Bosporan Kingdom,,src-encyclopediaofukraine-237e86aa1350,reviewed
-polity-proima-indoellenika-basileia,polity,Πρώιμα ινδοελληνικά βασίλεια,Early Indo-Greek kingdoms,,src-iranicaonline-2d20b536f2f7,reviewed
-polity-proime-epoche-toy-sideroy-sten-athena,polity,Πρώιμη Εποχή του Σιδήρου στην Αθήνα,Early Iron Age in Athens,,src-whc-99e8b681505e,reviewed
-polity-proimes-makedonikes-egemonies,polity,Πρώιμες μακεδονικές ηγεμονίες,Early Macedonian hegemonies,,src-whc-0aeb662441d4,reviewed
-polity-proimes-mykenaikes-koinotetes-tes-boiotias,polity,Πρώιμες μυκηναϊκές κοινότητες της Βοιωτίας,Early Mycenaean communities of Boeotia,,src-mthv-3f5f755ed462,reviewed
+polity-proima-indoellenika-basileia,polity,Πρώιμα ινδοελληνικά βασίλεια,Early Indo-Greek kingdoms,,src-iranicaonline-612dff96c99c,reviewed
+polity-proime-epoche-toy-sideroy-sten-athena,polity,Πρώιμη Εποχή του Σιδήρου στην Αθήνα,Early Iron Age in Athens,,src-whc-228f1be9c035,reviewed
+polity-proimes-makedonikes-egemonies,polity,Πρώιμες μακεδονικές ηγεμονίες,Early Macedonian hegemonies,,src-whc-fd006971700c,reviewed
+polity-proimes-mykenaikes-koinotetes-tes-boiotias,polity,Πρώιμες μυκηναϊκές κοινότητες της Βοιωτίας,Early Mycenaean communities of Boeotia,,src-mthv-715d665b63b5,reviewed
 polity-proimes-mykenaikes-koinotetes-tes-dytikes-messenias,polity,Πρώιμες μυκηναϊκές κοινότητες της δυτικής Μεσσηνίας,Early Mycenaean communities of western Messinia,,src-odysseus-00e2d87ae4a8,reviewed
-polity-proimes-mykenaikes-koinotetes-tes-kopaidas,polity,Πρώιμες μυκηναϊκές κοινότητες της Κωπαΐδας,Early Mycenaean communities of Kopaida,,src-mthv-3f5f755ed462,reviewed
+polity-proimes-mykenaikes-koinotetes-tes-kopaidas,polity,Πρώιμες μυκηναϊκές κοινότητες της Κωπαΐδας,Early Mycenaean communities of Kopaida,,src-mthv-715d665b63b5,reviewed
 polity-proimes-mykenaikes-koinotetes-tes-magnesias,polity,Πρώιμες μυκηναϊκές κοινότητες της Μαγνησίας,Early Mycenaean communities of Magnesia,,src-odysseus-589898851f92,reviewed
 polity-ptolemaike-dioikese-tes-kyproy,polity,Πτολεμαϊκή διοίκηση της Κύπρου,Ptolemaic administration of Cyprus,,src-websites-d5246844b076,reviewed
-polity-ptolemaike-dioikese-tes-kyrenaikes,polity,Πτολεμαϊκή διοίκηση της Κυρηναϊκής,Ptolemaic administration of Cyrenaica,,src-discovery-dd8bc12f19e5,reviewed
-polity-romaika-exartemeno-basileio-toy-bosporoy,polity,Ρωμαϊκά εξαρτημένο Βασίλειο του Βοσπόρου,Roman dependent Kingdom of the Bosphorus,,src-iranicaonline-0f32c4ee76cf,reviewed
+polity-ptolemaike-dioikese-tes-kyrenaikes,polity,Πτολεμαϊκή διοίκηση της Κυρηναϊκής,Ptolemaic administration of Cyrenaica,,src-persee-a9866e5e43d7,reviewed
+polity-romaika-exartemeno-basileio-toy-bosporoy,polity,Ρωμαϊκά εξαρτημένο Βασίλειο του Βοσπόρου,Roman dependent Kingdom of the Bosphorus,,src-iranicaonline-4a607235e191,reviewed
 polity-romaike-eparchia-aigyptos,polity,Ρωμαϊκή επαρχία Αίγυπτος,Roman province of Egypt,,src-metmuseum-9200258a95cb,reviewed
 polity-romaike-eparchia-asia,polity,Ρωμαϊκή επαρχία Ασία,Roman province of Asia,,src-metmuseum-50fe20dc493f,needs_review
 polity-romaike-eparchia-bithynia,polity,Ρωμαϊκή επαρχία Βιθυνία,Roman province of Bithynia,,src-attalus-1b40f4436114,reviewed
 polity-romaike-eparchia-bithynia-kai-pontos,polity,Ρωμαϊκή επαρχία Βιθυνία και Πόντος,Roman province of Bithynia and Pontus,,src-metmuseum-50fe20dc493f,reviewed
-polity-romaike-eparchia-kappadokia,polity,Ρωμαϊκή επαρχία Καππαδοκία,Roman province of Cappadocia,,src-iranicaonline-efe1d8ddd34e,needs_review
-polity-romaike-eparchia-syria,polity,Ρωμαϊκή επαρχία Συρία,Roman province of Syria,,src-whc-9d3804ad2081,needs_review
+polity-romaike-eparchia-kappadokia,polity,Ρωμαϊκή επαρχία Καππαδοκία,Roman province of Cappadocia,,src-iranicaonline-0624b0b64cf3,needs_review
+polity-romaike-eparchia-syria,polity,Ρωμαϊκή επαρχία Συρία,Roman province of Syria,,src-whc-758c2c416617,needs_review
 polity-romaike-syria-parthiko-basileio-kai-alla-periphereiaka-krate,polity,"Ρωμαϊκή Συρία, Παρθικό βασίλειο και άλλα περιφερειακά κράτη","Roman Syria, Parthian kingdom and other peripheral states",,src-metmuseum-31540f5687cf,reviewed
 polity-romaikes-merides-tes-makedonias-kai-katopin-eparchia,polity,Ρωμαϊκές μερίδες της Μακεδονίας και κατόπιν επαρχία,Roman districts of Macedonia and later the Roman province,,src-metmuseum-50fe20dc493f,reviewed
 polity-satrapeia-aigyptoy-tes-aytokratorias-toy-alexandroy,polity,Σατραπεία Αιγύπτου της αυτοκρατορίας του Αλεξάνδρου,Egyptian satrapy of Alexander's empire,,src-metmuseum-9200258a95cb,reviewed
 polity-seleykidike-epikyriarchia-ste-dytike-mikra-asia,polity,Σελευκιδική επικυριαρχία στη δυτική Μικρά Ασία,Seleucid rule in western Asia Minor,,src-metmuseum-50fe20dc493f,needs_review
 polity-seleykidike-satrapeia-baktrianes,polity,Σελευκιδική σατραπεία Βακτριανής,Seleucid satrapy of Bactria,,src-metmuseum-50fe20dc493f,reviewed
-polity-seleykidike-satrapeia-kommagenes,polity,Σελευκιδική σατραπεία Κομμαγηνής,Seleucid satrapy of Commagene,,src-whc-9d3804ad2081,needs_review
+polity-seleykidike-satrapeia-kommagenes,polity,Σελευκιδική σατραπεία Κομμαγηνής,Seleucid satrapy of Commagene,,src-whc-758c2c416617,needs_review
 polity-seleykidiko-basileio-kai-anexarteta-mikrasiatika-krate,polity,Σελευκιδικό βασίλειο και ανεξάρτητα μικρασιατικά κράτη,Seleucid kingdom and independent Asia Minor states,,src-pleiades-501458,reviewed
-polity-symmachia-ellenikon-poleon-stis-dyo-pleyres-toy-stenoy,polity,Συμμαχία ελληνικών πόλεων στις δύο πλευρές του στενού,Alliance of Greek cities on both sides of the strait,,src-iranicaonline-0f32c4ee76cf,reviewed
+polity-symmachia-ellenikon-poleon-stis-dyo-pleyres-toy-stenoy,polity,Συμμαχία ελληνικών πόλεων στις δύο πλευρές του στενού,Alliance of Greek cities on both sides of the strait,,src-iranicaonline-4a607235e191,reviewed
 polity-syrakoysia-pole-ypo-tyrannike-exoysia-toy-agathokle,polity,Συρακούσια πόλη υπό τυραννική εξουσία του Αγαθοκλή,Syracuse city under the tyrannical rule of Agathocles,,src-britishmuseum-073d3f0a8ae4,reviewed
 polity-thrakike-satrapeia-tes-aytokratorias-toy-alexandroy,polity,Θρακική σατραπεία της αυτοκρατορίας του Αλεξάνδρου,Thracian satrapy of Alexander's empire,,src-pleiades-501458,reviewed
 polity-topikes-bithynikes-egemonies,polity,Τοπικές βιθυνικές ηγεμονίες,Local Bithynian hegemonies,,src-attalus-1b40f4436114,reviewed
-polity-ystera-periphereiaka-indoellenika-basileia,polity,Ύστερα περιφερειακά ινδοελληνικά βασίλεια,Later regional Indo-Greek kingdoms,,src-iranicaonline-2d20b536f2f7,reviewed
+polity-ystera-periphereiaka-indoellenika-basileia,polity,Ύστερα περιφερειακά ινδοελληνικά βασίλεια,Later regional Indo-Greek kingdoms,,src-iranicaonline-612dff96c99c,reviewed
 polity-ystere-epoche-toy-chalkoy-kai-proime-politeiake-sygkrotese-tes-palaipaphoy,polity,Ύστερη εποχή του Χαλκού και πρώιμη πολιτειακή συγκρότηση της Παλαίπαφου,Late Bronze Age and early state formation of Palaipafos,,src-websites-d5246844b076,reviewed
 polity-ystere-epoche-toy-chalkoy-sten-egkome-kai-proimes-kypriakes-egemonies,polity,Ύστερη εποχή του Χαλκού στην Έγκωμη και πρώιμες κυπριακές ηγεμονίες,Late Bronze Age in Engomi and early Cypriot hegemonies,,src-uni-muenster-0a0030be4d2a,reviewed
-polity-ystero-pelateiako-basileio-tes-kappadokias,polity,Ύστερο πελατειακό βασίλειο της Καππαδοκίας,Late Client Kingdom of Cappadocia,,src-iranicaonline-efe1d8ddd34e,reviewed
+polity-ystero-pelateiako-basileio-tes-kappadokias,polity,Ύστερο πελατειακό βασίλειο της Καππαδοκίας,Late Client Kingdom of Cappadocia,,src-iranicaonline-0624b0b64cf3,reviewed
 region-achaia,ancient_region,Αχαΐα,Achaea,,src-pleiades-570567,reviewed
 region-aigina,ancient_region,Αίγινα,Aegina,,src-pleiades-579872,reviewed
 region-aigyptos,ancient_region,Αίγυπτος,Egypt,,src-pleiades-727070,reviewed
@@ -199,20 +199,20 @@ region-epeiros,ancient_region,Ήπειρος,Epirus,,src-pleiades-530794,reviewe
 region-epeiros-ionio,ancient_region,Ήπειρος / Ιόνιο,Epirus / Ionian Sea,,src-pleiades-530834,reviewed
 region-eyboia,ancient_region,Εύβοια,Euboea,,src-pleiades-579925,reviewed
 region-galatia-probegkia,ancient_region,Γαλατία / Προβηγκία,Gaul / Provence,,src-pleiades-148127,reviewed
-region-gandara-kai-boreiodytike-india,ancient_region,Γανδάρα και βορειοδυτική Ινδία,Gandhara and northwestern India,,src-iranicaonline-2d20b536f2f7,reviewed
-region-gandara-kai-pantzamp,ancient_region,Γανδάρα και Παντζάμπ,Gandhara and Punjab,,src-iranicaonline-2d20b536f2f7,reviewed
-region-gandara-paropamisades-kai-pantzamp,ancient_region,"Γανδάρα, Παροπαμισάδες και Παντζάμπ","Gandhara, Paropamisadae and Punjab",,src-iranicaonline-2d20b536f2f7,reviewed
+region-gandara-kai-boreiodytike-india,ancient_region,Γανδάρα και βορειοδυτική Ινδία,Gandhara and northwestern India,,src-iranicaonline-612dff96c99c,reviewed
+region-gandara-kai-pantzamp,ancient_region,Γανδάρα και Παντζάμπ,Gandhara and Punjab,,src-iranicaonline-612dff96c99c,reviewed
+region-gandara-paropamisades-kai-pantzamp,ancient_region,"Γανδάρα, Παροπαμισάδες και Παντζάμπ","Gandhara, Paropamisadae and Punjab",,src-iranicaonline-612dff96c99c,reviewed
 region-iberia-katalonia,ancient_region,Ιβηρία / Καταλονία,Iberia / Catalonia,,src-pleiades-246382,reviewed
 region-illyria,ancient_region,Ιλλυρία,Illyria,,src-pleiades-481728,reviewed
 region-ionia,ancient_region,Ιωνία,Ionia,,src-pleiades-550893,reviewed
 region-ionia-chios,ancient_region,Ιωνία / Χίος,Ionia / Chios,,src-pleiades-550496,reviewed
 region-ionia-karia,ancient_region,Ιωνία / Καρία,Ionia / Caria,,src-pleiades-599778,reviewed
 region-ionia-samos,ancient_region,Ιωνία / Σάμος,Ionia / Samos,,src-pleiades-599925,reviewed
-region-kappadokia,ancient_region,Καππαδοκία,Cappadocia,,src-iranicaonline-efe1d8ddd34e,reviewed
+region-kappadokia,ancient_region,Καππαδοκία,Cappadocia,,src-iranicaonline-0624b0b64cf3,reviewed
 region-karia,ancient_region,Καρία,Caria,,src-pleiades-599636,reviewed
 region-kimmerios-bosporos,ancient_region,Κιμμέριος Βόσπορος,Cimmerian Bosporus,,src-pleiades-854719,reviewed
 region-kolchida,ancient_region,Κολχίδα,Colchis,,src-pleiades-857107,reviewed
-region-kommagene,ancient_region,Κομμαγηνή,Commagene,,src-whc-9d3804ad2081,reviewed
+region-kommagene,ancient_region,Κομμαγηνή,Commagene,,src-whc-758c2c416617,reviewed
 region-korinthia,ancient_region,Κορινθία,Corinthia,,src-pleiades-570182,reviewed
 region-kos-dodekanesa,ancient_region,Κως / Δωδεκάνησα,Kos / Dodecanese,,src-pleiades-599728,reviewed
 region-krete,ancient_region,Κρήτη,Crete,,src-pleiades-589796,reviewed
@@ -251,7 +251,7 @@ region-rodos,ancient_region,Ρόδος,Rhodes,,src-pleiades-414067217,reviewed
 region-rodos-dodekanesa,ancient_region,Ρόδος / Δωδεκάνησα,Rhodes / Dodecanese,,src-pleiades-589913,reviewed
 region-saronikos,ancient_region,Σαρωνικός,Saronic Gulf,,src-pleiades-579853,reviewed
 region-sikelia,ancient_region,Σικελία,Sicily,,src-pleiades-462086,reviewed
-region-skythia,ancient_region,Σκυθία,Scythia,,src-penn-fb29e85fcab7,reviewed
+region-skythia,ancient_region,Σκυθία,Scythia,,src-penn-a97aa05ea214,reviewed
 region-skythia-dneisteros,ancient_region,Σκυθία / Δνείστερος,Scythia / Dniester,,src-pleiades-226800,reviewed
 region-skythia-kato-ypanis,ancient_region,Σκυθία / Κάτω Ύπανις,Scythia / lower Hypanis,,src-pleiades-226546,reviewed
 region-skythia-mikra,ancient_region,Σκυθία Μικρά,Scythia Minor,,src-pleiades-216839,reviewed
@@ -266,7 +266,7 @@ region-thrake-kai-dytike-mikra-asia,ancient_region,Θράκη και δυτικ�
 region-troada,ancient_region,Τρωάδα,Troad,,src-pleiades-550463,reviewed
 region-troada-ellespontos,ancient_region,Τρωάδα / Ελλήσποντος,Troad / Hellespont,,src-pleiades-501325,reviewed
 settlement-achaia,settlement,Αχαΐα,Achaia,,src-pleiades-452317,reviewed
-settlement-akropole-athenon,settlement,Ακρόπολη Αθηνών,Acropolis of Athens,,src-whc-99e8b681505e,reviewed
+settlement-akropole-athenon,settlement,Ακρόπολη Αθηνών,Acropolis of Athens,,src-whc-228f1be9c035,reviewed
 settlement-anaktoro-knosoy,settlement,Ανάκτορο Κνωσού,Palace of Knossos,,src-odysseus-9e3ae0cba911,reviewed
 settlement-anaktoro-toy-nestora-ano-egklianos,settlement,"Ανάκτορο του Νέστορα, Άνω Εγκλιανός","Palace of Nestor, Ano Eglianos",,src-odysseus-00e2d87ae4a8,reviewed
 settlement-argos-paradose,settlement,Άργος (παράδοση),Argos (tradition),,src-pleiades-599664,reviewed
@@ -279,7 +279,7 @@ settlement-chalkida-kai-eretria,settlement,Χαλκίδα και Ερέτρια,
 settlement-chalkida-kai-kyme,settlement,Χαλκίδα και Κύμη,Chalkida and Kymi,,src-pleiades-462538,reviewed
 settlement-dimeni,settlement,Διμήνι,Dimini,,src-odysseus-589898851f92,reviewed
 settlement-dodone,settlement,Δωδώνη,Dodona,,src-cambridge-96106a304cc6,reviewed
-settlement-kadmeia-theba,settlement,"Καδμεία, Θήβα","Cadmeia, Thebes",,src-mthv-3f5f755ed462,reviewed
+settlement-kadmeia-theba,settlement,"Καδμεία, Θήβα","Cadmeia, Thebes",,src-mthv-715d665b63b5,reviewed
 settlement-kerkyra-kai-korinthos,settlement,Κέρκυρα και Κόρινθος,Corfu and Corinth,,src-pleiades-481818,reviewed
 settlement-korinthos-kai-kerkyra,settlement,Κόρινθος και Κέρκυρα,Corinth and Corfu,,src-pleiades-481728,reviewed
 settlement-krete-kai-athena-paradose,settlement,Κρήτη και Αθήνα (παράδοση),Crete and Athens (tradition),,src-pleiades-550535,reviewed
@@ -288,26 +288,26 @@ settlement-lokrida,settlement,Λοκρίδα,Locride,,src-pleiades-452369,review
 settlement-lokrida-kai-thessalia-aiolike-paradose,settlement,Λοκρίδα και Θεσσαλία (αιολική παράδοση),Locris and Thessaly (Aeolian tradition),,src-pleiades-550506,reviewed
 settlement-lysimacheia,settlement,Λυσιμάχεια,Lysimachia,,src-pleiades-501458,reviewed
 settlement-magnesia-thessalias,settlement,Μαγνησία Θεσσαλίας,Magnesia in Thessaly,,src-pleiades-599778,reviewed
-settlement-mazaka,settlement,Μάζακα,Mazaca,,src-iranicaonline-efe1d8ddd34e,reviewed
+settlement-mazaka,settlement,Μάζακα,Mazaca,,src-iranicaonline-0624b0b64cf3,reviewed
 settlement-megara-kai-chalkedona,settlement,Μέγαρα και Χαλκηδόνα,Megara and Chalcedon,,src-pleiades-216882,reviewed
 settlement-megara-kai-tanagra,settlement,Μέγαρα και Τανάγρα,Megara and Tanagra,,src-pleiades-844944,reviewed
 settlement-methymna,settlement,Μήθυμνα,Methymna,,src-pleiades-550463,reviewed
 settlement-miletos-kai-alles-ellenikes-poleis,settlement,Μίλητος και άλλες ελληνικές πόλεις,Miletus and other Greek cities,,src-pleiades-727169,reviewed
 settlement-miletos-paradose,settlement,Μίλητος (παράδοση),Miletus (tradition),,src-pleiades-857107,reviewed
-settlement-mykenes,settlement,Μυκήνες,Mycenae,,src-whc-20fbbfc3302f,reviewed
+settlement-mykenes,settlement,Μυκήνες,Mycenae,,src-whc-6306f630553d,reviewed
 settlement-nikomedeia,settlement,Νικομήδεια,Nicomedia,,src-attalus-1b40f4436114,reviewed
-settlement-orchomenos-boiotias,settlement,Ορχομενός Βοιωτίας,Orchomenos of Boeotia,,src-mthv-3f5f755ed462,reviewed
+settlement-orchomenos-boiotias,settlement,Ορχομενός Βοιωτίας,Orchomenos of Boeotia,,src-mthv-715d665b63b5,reviewed
 settlement-palaipaphos-koyklia,settlement,"Παλαίπαφος, Κούκλια",Palaepaphos (Kouklia),,src-websites-d5246844b076,reviewed
 settlement-pantikapaio-bosporos,settlement,Παντικάπαιο / Βόσπορος,Panticapaeum / Bosporus,,src-pleiades-825397,reviewed
-settlement-pantikapaion-kerts,settlement,"Παντικάπαιον, Κερτς","Pantikapaion, Kerch",,src-iranicaonline-0f32c4ee76cf,reviewed
+settlement-pantikapaion-kerts,settlement,"Παντικάπαιον, Κερτς","Pantikapaion, Kerch",,src-iranicaonline-4a607235e191,reviewed
 settlement-paros,settlement,Πάρος,Paros,,src-pleiades-197433,reviewed
 settlement-phokida-kai-athena-paradose,settlement,Φωκίδα και Αθήνα (παράδοση),Phocis and Athens (tradition),,src-pleiades-550823,reviewed
 settlement-rodos-kai-krete,settlement,Ρόδος και Κρήτη,Rhodes and Crete,,src-pleiades-462214,reviewed
 settlement-rodos-lindos,settlement,Ρόδος (Λίνδος),Rhodes (Lindos),,src-pleiades-639051,reviewed
-settlement-sagala,settlement,Σάγαλα,Sagala,,src-iranicaonline-2d20b536f2f7,reviewed
+settlement-sagala,settlement,Σάγαλα,Sagala,,src-iranicaonline-612dff96c99c,reviewed
 settlement-salamina-kyproy,settlement,Σαλαμίνα Κύπρου,"Salamis, Cyprus",,src-uni-muenster-0a0030be4d2a,reviewed
-settlement-samosata,settlement,Σαμόσατα,Samosata,,src-whc-9d3804ad2081,needs_review
-settlement-taxila,settlement,Τάξιλα,Taxila,,src-iranicaonline-2d20b536f2f7,needs_review
+settlement-samosata,settlement,Σαμόσατα,Samosata,,src-whc-758c2c416617,needs_review
+settlement-taxila,settlement,Τάξιλα,Taxila,,src-iranicaonline-612dff96c99c,needs_review
 settlement-thasos,settlement,Θάσος,Thassos,,src-pleiades-501482,reviewed
-settlement-tiryntha,settlement,Τίρυνθα,Tiryns,,src-whc-20fbbfc3302f,reviewed
+settlement-tiryntha,settlement,Τίρυνθα,Tiryns,,src-whc-6306f630553d,reviewed
 settlement-troizena,settlement,Τροιζήνα,Troezen,,src-pleiades-599636,reviewed
