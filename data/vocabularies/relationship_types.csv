@@ -1,0 +1,9 @@
+code,label_el,label_en,definition_el,definition_en,sort_order
+founded_from,Ιδρύθηκε από,Founded from,Σχέση αποικιακής ίδρυσης με μητρόπολη ή ιδρυτική κοινότητα,Colonial foundation relation to a metropolis or founding community,10
+associated_with_settlement,Συνδέεται με οικισμό,Associated with settlement,Χωρική ή θεσμική σύνδεση ιερού με οικισμό,Spatial or institutional association of a sanctuary with a settlement,20
+representative_center,Αντιπροσωπευτικό κέντρο,Representative centre,Αστικό ή ανακτορικό κέντρο που χρησιμοποιείται ως χωρικός δείκτης πολιτείας,Urban or palatial centre used as the spatial marker of a polity,30
+preceded_by,Προηγήθηκε,Preceded by,Πολιτική ή χρονική οντότητα που προηγήθηκε της υποκειμενικής οντότητας,Political or temporal entity preceding the subject entity,40
+succeeded_by,Διαδέχθηκε,Succeeded by,Πολιτική ή χρονική οντότητα που διαδέχθηκε την υποκειμενική οντότητα,Political or temporal entity succeeding the subject entity,50
+cult_of,Λατρεία,Associated cult,Θεότητα ή λατρεία που τεκμηριώνεται στο ιερό,Deity or cult attested at the sanctuary,60
+ruled_by_dynasty,Δυναστεία,Ruled by dynasty,Δυναστεία ή ηγεμονικός οίκος που συνδέεται με πολιτική οντότητα,Dynasty or ruling house associated with a polity,70
+part_of,Μέρος του,Part of,Μερωνυμική ή διοικητική σχέση με ευρύτερη οντότητα,Partitive or administrative relation to a broader entity,80

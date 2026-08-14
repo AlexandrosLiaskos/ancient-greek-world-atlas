@@ -1,0 +1,164 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Ancient Greek World Atlas canonical relational tables",
+  "version": "1.0.0",
+  "tables": {
+    "sources": {
+      "primary_key": "source_id",
+      "columns": {
+        "source_id": {"type": "string", "required": true},
+        "url": {"type": "string", "required": true},
+        "title": {"type": "string", "required": true},
+        "publisher": {"type": "string", "required": true},
+        "source_class": {"type": "string", "required": true, "vocabulary": "source_classes"},
+        "language": {"type": "string", "required": true},
+        "license": {"type": "string", "required": false},
+        "accessed_on": {"type": "date", "required": true},
+        "http_status": {"type": "integer", "required": false},
+        "url_status": {"type": "string", "required": true},
+        "citation": {"type": "string", "required": true},
+        "notes": {"type": "string", "required": false}
+      }
+    },
+    "authorities": {
+      "primary_key": "authority_id",
+      "columns": {
+        "authority_id": {"type": "string", "required": true},
+        "authority_type": {"type": "string", "required": true, "vocabulary": "authority_types"},
+        "preferred_label_el": {"type": "string", "required": true},
+        "preferred_label_en": {"type": "string", "required": true},
+        "uri": {"type": "string", "required": false},
+        "source_id": {"type": "string", "required": false, "foreign_key": "sources.source_id"},
+        "review_state": {"type": "string", "required": true, "vocabulary": "review_states"}
+      }
+    },
+    "entities": {
+      "primary_key": "entity_id",
+      "columns": {
+        "entity_id": {"type": "string", "required": true},
+        "legacy_id": {"type": "string", "required": true},
+        "entity_class": {"type": "string", "required": true, "vocabulary": "entity_classes"},
+        "entity_subtype": {"type": "string", "required": true, "vocabulary": "entity_subtypes"},
+        "legacy_subtype": {"type": "string", "required": false},
+        "collections": {"type": "string", "required": true},
+        "preferred_name_el": {"type": "string", "required": true},
+        "preferred_name_en": {"type": "string", "required": true},
+        "ancient_name_grc": {"type": "string", "required": false},
+        "description_el": {"type": "string", "required": true},
+        "description_en": {"type": "string", "required": true},
+        "sanctuary_scope": {"type": "string", "required": false},
+        "sanctuary_setting": {"type": "string", "required": false},
+        "sanctuary_function_tags": {"type": "string", "required": false},
+        "ancient_region_authority_id": {"type": "string", "required": true, "foreign_key": "authorities.authority_id"},
+        "temporal_precision": {"type": "string", "required": true, "vocabulary": "precision_terms"},
+        "location_certainty": {"type": "string", "required": true, "vocabulary": "certainty_terms"},
+        "record_confidence": {"type": "string", "required": true, "vocabulary": "certainty_terms"},
+        "review_state": {"type": "string", "required": true, "vocabulary": "review_states"},
+        "translation_status": {"type": "string", "required": true, "vocabulary": "translation_statuses"},
+        "data_version": {"type": "string", "required": true},
+        "source_origin": {"type": "string", "required": true},
+        "last_reviewed": {"type": "date", "required": true},
+        "reviewer": {"type": "string", "required": true}
+      }
+    },
+    "names": {
+      "primary_key": "name_id",
+      "columns": {
+        "name_id": {"type": "string", "required": true},
+        "entity_id": {"type": "string", "required": true, "foreign_key": "entities.entity_id"},
+        "name": {"type": "string", "required": true},
+        "language": {"type": "string", "required": true},
+        "script": {"type": "string", "required": true},
+        "name_type": {"type": "string", "required": true, "vocabulary": "name_types"},
+        "is_preferred": {"type": "boolean", "required": true},
+        "start_year": {"type": "integer", "required": false},
+        "end_year": {"type": "integer", "required": false},
+        "source_id": {"type": "string", "required": true, "foreign_key": "sources.source_id"},
+        "review_state": {"type": "string", "required": true, "vocabulary": "review_states"}
+      }
+    },
+    "places": {
+      "primary_key": "place_id",
+      "columns": {
+        "place_id": {"type": "string", "required": true},
+        "entity_id": {"type": "string", "required": true, "foreign_key": "entities.entity_id"},
+        "latitude": {"type": "number", "required": true},
+        "longitude": {"type": "number", "required": true},
+        "geometry_wkt": {"type": "string", "required": true},
+        "geometry_geojson": {"type": "json", "required": true},
+        "geometry_role": {"type": "string", "required": true, "vocabulary": "geometry_roles"},
+        "location_certainty": {"type": "string", "required": true, "vocabulary": "certainty_terms"},
+        "location_precision": {"type": "string", "required": true, "vocabulary": "precision_terms"},
+        "modern_country_el": {"type": "string", "required": true},
+        "modern_country_en": {"type": "string", "required": true},
+        "country_iso3": {"type": "string", "required": true},
+        "country_iso2": {"type": "string", "required": true},
+        "modern_locality": {"type": "string", "required": false},
+        "coordinate_source_text": {"type": "string", "required": true},
+        "spatial_note_el": {"type": "string", "required": false},
+        "spatial_note_en": {"type": "string", "required": false},
+        "source_id": {"type": "string", "required": true, "foreign_key": "sources.source_id"},
+        "review_state": {"type": "string", "required": true, "vocabulary": "review_states"}
+      }
+    },
+    "chronologies": {
+      "primary_key": "chronology_id",
+      "columns": {
+        "chronology_id": {"type": "string", "required": true},
+        "entity_id": {"type": "string", "required": true, "foreign_key": "entities.entity_id"},
+        "start_year": {"type": "integer", "required": true},
+        "end_year": {"type": "integer", "required": true},
+        "start_precision": {"type": "string", "required": true, "vocabulary": "precision_terms"},
+        "end_precision": {"type": "string", "required": true, "vocabulary": "precision_terms"},
+        "temporal_precision": {"type": "string", "required": true, "vocabulary": "precision_terms"},
+        "chronology_basis": {"type": "string", "required": true, "vocabulary": "chronology_bases"},
+        "display_cutoff": {"type": "boolean", "required": true},
+        "label_el": {"type": "string", "required": true},
+        "label_en": {"type": "string", "required": true},
+        "note_el": {"type": "string", "required": false},
+        "note_en": {"type": "string", "required": false},
+        "source_id": {"type": "string", "required": true, "foreign_key": "sources.source_id"},
+        "review_state": {"type": "string", "required": true, "vocabulary": "review_states"}
+      }
+    },
+    "relationships": {
+      "primary_key": "relationship_id",
+      "columns": {
+        "relationship_id": {"type": "string", "required": true},
+        "subject_entity_id": {"type": "string", "required": true, "foreign_key": "entities.entity_id"},
+        "predicate": {"type": "string", "required": true, "vocabulary": "relationship_types"},
+        "object_entity_id": {"type": "string", "required": false, "foreign_key": "entities.entity_id"},
+        "object_authority_id": {"type": "string", "required": false, "foreign_key": "authorities.authority_id"},
+        "object_label_el": {"type": "string", "required": true},
+        "object_label_en": {"type": "string", "required": true},
+        "certainty": {"type": "string", "required": true, "vocabulary": "certainty_terms"},
+        "source_id": {"type": "string", "required": true, "foreign_key": "sources.source_id"},
+        "migration_evidence_el": {"type": "string", "required": false},
+        "review_state": {"type": "string", "required": true, "vocabulary": "review_states"}
+      }
+    },
+    "entity_sources": {
+      "primary_key": "entity_source_id",
+      "columns": {
+        "entity_source_id": {"type": "string", "required": true},
+        "entity_id": {"type": "string", "required": true, "foreign_key": "entities.entity_id"},
+        "source_id": {"type": "string", "required": true, "foreign_key": "sources.source_id"},
+        "support_scope": {"type": "string", "required": true, "vocabulary": "support_scopes"},
+        "is_primary": {"type": "boolean", "required": true}
+      }
+    },
+    "external_ids": {
+      "primary_key": "external_id",
+      "columns": {
+        "external_id": {"type": "string", "required": true},
+        "entity_id": {"type": "string", "required": false, "foreign_key": "entities.entity_id"},
+        "place_id": {"type": "string", "required": false, "foreign_key": "places.place_id"},
+        "scheme": {"type": "string", "required": true},
+        "identifier": {"type": "string", "required": true},
+        "uri": {"type": "string", "required": true},
+        "match_type": {"type": "string", "required": true},
+        "source_id": {"type": "string", "required": true, "foreign_key": "sources.source_id"}
+      }
+    }
+  }
+}

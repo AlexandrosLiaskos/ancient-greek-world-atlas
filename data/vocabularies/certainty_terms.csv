@@ -1,0 +1,6 @@
+code,label_el,label_en,definition_el,definition_en,sort_order
+high,Υψηλή,High,Ισχυρή τεκμηρίωση για την απόδοση,Strong support for the assertion,10
+medium,Μέση,Medium,Επαρκής αλλά όχι οριστική τεκμηρίωση,Adequate but not conclusive support,20
+low,Χαμηλή,Low,Περιορισμένη τεκμηρίωση ή ισχυρή επιφύλαξη,Limited support or substantial reservation,30
+disputed,Αμφισβητούμενη,Disputed,Υπάρχουν ανταγωνιστικές επιστημονικές ερμηνείες,Competing scholarly interpretations exist,40
+unknown,Άγνωστη,Unknown,Η βεβαιότητα δεν έχει αξιολογηθεί,Certainty has not been assessed,99

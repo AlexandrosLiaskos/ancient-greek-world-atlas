@@ -1,0 +1,6 @@
+code,label_el,label_en,definition_el,definition_en,sort_order
+source,Κείμενο πηγής,Source text,Το κείμενο προέρχεται από την αρχική έρευνα,Text originates in the submitted research,10
+machine_assisted_unreviewed,Μηχανικά υποβοηθούμενο χωρίς επιμέλεια,Machine-assisted unreviewed,Η μετάφραση δημιουργήθηκε μηχανικά και δεν επιμελήθηκε,Translation was machine-generated and not editorially reviewed,20
+machine_assisted_reviewed,Μηχανικά υποβοηθούμενο και ελεγμένο,Machine-assisted reviewed,Η μετάφραση δημιουργήθηκε μηχανικά και ελέγχθηκε επιμελητικά,Translation was machine-generated and editorially checked,30
+human_reviewed,Ανθρώπινη επιμέλεια,Human reviewed,Το κείμενο μεταφράστηκε ή αναθεωρήθηκε από επιμελητή,Text was translated or revised by an editor,40
+not_applicable,Δεν εφαρμόζεται,Not applicable,Δεν απαιτείται μετάφραση,Translation is not required,90

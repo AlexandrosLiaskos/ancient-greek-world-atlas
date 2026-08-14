@@ -1,0 +1,6 @@
+code,label_el,label_en,definition_el,definition_en,sort_order
+preferred,Προτιμώμενο,Preferred,Κύριο όνομα στη συγκεκριμένη γλώσσα,Primary name in the specified language,10
+ancient,Αρχαίο,Ancient,Ιστορικά τεκμηριωμένος αρχαίος τύπος,Historically attested ancient form,20
+modern,Σύγχρονο,Modern,Σύγχρονο τοπωνύμιο ή όνομα,Modern place-name or name,30
+alternative,Εναλλακτικό,Alternative,Άλλος τεκμηριωμένος τύπος ονόματος,Another attested name form,40
+transliterated,Μεταγραμμένο,Transliterated,Μεταγραφή ονόματος σε άλλο σύστημα γραφής,Transliteration into another writing system,50

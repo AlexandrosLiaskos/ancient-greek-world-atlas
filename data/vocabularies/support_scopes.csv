@@ -1,0 +1,8 @@
+code,label_el,label_en,definition_el,definition_en,sort_order
+identity,Ταυτότητα,Identity,Υποστηρίζει την ταυτότητα της οντότητας,Supports the identity of the entity,10
+names,Ονόματα,Names,Υποστηρίζει ονόματα ή μεταγραφές,Supports names or transliterations,20
+description,Περιγραφή,Description,Υποστηρίζει τη συνοπτική περιγραφή,Supports the summary description,30
+chronology,Χρονολόγηση,Chronology,Υποστηρίζει χρονικά όρια ή φάσεις,Supports temporal bounds or phases,40
+geometry,Χωρική θέση,Geometry,Υποστηρίζει θέση ή γεωμετρία,Supports location or geometry,50
+classification,Ταξινόμηση,Classification,Υποστηρίζει τύπο ή συλλογή,Supports type or collection,60
+relationships,Σχέσεις,Relationships,Υποστηρίζει σχέση με άλλη οντότητα ή αρχή,Supports a relation to another entity or authority,70

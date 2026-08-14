@@ -1,0 +1,8 @@
+code,label_el,label_en,definition_el,definition_en,sort_order
+occupation_window,Περίοδος κατοίκησης,Occupation window,Χρονικό εύρος τεκμηριωμένης κατοίκησης,Span of attested occupation,10
+cult_activity_window,Περίοδος λατρευτικής δραστηριότητας,Cult activity window,Χρονικό εύρος τεκμηριωμένης λατρευτικής χρήσης,Span of attested cult activity,20
+political_phase,Πολιτική φάση,Political phase,Χρονικό εύρος πολιτικής οντότητας ή δυναστικής φάσης,Span of a polity or dynastic phase,30
+foundation,Ίδρυση,Foundation,Χρονολόγηση ιδρυτικού γεγονότος,Dating of a foundation event,40
+construction_phase,Οικοδομική φάση,Construction phase,Χρονολόγηση οικοδομικής φάσης,Dating of a construction phase,50
+use_phase,Φάση χρήσης,Use phase,Χρονολόγηση διακριτής φάσης χρήσης,Dating of a distinct phase of use,60
+unknown,Άγνωστη βάση,Unknown basis,Η βάση χρονολόγησης δεν έχει καθοριστεί,The chronology basis has not been determined,99

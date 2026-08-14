@@ -1,0 +1,9 @@
+code,label_el,label_en,definition_el,definition_en,sort_order
+exact,Ακριβές,Exact,Η πηγή υποστηρίζει συγκεκριμένο έτος ή σαφές όριο,The source supports a specific year or clear boundary,10
+approximate,Κατά προσέγγιση,Approximate,Το έτος ή όριο είναι προσεγγιστικό,The year or boundary is approximate,20
+uncertain,Αβέβαιο,Uncertain,Η χρονολόγηση είναι αβέβαιη,The dating is uncertain,30
+broad_range,Ευρύ εύρος,Broad range,Μόνο ευρύ χρονικό εύρος είναι ασφαλές,Only a broad chronological range is secure,40
+mixed,Μικτή ακρίβεια,Mixed precision,Τα χρονικά όρια έχουν διαφορετική ποιότητα ή ακρίβεια,The temporal bounds have differing quality or precision,50
+disputed,Αμφισβητούμενο,Disputed,Η χρονολόγηση αποτελεί αντικείμενο επιστημονικής διαφωνίας,The dating is subject to scholarly disagreement,60
+display_cutoff,Όριο προβολής,Display cutoff,Συμβατικό όριο του άτλαντα και όχι ιστορικό τέλος,Atlas display boundary rather than a historical end,70
+unknown,Άγνωστο,Unknown,Δεν έχει καθοριστεί η ακρίβεια,Precision has not been determined,99

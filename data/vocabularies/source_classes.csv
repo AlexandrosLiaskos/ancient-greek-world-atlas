@@ -1,0 +1,11 @@
+code,label_el,label_en,definition_el,definition_en,sort_order
+scholarly_gazetteer,Επιστημονικό γεωγραφικό λεξικό,Scholarly gazetteer,Δομημένο επιστημονικό γεωγραφικό λεξικό,Structured scholarly gazetteer,10
+unesco,UNESCO,UNESCO,Επίσημη τεκμηρίωση της UNESCO,Official UNESCO documentation,20
+national_archaeological_service,Εθνική αρχαιολογική υπηρεσία,National archaeological service,Επίσημη κρατική αρχαιολογική υπηρεσία,Official state archaeological service,30
+museum,Μουσείο,Museum,Επιμελημένο περιεχόμενο μουσείου,Curated museum content,40
+university,Πανεπιστήμιο,University,Πανεπιστημιακή έκδοση ή ερευνητικό έργο,University publication or research project,50
+excavation_project,Ανασκαφικό πρόγραμμα,Excavation project,Επίσημη τεκμηρίωση ανασκαφικού προγράμματος,Official excavation-project documentation,60
+peer_reviewed_publication,Επιστημονική δημοσίευση,Peer-reviewed publication,Άρθρο βιβλίο ή κεφάλαιο με επιστημονική επιμέλεια,Scholarly edited article book or chapter,70
+reference_work,Έργο αναφοράς,Reference work,Επιμελημένο έργο αναφοράς,Edited reference work,80
+knowledge_graph,Γράφος γνώσης,Knowledge graph,Συνεργατική δομημένη βάση για ανακάλυψη και διασύνδεση,Collaborative structured database for discovery and linking,90
+other,Άλλο,Other,Πηγή που δεν ανήκει στις προηγούμενες κατηγορίες,Source outside the preceding classes,99

@@ -1,0 +1,7 @@
+code,label_el,label_en,definition_el,definition_en,sort_order
+draft,Πρόχειρο,Draft,Η εγγραφή δεν έχει ακόμη ελεγχθεί,The record has not yet been reviewed,10
+needs_review,Χρειάζεται έλεγχο,Needs review,Η εγγραφή έχει συγκεκριμένο ανοικτό ζήτημα,The record has a specific unresolved issue,20
+machine_checked,Μηχανικά ελεγμένο,Machine checked,Πέρασε αυτοματοποιημένους ελέγχους χωρίς πλήρη επιμέλεια,Passed automated checks without full editorial review,30
+reviewed,Ελεγμένο,Reviewed,Έγινε επιμελητικός έλεγχος των διαθέσιμων στοιχείων,Available evidence received editorial review,40
+verified,Επαληθευμένο,Verified,Η εγγραφή και οι κύριες πηγές της επαληθεύτηκαν,The record and its principal sources were verified,50
+excluded,Εξαιρέθηκε,Excluded,Η εγγραφή δεν περιλαμβάνεται στη δημόσια έκδοση,The record is not included in the public release,90

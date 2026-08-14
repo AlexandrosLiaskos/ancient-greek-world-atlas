@@ -1,0 +1,7 @@
+code,label_el,label_en,definition_el,definition_en,sort_order
+ancient_region,Αρχαία περιοχή,Ancient region,Ιστορική γεωγραφική περιοχή,Historical geographic region,10
+deity_or_cult,Θεότητα ή λατρεία,Deity or cult,Θεότητα επίκληση ή λατρευτική παράδοση,Deity epithet or cult tradition,20
+dynasty,Δυναστεία,Dynasty,Ηγεμονικός οίκος ή δυναστική γραμμή,Ruling house or dynastic line,30
+settlement,Οικισμός,Settlement,Εξωτερικός οικισμός που χρησιμοποιείται ως στόχος σχέσης,External settlement used as a relationship target,40
+polity,Πολιτική οντότητα,Polity,Εξωτερική πολιτική οντότητα που χρησιμοποιείται ως στόχος σχέσης,External polity used as a relationship target,50
+geographic_region,Γεωγραφική περιοχή,Geographic region,Μη πολιτική γεωγραφική ενότητα,Non-political geographic unit,60

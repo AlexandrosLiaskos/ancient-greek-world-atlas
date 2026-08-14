@@ -1,0 +1,18 @@
+code,label_el,label_en,definition_el,definition_en,sort_order
+polis,Πόλις,Polis,Αστική πολιτική κοινότητα του ελληνικού κόσμου,Urban political community of the Greek world,10
+settlement,Οικισμός,Settlement,Κατοικημένος τόπος χωρίς ασφαλέστερη ειδίκευση,Inhabited place without a more secure subtype,20
+port_settlement,Λιμενικός οικισμός,Port settlement,Οικισμός με κύρια λιμενική λειτουργία,Settlement with a principal harbour function,30
+cult_place,Λατρευτικός τόπος,Cult place,Ιερό χωρίς ασφαλέστερη λειτουργική ειδίκευση,Sanctuary without a more secure functional subtype,40
+healing_sanctuary,Θεραπευτικό ιερό,Healing sanctuary,Ιερό με τεκμηριωμένη θεραπευτική λειτουργία,Sanctuary with an attested healing function,41
+oracle,Μαντείο,Oracle,Ιερό με τεκμηριωμένη μαντική λειτουργία,Sanctuary with an attested oracular function,42
+mystery_sanctuary,Ιερό μυστηρίων,Mystery sanctuary,Ιερό συνδεδεμένο με μυστηριακή λατρεία,Sanctuary associated with a mystery cult,43
+peak_sanctuary,Ιερό κορυφής,Peak sanctuary,Ιερό εγκατεστημένο σε κορυφή,Sanctuary established on a mountain peak,44
+cave_sanctuary,Σπηλαιώδες ιερό,Cave sanctuary,Ιερό εγκατεστημένο σε σπήλαιο,Sanctuary established in a cave,45
+hero_shrine,Ηρώο,Hero shrine,Λατρευτικός τόπος αφιερωμένος σε ήρωα,Cult place dedicated to a hero,46
+palatial_state,Ανακτορικό κράτος,Palatial state,Πολιτική οντότητα οργανωμένη γύρω από ανακτορικό κέντρο,Polity organized around a palatial centre,50
+kingdom,Βασίλειο,Kingdom,Μοναρχική πολιτική οντότητα,Monarchical polity,51
+empire,Αυτοκρατορία,Empire,Εδαφικά εκτεταμένη πολυπεριφερειακή πολιτική οντότητα,Territorially extensive multi-regional polity,52
+city_kingdom,Πόλη-βασίλειο,City-kingdom,Μοναρχική πολιτική οντότητα με κέντρο μία πόλη,Monarchical polity centered on one city,53
+dynastic_phase,Δυναστική φάση,Dynastic phase,Χρονολογικά διακριτή δυναστική φάση ευρύτερου βασιλείου,Chronologically distinct dynastic phase of a wider kingdom,54
+client_kingdom,Πελατειακό βασίλειο,Client kingdom,Βασίλειο σε θεσμική εξάρτηση από ισχυρότερη δύναμη,Kingdom institutionally dependent on a stronger power,55
+aggregate_polities,Σύνολο πολιτειών,Aggregate polities,Συμβατική ομαδοποίηση πολλών συγγενών πολιτικών οντοτήτων,Conventional grouping of several related polities,56

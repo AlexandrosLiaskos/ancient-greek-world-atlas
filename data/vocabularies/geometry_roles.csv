@@ -1,0 +1,4 @@
+code,label_el,label_en,definition_el,definition_en,sort_order
+site,Θέση,Site,Το σημείο αναφέρεται στην ίδια την αρχαιολογική θέση,The point refers to the archaeological site itself,10
+proxy,Προσεγγιστικός δείκτης,Proxy,Το σημείο είναι τεκμηριωμένος προσεγγιστικός χωρικός δείκτης,The point is a documented approximate spatial indicator,20
+representative_center,Αντιπροσωπευτικό κέντρο,Representative centre,Το σημείο αποδίδει κέντρο πολιτικής οντότητας και όχι την επικράτειά της,The point represents a centre of a polity rather than its territory,30
