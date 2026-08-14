@@ -1,0 +1,121 @@
+@media (min-width: 47.5rem) {
+  #app {
+    grid-template-rows: var(--masthead-height) minmax(0, 1fr);
+  }
+
+  .masthead {
+    grid-template-columns: minmax(3rem, 1fr) auto minmax(3rem, 1fr);
+    padding: var(--space-sm) var(--space-lg);
+  }
+
+  .masthead-rule {
+    display: block;
+    height: 1px;
+    background: var(--color-ink);
+  }
+
+  .masthead h1 {
+    padding-inline: var(--space-lg);
+    overflow: visible;
+    font-size: 2.75rem;
+    text-align: center;
+    text-overflow: clip;
+  }
+
+  .masthead-actions {
+    justify-self: end;
+  }
+
+  .app-shell {
+    display: grid;
+    grid-template-columns: var(--sidebar-width) minmax(0, 1fr);
+  }
+
+  .workbench {
+    position: relative;
+    inset: auto;
+    z-index: 1;
+    grid-column: 1;
+    grid-row: 1;
+    width: auto;
+    height: auto;
+    min-height: 0;
+    border-top: 0;
+    border-inline-end: 1px solid var(--color-ink);
+    box-shadow: none;
+    transform: none;
+    visibility: visible;
+    transition: none;
+  }
+
+  .sheet-grip,
+  .sheet-close,
+  .mobile-actions {
+    display: none;
+  }
+
+  .map-stage {
+    position: relative;
+    grid-column: 2;
+    grid-row: 1;
+  }
+
+  .tool-tab {
+    min-height: 4rem;
+    font-size: var(--text-caption);
+  }
+
+  .map-legend {
+    inset: auto var(--space-md) calc(2rem + var(--space-md)) auto;
+  }
+
+  dialog {
+    width: min(90vw, 58rem);
+  }
+}
+
+@media (min-width: 75rem) {
+  :root {
+    --sidebar-width: 26rem;
+  }
+
+  .tool-tab {
+    grid-template-columns: auto auto;
+    place-content: center;
+    gap: var(--space-xs);
+  }
+}
+
+@media (max-width: 25rem) {
+  .masthead h1 {
+    font-size: 1.55rem;
+  }
+
+  .masthead-actions {
+    gap: var(--space-2xs);
+  }
+
+  .masthead .icon-button {
+    display: none;
+  }
+
+  .map-legend {
+    width: 12.5rem;
+  }
+}
+
+@media (orientation: landscape) and (max-height: 35rem) and (max-width: 63.99rem) {
+  :root {
+    --sheet-height: min(86dvh, 30rem);
+  }
+
+  .sheet-grip {
+    margin-block: var(--space-2xs) 0;
+  }
+
+  .tool-tab {
+    min-height: 3rem;
+    grid-template-columns: auto auto;
+    gap: var(--space-xs);
+  }
+}

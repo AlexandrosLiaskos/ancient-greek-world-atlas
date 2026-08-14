@@ -6,7 +6,7 @@
 
 **Architecture:** A static semantic HTML/CSS application loads the checked-in JSON release, adapts it into immutable browser view records, and derives search, filters, statistics, catalogue, map, and detail views from one central state store. Native ES modules own pure domain logic while a small Leaflet controller owns map-specific side effects; GitHub Pages serves the repository directly without a backend or mandatory build step.
 
-**Tech Stack:** HTML5, CSS, native JavaScript ES modules, Node.js built-in test runner, html-validate 11.6.2, Playwright 1.62.1, Leaflet 1.9.4, Leaflet.markercluster 1.5.3, Python unittest data suite, GitHub Pages.
+**Tech Stack:** HTML5, CSS, native JavaScript ES modules, Node.js built-in test runner, html-validate 10.4.0, Playwright 1.62.1, Leaflet 1.9.4, Leaflet.markercluster 1.5.3, Python unittest data suite, GitHub Pages.
 
 **Spec:** `docs/superpowers/specs/2026-08-15-ancient-greek-world-webgis-design.md`
 
@@ -116,7 +116,7 @@ Expected: FAIL because `index.html` does not exist.
     "test": "npm run test:web && npm run test:data && npm run validate:html",
     "serve": "npx --yes serve . -l 4173"
   },
-  "devDependencies": { "html-validate": "11.6.2" }
+  "devDependencies": { "html-validate": "10.4.0" }
 }
 ```
 

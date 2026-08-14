@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="el">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta id="meta-description" name="description" content="Δίγλωσσος διαδραστικός άτλας 226 τόπων και πολιτειών του αρχαίου ελληνικού κόσμου.">
+  <meta name="theme-color" content="#f7f7f4">
+  <link rel="icon" href="data:,">
+  <title>Άτλας του Αρχαίου Ελληνικού Κόσμου</title>
+  <link rel="preconnect" href="https://unpkg.com">
+  <link rel="preconnect" href="https://a.basemaps.cartocdn.com">
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://unpkg.com/leaflet.markercluster@1.5.3/dist/MarkerCluster.css">
+  <link rel="stylesheet" href="https://unpkg.com/leaflet.markercluster@1.5.3/dist/MarkerCluster.Default.css">
+  <link rel="stylesheet" href="./assets/styles/tokens.css">
+  <link rel="stylesheet" href="./assets/styles/base.css">
+  <link rel="stylesheet" href="./assets/styles/layout.css">
+  <link rel="stylesheet" href="./assets/styles/components.css">
+  <link rel="stylesheet" href="./assets/styles/responsive.css">
+</head>
+<body>
+  <a class="skip-link" href="#main-content">Μετάβαση στον άτλαντα</a>
+
+  <div id="app" data-source="./dist/ancient-greek-world.json" data-status="loading" data-sheet-open="false">
+    <header class="masthead" aria-label="Κύρια κεφαλίδα">
+      <span class="masthead-rule" aria-hidden="true"></span>
+      <h1 id="masthead-title">Άτλας του Αρχαίου Ελληνικού Κόσμου</h1>
+      <div class="masthead-actions">
+        <button id="about-button" class="icon-button" type="button" aria-haspopup="dialog" aria-controls="about-dialog" aria-label="Σχετικά με τον άτλαντα">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9"></circle><path d="M12 10v7M12 7h.01"></path></svg>
+        </button>
+        <button id="language-toggle" class="language-button" type="button" aria-label="Switch to English">EN</button>
+      </div>
+    </header>
+
+    <main id="main-content" class="app-shell">
+      <aside id="workbench" class="workbench" aria-label="Εργαλεία άτλαντα">
+        <div class="sheet-grip" aria-hidden="true"></div>
+        <button id="sheet-close" class="sheet-close" type="button" aria-label="Κλείσιμο καταλόγου">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="m6 9 6 6 6-6"></path></svg>
+        </button>
+
+        <nav id="tool-tabs" class="tool-tabs" role="tablist" aria-label="Ενότητες άτλαντα">
+          <button id="tab-catalogue" class="tool-tab is-active" type="button" role="tab" data-tab="catalogue" aria-controls="panel-catalogue" aria-selected="true" tabindex="0">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 4h14v16H5zM8 8h8M8 12h8M8 16h5"></path></svg>
+            <span>Κατάλογος</span>
+          </button>
+          <button id="tab-filters" class="tool-tab" type="button" role="tab" data-tab="filters" aria-controls="panel-filters" aria-selected="false" tabindex="-1">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 6h16M7 12h10M10 18h4"></path></svg>
+            <span>Φίλτρα</span>
+            <b id="filter-badge" class="tab-badge" hidden>0</b>
+          </button>
+          <button id="tab-search" class="tool-tab" type="button" role="tab" data-tab="search" aria-controls="panel-search" aria-selected="false" tabindex="-1">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="10.5" cy="10.5" r="6.5"></circle><path d="m15.5 15.5 4 4"></path></svg>
+            <span>Αναζήτηση</span>
+          </button>
+          <button id="tab-statistics" class="tool-tab" type="button" role="tab" data-tab="statistics" aria-controls="panel-statistics" aria-selected="false" tabindex="-1">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 20V10h3v10M11 20V4h3v16M17 20v-7h3v7"></path></svg>
+            <span>Στατιστικά</span>
+          </button>
+        </nav>
+
+        <div class="workbench-panels">
+          <section id="panel-catalogue" class="task-panel is-active" role="tabpanel" aria-labelledby="tab-catalogue">
+            <header class="panel-heading">
+              <h2 id="catalogue-heading">Κατάλογος</h2>
+              <span id="result-count" aria-live="polite">Φόρτωση 226 εγγραφών…</span>
+            </header>
+            <div id="active-filter-summary" class="active-filter-summary" hidden></div>
+            <ul id="result-list" class="result-list" aria-busy="true">
+              <li class="catalogue-skeleton" aria-hidden="true">
+                <span></span><span></span><span></span><span></span><span></span><span></span>
+              </li>
+            </ul>
+            <div id="empty-state" class="empty-state" hidden>
+              <h3>Δεν βρέθηκαν εγγραφές</h3>
+              <p>Αλλάξτε την αναζήτηση ή καθαρίστε τα φίλτρα για να εμφανιστεί ξανά ο κατάλογος.</p>
+              <button id="empty-reset" class="primary-button" type="button">Καθαρισμός φίλτρων</button>
+            </div>
+          </section>
+
+          <section id="panel-filters" class="task-panel" role="tabpanel" aria-labelledby="tab-filters" hidden>
+            <header class="panel-heading">
+              <h2>Φίλτρα</h2>
+              <button id="reset-filters" class="text-button" type="button" disabled>Καθαρισμός</button>
+            </header>
+            <div id="active-filter-chips" class="filter-chips" role="group" aria-label="Ενεργά φίλτρα"></div>
+            <div id="facet-picker" class="facet-picker" aria-busy="true">
+              <div class="panel-skeleton" aria-hidden="true"><span></span><span></span><span></span><span></span></div>
+            </div>
+            <footer class="panel-actions">
+              <button id="show-results" class="primary-button" type="button">Προβολή 226 εγγραφών</button>
+            </footer>
+          </section>
+
+          <section id="panel-search" class="task-panel" role="tabpanel" aria-labelledby="tab-search" hidden>
+            <header class="panel-heading"><h2>Αναζήτηση</h2></header>
+            <div id="search-form" class="search-form" role="search">
+              <label for="search-input">Όνομα, τόπος ή λέξη</label>
+              <div class="search-field">
+                <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="10.5" cy="10.5" r="6.5"></circle><path d="m15.5 15.5 4 4"></path></svg>
+                <input id="search-input" name="q" type="search" autocomplete="off" spellcheck="false" placeholder="π.χ. Αθήνα, Athenae, Ιωνία">
+                <button id="clear-search" class="clear-search" type="button" aria-label="Καθαρισμός αναζήτησης" hidden>×</button>
+              </div>
+            </div>
+            <p id="search-summary" class="search-summary">Αναζήτηση σε ελληνικά, αγγλικά και αρχαία ονόματα.</p>
+            <div id="search-results" class="search-results"></div>
+          </section>
+
+          <section id="panel-statistics" class="task-panel" role="tabpanel" aria-labelledby="tab-statistics" hidden>
+            <header class="panel-heading">
+              <h2>Στατιστικά</h2>
+              <span id="statistics-count">226 εγγραφές</span>
+            </header>
+            <p class="panel-intro">Οι κατανομές ενημερώνονται μαζί με τον ορατό κατάλογο.</p>
+            <div id="statistics-content" class="statistics-content" aria-busy="true">
+              <div class="panel-skeleton" aria-hidden="true"><span></span><span></span><span></span><span></span></div>
+            </div>
+          </section>
+        </div>
+      </aside>
+
+      <section class="map-stage" aria-label="Χάρτης αρχαίου ελληνικού κόσμου">
+        <div id="map" aria-label="Διαδραστικός χάρτης" tabindex="0"></div>
+        <div id="map-loading" class="map-message">
+          <span class="map-loading-mark" aria-hidden="true"></span>
+          <span>Προετοιμασία χάρτη…</span>
+        </div>
+        <div id="map-error" class="map-message map-error" role="status" hidden></div>
+
+        <section id="map-legend" class="map-legend" aria-label="Υπόμνημα χάρτη">
+          <button id="legend-toggle" class="legend-heading" type="button" aria-expanded="true" aria-controls="legend-content">
+            <span>Υπόμνημα</span>
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="m7 14 5-5 5 5"></path></svg>
+          </button>
+          <div id="legend-content" class="legend-content">
+            <div class="legend-row"><i class="legend-symbol marker-settlement" aria-hidden="true"></i><span>Οικισμοί</span><b id="legend-settlement-count">119</b></div>
+            <div class="legend-row"><i class="legend-symbol marker-sanctuary" aria-hidden="true"></i><span>Ιερά</span><b id="legend-sanctuary-count">70</b></div>
+            <div class="legend-row"><i class="legend-symbol marker-polity" aria-hidden="true"></i><span>Πολιτείες</span><b id="legend-polity-count">37</b></div>
+            <div class="legend-row"><i class="legend-cluster" aria-hidden="true">12</i><span>Συγκέντρωση</span></div>
+            <div class="legend-note"><i class="legend-uncertain" aria-hidden="true"></i><span>Προσεγγιστικό ή αντιπροσωπευτικό σημείο</span></div>
+          </div>
+        </section>
+
+        <div id="map-status" class="map-status" aria-live="polite">
+          <span id="coordinate-status">—°N · —°E</span>
+          <span id="visible-status">226 από 226 εγγραφές</span>
+        </div>
+      </section>
+    </main>
+
+    <nav id="mobile-actions" class="mobile-actions" aria-label="Εργαλεία άτλαντα για κινητό">
+      <button class="mobile-action is-active" type="button" data-mobile-tab="catalogue" aria-controls="workbench">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 4h14v16H5zM8 8h8M8 12h8M8 16h5"></path></svg><span>Κατάλογος</span>
+      </button>
+      <button class="mobile-action" type="button" data-mobile-tab="filters" aria-controls="workbench">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 6h16M7 12h10M10 18h4"></path></svg><span>Φίλτρα</span>
+      </button>
+      <button class="mobile-action" type="button" data-mobile-tab="search" aria-controls="workbench">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="10.5" cy="10.5" r="6.5"></circle><path d="m15.5 15.5 4 4"></path></svg><span>Αναζήτηση</span>
+      </button>
+      <button class="mobile-action" type="button" data-mobile-tab="statistics" aria-controls="workbench">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 20V10h3v10M11 20V4h3v16M17 20v-7h3v7"></path></svg><span>Στατιστικά</span>
+      </button>
+    </nav>
+
+    <dialog id="record-dialog" class="record-dialog" aria-labelledby="record-title">
+      <div class="dialog-header">
+        <h2 id="record-title">Εγγραφή</h2>
+        <button id="record-close" class="icon-button" type="button" aria-label="Κλείσιμο εγγραφής">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="m6 6 12 12M18 6 6 18"></path></svg>
+        </button>
+      </div>
+      <div id="record-content" class="record-content"></div>
+    </dialog>
+
+    <dialog id="about-dialog" class="about-dialog" aria-labelledby="about-title">
+      <div class="dialog-header">
+        <h2 id="about-title">Σχετικά με τον άτλαντα</h2>
+        <button id="about-close" class="icon-button" type="button" aria-label="Κλείσιμο πληροφοριών">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="m6 6 12 12M18 6 6 18"></path></svg>
+        </button>
+      </div>
+      <div class="about-content">
+        <p>Ο Άτλας του Αρχαίου Ελληνικού Κόσμου παρουσιάζει 226 τεκμηριωμένους οικισμούς, ιερά και πολιτείες σε ένα δίγλωσσο γεωγραφικό ευρετήριο.</p>
+        <p>Τα σημεία δηλώνουν αρχαιολογικές θέσεις, τεκμηριωμένες προσεγγίσεις ή αντιπροσωπευτικά κέντρα· δεν αποτελούν πολιτικά όρια.</p>
+      </div>
+    </dialog>
+
+    <div id="app-status" class="visually-hidden" role="status" aria-live="polite" aria-atomic="true"></div>
+  </div>
+
+  <noscript>
+    <p class="noscript-message">Ο διαδραστικός άτλας χρειάζεται JavaScript. Τα ερευνητικά δεδομένα παραμένουν διαθέσιμα στον φάκελο dist.</p>
+  </noscript>
+
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin="anonymous"></script>
+  <script src="https://unpkg.com/leaflet.markercluster@1.5.3/dist/leaflet.markercluster.js"></script>
+  <script type="module" src="./src/web/app.js"></script>
+</body>
+</html>

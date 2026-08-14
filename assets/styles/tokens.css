@@ -1,0 +1,70 @@
+@font-face {
+  font-family: 'GFS Solomos';
+  src: url('../fonts/gfs-solomos.woff2') format('woff2');
+  font-display: swap;
+  font-style: normal;
+  font-weight: 400;
+}
+
+:root {
+  color-scheme: light;
+
+  --color-canvas: oklch(97.53% 0.004 106.47);
+  --color-surface: oklch(100% 0 0);
+  --color-ink: oklch(21.01% 0.0066 134.98);
+  --color-muted: oklch(43% 0.012 150);
+  --color-rule: oklch(83.8% 0.0088 128.58);
+  --color-rule-strong: oklch(58% 0.012 145);
+  --color-accent: oklch(42.57% 0.0791 164.27);
+  --color-accent-hover: oklch(36% 0.075 164.27);
+  --color-accent-wash: oklch(94% 0.018 164.27);
+  --color-settlement: oklch(49.15% 0.0892 239.53);
+  --color-sanctuary: oklch(51.34% 0.1087 41.28);
+  --color-polity: oklch(48.74% 0.0882 298.13);
+  --color-error: oklch(48% 0.14 26);
+  --color-error-wash: oklch(95% 0.025 26);
+  --color-map-water: oklch(91% 0.018 232);
+  --color-overlay: oklch(12% 0.01 145 / 46%);
+
+  --font-title: 'GFS Solomos', Georgia, serif;
+  --font-editorial: Georgia, 'Times New Roman', serif;
+  --font-ui: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Arial, sans-serif;
+
+  --text-caption: 0.75rem;
+  --text-secondary: 0.875rem;
+  --text-body: 1rem;
+  --text-subheading: 1.25rem;
+  --text-heading: 1.75rem;
+
+  --space-2xs: 0.25rem;
+  --space-xs: 0.5rem;
+  --space-sm: 0.75rem;
+  --space-md: 1rem;
+  --space-lg: 1.5rem;
+  --space-xl: 2rem;
+  --space-2xl: 3rem;
+  --space-3xl: 4rem;
+
+  --masthead-height-mobile: 4.25rem;
+  --masthead-height: 5rem;
+  --sidebar-width: 25rem;
+  --mobile-actions-height: 4rem;
+  --sheet-height: min(78dvh, 44rem);
+  --control-size: 2.75rem;
+
+  --ease-out: cubic-bezier(0.22, 1, 0.36, 1);
+  --duration-fast: 120ms;
+  --duration: 180ms;
+  --duration-sheet: 220ms;
+
+  --z-map: 0;
+  --z-map-control: 300;
+  --z-sticky: 400;
+  --z-sheet: 600;
+  --z-mobile-nav: 700;
+  --z-dialog: 900;
+  --z-toast: 1000;
+
+  --shadow-overlay: 0 1.25rem 3rem oklch(12% 0.01 145 / 20%);
+  --focus-ring: 0 0 0 3px oklch(42.57% 0.0791 164.27 / 30%);
+}

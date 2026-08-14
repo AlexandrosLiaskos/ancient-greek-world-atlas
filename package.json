@@ -1,0 +1,17 @@
+{
+  "name": "ancient-greek-world-atlas",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "A bilingual static WebGIS of the ancient Greek world.",
+  "scripts": {
+    "test:web": "node --test tests/web/*.test.js",
+    "test:data": "python -m unittest discover -s tests -v",
+    "validate:html": "html-validate index.html",
+    "test": "npm run test:web && npm run test:data && npm run validate:html",
+    "serve": "npx --yes serve . -l 4173"
+  },
+  "devDependencies": {
+    "html-validate": "10.4.0"
+  }
+}
