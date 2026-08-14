@@ -1,4 +1,10 @@
 import { expect, test } from '@playwright/test';
+import { resolve } from 'node:path';
+import { fileURLToPath } from 'node:url';
+
+import { preparePages } from '../../scripts/prepare-pages.mjs';
+
+const repoRoot = fileURLToPath(new URL('../..', import.meta.url));
 
 const transparentTile = Buffer.from(
   'iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mP8z8BQDwAFgwJ/lWcH0wAAAABJRU5ErkJggg==',
@@ -29,6 +35,13 @@ function captureRuntimeErrors(page) {
 
 test.describe('desktop atlas', () => {
   test.skip(({ isMobile }) => isMobile, 'Desktop workflow');
+
+  test('loads the prepared Pages artifact from a project subpath', async ({ page }) => {
+    await preparePages(repoRoot, resolve(repoRoot, '_site'));
+    await loadAtlas(page, '/_site/?lang=el');
+    await expect(page.locator('html')).toHaveAttribute('lang', 'el');
+    await expect(page.locator('#result-count')).toContainText('226');
+  });
 
   test('loads Greek-first and preserves composed filters in the URL', async ({ page }) => {
     await loadAtlas(page);

@@ -11,3 +11,4 @@ outputs/**/*.inspect.ndjson
 playwright-report/
 test-results/
 blob-report/
+_site/

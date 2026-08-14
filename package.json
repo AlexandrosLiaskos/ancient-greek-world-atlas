@@ -10,6 +10,7 @@
     "validate:html": "html-validate index.html",
     "test": "npm run test:web && npm run test:data && npm run validate:html",
     "test:e2e": "playwright test",
+    "prepare:pages": "node scripts/prepare-pages.mjs",
     "serve": "npx --yes serve . -l 4173"
   },
   "devDependencies": {
