@@ -427,6 +427,26 @@
         "medium": 14
       }
     },
+    "media": {
+      "bilingual_items": 452,
+      "bilingual_items_percent": 100.0,
+      "by_license": {
+        "CC BY 2.0": 17,
+        "CC BY 2.5": 7,
+        "CC BY 3.0": 9,
+        "CC BY 4.0": 12,
+        "CC BY-SA 1.0": 1,
+        "CC BY-SA 2.0": 49,
+        "CC BY-SA 2.5": 5,
+        "CC BY-SA 3.0": 67,
+        "CC BY-SA 4.0": 193,
+        "CC0 1.0": 33,
+        "Public domain": 59
+      },
+      "entities_covered": 226,
+      "entities_covered_percent": 100.0,
+      "items": 452
+    },
     "relationships": {
       "authority_targets": 238,
       "by_predicate": {
@@ -465,6 +485,7 @@
       "entities": 226,
       "entity_sources": 1589,
       "external_ids": 184,
+      "media": 452,
       "names": 671,
       "places": 226,
       "relationships": 326,

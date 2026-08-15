@@ -15,6 +15,7 @@ A Greek-first, fully bilingual and source-aware WebGIS for exploring settlements
 - Composable filters for class, collection, country, ancient region, confidence, coordinate role and chronology.
 - Count-only map clusters; individual sites use class-shaped, unnumbered symbols.
 - Source-rich records with chronology, geography, relationships, claim-scoped citations and external identifiers.
+- 452 locally optimized, reusable images: two reviewed views per record with bilingual captions, swipe/scroll navigation and work-level attribution.
 - Shareable URLs that preserve language, filters, search, selected record, basemap and map position.
 - Responsive desktop workbench, mobile bottom sheet and keyboard-accessible dialogs.
 
@@ -71,15 +72,16 @@ python scripts/validate_release.py --canonical data/canonical --report-dir repor
 python scripts/export_release.py --canonical data/canonical --dist dist --check
 ```
 
-The automated suite checks the 226-record release, bilingual completeness, source and relationship integrity, deterministic exports, HTML, URL state, search and filters, accessibility, map failure fallback, keyboard behavior and responsive layouts from 390 to 1440 pixels.
+The automated suite checks the 226-record release, all 452 media files and checksums, bilingual completeness, source and relationship integrity, deterministic exports, HTML, URL state, search and filters, accessibility, map failure fallback, keyboard behavior and responsive layouts from 390 to 1440 pixels.
 
 ## Data foundation / Βάση δεδομένων
 
-The canonical CSV layer remains the source of truth and uses nine normalized tables:
+The canonical CSV layer remains the source of truth and uses ten normalized tables:
 
 - `entities`, `names`, `places`, `chronologies`;
 - `authorities`, `relationships`;
 - `sources`, `entity_sources`, `external_ids`.
+- `media`, with ordered local files, bilingual display text, licence metadata and SHA-256 fixity.
 
 The repository preserves the submitted research at `data/raw`, explicit editorial decisions at `data/research`, controlled terms at `data/vocabularies`, reviewed canonical tables at `data/canonical`, generated releases at `dist`, and validation evidence at `reports`.
 
@@ -99,6 +101,6 @@ The workflow at `.github/workflows/pages.yml` verifies the project, builds the e
 
 ## Licensing and attribution / Άδειες και αναφορά
 
-Project code is released under the MIT License in `LICENSE-CODE`. Original dataset compilation and editorial contributions are released under CC BY 4.0 in `LICENSE-DATA`. Incorporated Pleiades content remains under CC BY 3.0 and retains its own attribution. Linked publications, museum pages and other sources are cited but are not relicensed by this repository.
+Project code is released under the MIT License in `LICENSE-CODE`. Original dataset compilation and editorial contributions are released under CC BY 4.0 in `LICENSE-DATA`. Incorporated Pleiades content remains under CC BY 3.0 and retains its own attribution. Local media retain their individual Wikimedia Commons licences and work-level credits in `THIRD_PARTY_MEDIA.md`. Linked publications, museum pages and other sources are cited but are not relicensed by this repository.
 
 Preferred citation metadata is in `CITATION.cff`; release history is in `CHANGELOG.md`.

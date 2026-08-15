@@ -36,6 +36,12 @@ All geometries are points. They do not claim territorial extent or architectural
 
 The default basemap is CARTO Positron; OpenStreetMap is available from the layer control. If map libraries or tiles are unavailable, the catalogue, search, filters, statistics and scholarly records remain usable, and the interface shows a non-blocking notice.
 
+## Record galleries / Συλλογές εικόνων
+
+Every record opens with two reviewed local images. Use the arrow controls, thumbnails, horizontal scroll or a touch swipe to move between them. Captions and alternative text follow the active language; the creator, individual licence and Wikimedia Commons source remain visible for every work. The files are optimized WebP assets served with the static site, so opening a record does not depend on a third-party image host.
+
+Κάθε εγγραφή ανοίγει με δύο ελεγμένες τοπικές εικόνες. Η εναλλαγή γίνεται με τα βέλη, τις μικρογραφίες, οριζόντια κύλιση ή χειρονομία αφής. Οι λεζάντες και τα εναλλακτικά κείμενα ακολουθούν την ενεργή γλώσσα, ενώ για κάθε έργο εμφανίζονται δημιουργός, άδεια και σύνδεσμος Wikimedia Commons.
+
 ## Shareable URL state
 
 The browser address is updated without reloading. Back and Forward restore meaningful navigation state.

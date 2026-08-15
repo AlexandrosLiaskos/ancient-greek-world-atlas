@@ -2,9 +2,9 @@
 
 ## Purpose / Σκοπός
 
-This release is the scholarly data foundation for a future bilingual WebGIS of the ancient Greek world. It transforms the submitted 226-row research file into a normalized, source-aware and reproducible dataset. It does not claim to be an exhaustive gazetteer, a territorial reconstruction or a substitute for specialist site publications.
+This release is the scholarly data foundation and static bilingual WebGIS of the ancient Greek world. It transforms the submitted 226-row research file into a normalized, source-aware and reproducible dataset. It does not claim to be an exhaustive gazetteer, a territorial reconstruction or a substitute for specialist site publications.
 
-Η έκδοση αποτελεί την επιστημονική βάση δεδομένων για ένα μελλοντικό δίγλωσσο WebGIS του αρχαίου ελληνικού κόσμου. Μετασχηματίζει το αρχικό ερευνητικό αρχείο 226 εγγραφών σε κανονικοποιημένο, τεκμηριωμένο και αναπαραγώγιμο σύνολο δεδομένων. Δεν αποτελεί εξαντλητικό γεωγραφικό λεξικό, εδαφική ανασύσταση ή υποκατάστατο ειδικών αρχαιολογικών δημοσιεύσεων.
+Η έκδοση αποτελεί την επιστημονική βάση δεδομένων και το στατικό δίγλωσσο WebGIS του αρχαίου ελληνικού κόσμου. Μετασχηματίζει το αρχικό ερευνητικό αρχείο 226 εγγραφών σε κανονικοποιημένο, τεκμηριωμένο και αναπαραγώγιμο σύνολο δεδομένων. Δεν αποτελεί εξαντλητικό γεωγραφικό λεξικό, εδαφική ανασύσταση ή υποκατάστατο ειδικών αρχαιολογικών δημοσιεύσεων.
 
 ## 1. Immutable research source / Αμετάβλητη ερευνητική πηγή
 
@@ -30,7 +30,7 @@ The public editorial collections remain `city`, `colony`, `sanctuary` and `kingd
 
 ## 3. Separation of assertions / Διαχωρισμός ισχυρισμών
 
-One row in the submitted file mixed identity, names, chronology, location, relationships and bibliography. The canonical release separates those claims into nine related tables:
+One row in the submitted file mixed identity, names, chronology, location, relationships and bibliography. The canonical release separates those claims and their reviewed media into ten related tables:
 
 1. `entities`
 2. `names`
@@ -41,8 +41,11 @@ One row in the submitted file mixed identity, names, chronology, location, relat
 7. `sources`
 8. `entity_sources`
 9. `external_ids`
+10. `media`
 
 This allows a date, geometry or relationship to carry its own source and uncertainty without overwriting the entity's identity.
+
+Media discovery is reproducible but not treated as an authority for historical claims. Each entity receives two reviewed Wikimedia Commons works; the first is the primary view and the second is gallery context. Site photography is preferred, while ancient objects, maps, reconstructions or historical illustrations may represent places whose fabric is lost or visually inaccessible. Homonyms and modern namesakes are explicitly excluded. Every local derivative retains work-level source, creator and licence metadata plus a SHA-256 checksum.
 
 Η διάσπαση επιτρέπει σε κάθε χρονολογία, γεωμετρία ή σχέση να έχει δική της πηγή και βαθμό βεβαιότητας χωρίς να συγχέεται με την ταυτότητα της οντότητας.
 

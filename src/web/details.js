@@ -141,6 +141,14 @@ export function buildDetailsModel(entity, atlas, lang = 'el') {
       sourceId: place.sourceId,
     }),
     relationships: Object.freeze((entity.relationships ?? []).map((relation) => relationModel(relation, atlas, lang))),
+    media: Object.freeze((entity.media ?? []).map((item) => Object.freeze({
+      ...item,
+      alt: localized(item.alt, lang),
+      caption: localized(item.caption, lang),
+      sourceUrl: safeExternalUrl(item.sourceUrl),
+      originalUrl: safeExternalUrl(item.originalUrl),
+      licenseUrl: safeExternalUrl(item.licenseUrl),
+    }))),
     sourceGroups: Object.freeze(sourceGroups),
     externalIds: Object.freeze((entity.externalIds ?? []).map((external) => Object.freeze({
       ...external,
@@ -254,6 +262,82 @@ function renderIdentifiers(model) {
   )));
 }
 
+function renderMedia(model) {
+  if (!model.media.length) return null;
+  const label = model.lang === 'el' ? `Εικόνες: ${model.title}` : `Images of ${model.title}`;
+  const track = createElement('div', {
+    className: 'media-track',
+    tabIndex: 0,
+    role: 'region',
+    'aria-label': label,
+  });
+  const slides = model.media.map((item, index) => createElement('figure', {
+    className: 'media-slide',
+    id: `media-${model.id}-${index + 1}`,
+  }, [
+    createElement('img', {
+      className: 'media-image',
+      src: item.src,
+      alt: item.alt,
+      width: item.width,
+      height: item.height,
+      loading: index === 0 ? 'eager' : 'lazy',
+      decoding: 'async',
+      fetchPriority: index === 0 ? 'high' : 'auto',
+    }),
+    createElement('figcaption', { className: 'media-caption' }, [
+      createElement('p', { className: 'media-caption-text' }, item.caption),
+      createElement('p', { className: 'media-attribution' }, [
+        item.sourceUrl ? externalLink(item.sourceUrl, item.attribution) : item.attribution,
+        item.licenseUrl ? [' · ', externalLink(item.licenseUrl, item.license)] : ` · ${item.license}`,
+      ]),
+    ]),
+  ]));
+  track.append(...slides);
+
+  const scroll = (direction) => track.scrollBy?.({
+    left: direction * (track.clientWidth || 640),
+    behavior: 'smooth',
+  });
+  const controls = model.media.length > 1
+    ? createElement('div', { className: 'media-controls' }, [
+      createElement('button', {
+        className: 'media-arrow',
+        type: 'button',
+        'aria-label': model.lang === 'el' ? 'Προηγούμενη εικόνα' : 'Previous image',
+        on: { click: () => scroll(-1) },
+      }, '←'),
+      createElement('div', { className: 'media-thumbnails', role: 'group', 'aria-label': label }, model.media.map((item, index) => (
+        createElement('button', {
+          className: 'media-thumbnail',
+          type: 'button',
+          'aria-label': model.lang === 'el'
+            ? `Προβολή εικόνας ${index + 1} από ${model.media.length}`
+            : `View image ${index + 1} of ${model.media.length}`,
+          on: { click: () => slides[index].scrollIntoView?.({ behavior: 'smooth', inline: 'start', block: 'nearest' }) },
+        }, [
+          createElement('img', {
+            className: 'media-thumbnail-image',
+            src: item.src,
+            alt: '',
+            loading: 'lazy',
+            decoding: 'async',
+          }),
+          createElement('span', { 'aria-hidden': 'true' }, index + 1),
+        ])
+      ))),
+      createElement('button', {
+        className: 'media-arrow',
+        type: 'button',
+        'aria-label': model.lang === 'el' ? 'Επόμενη εικόνα' : 'Next image',
+        on: { click: () => scroll(1) },
+      }, '→'),
+    ])
+    : null;
+
+  return createElement('section', { className: 'record-media', 'aria-label': label }, [track, controls]);
+}
+
 export function renderDetails(dialog, model, handlers = {}) {
   const title = dialog.querySelector('#record-title');
   const content = dialog.querySelector('#record-content');
@@ -302,6 +386,7 @@ export function renderDetails(dialog, model, handlers = {}) {
 
   replaceChildren(content, [
     lede,
+    renderMedia(model),
     section(message(model.lang, 'description'), createElement('p', { className: 'record-description' }, model.description || message(model.lang, 'noDescription'))),
     section(message(model.lang, 'chronology'), renderChronologies(model)),
     section(message(model.lang, 'geography'), [coordinateButton, geography, model.place.spatialNote ? createElement('p', { className: 'spatial-note' }, model.place.spatialNote) : null]),

@@ -147,6 +147,32 @@ CREATE TABLE external_ids (
     UNIQUE (scheme, identifier, entity_id, place_id)
 );
 
+CREATE TABLE media (
+    media_id TEXT PRIMARY KEY,
+    entity_id TEXT NOT NULL REFERENCES entities(entity_id) ON DELETE CASCADE,
+    position INTEGER NOT NULL CHECK (position BETWEEN 1 AND 4),
+    role TEXT NOT NULL CHECK (role IN ('primary','gallery')),
+    file_path TEXT NOT NULL UNIQUE,
+    source_url TEXT NOT NULL,
+    original_url TEXT NOT NULL,
+    title TEXT NOT NULL,
+    creator TEXT NOT NULL,
+    license TEXT NOT NULL,
+    license_url TEXT NOT NULL,
+    attribution TEXT NOT NULL,
+    caption_el TEXT NOT NULL,
+    caption_en TEXT NOT NULL,
+    alt_el TEXT NOT NULL,
+    alt_en TEXT NOT NULL,
+    width INTEGER NOT NULL CHECK (width > 0),
+    height INTEGER NOT NULL CHECK (height > 0),
+    sha256 TEXT NOT NULL CHECK (length(sha256) = 64),
+    retrieved_on TEXT NOT NULL,
+    review_state TEXT NOT NULL CHECK (review_state IN ('draft','needs_review','machine_checked','reviewed','verified','excluded')),
+    CHECK ((position = 1 AND role = 'primary') OR (position > 1 AND role = 'gallery')),
+    UNIQUE (entity_id, position)
+);
+
 CREATE INDEX idx_entities_class ON entities(entity_class);
 CREATE INDEX idx_entities_review_state ON entities(review_state);
 CREATE INDEX idx_places_entity ON places(entity_id);
@@ -155,6 +181,7 @@ CREATE INDEX idx_relationships_subject ON relationships(subject_entity_id);
 CREATE INDEX idx_relationships_object_entity ON relationships(object_entity_id);
 CREATE INDEX idx_entity_sources_entity ON entity_sources(entity_id);
 CREATE INDEX idx_external_ids_entity ON external_ids(entity_id);
+CREATE INDEX idx_media_entity ON media(entity_id);
 
 CREATE VIEW entity_overview AS
 SELECT

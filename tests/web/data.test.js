@@ -31,6 +31,21 @@ test('adaptRelease resolves names, region, point semantics, chronology, and sour
   assert.deepEqual(entity.sources[0].scopes, ['geometry', 'identity']);
   assert.equal(entity.relationships[0].targetEntityId, 'city-athens-attica');
   assert.deepEqual(entity.aliases.map(({ value }) => value), ['Αἴγινα', 'Aigina']);
+  assert.equal(entity.media.length, 2);
+  assert.deepEqual(
+    {
+      src: entity.media[0].src,
+      alt: entity.media[0].alt,
+      caption: entity.media[0].caption,
+      license: entity.media[0].license,
+    },
+    {
+      src: './assets/media/city-aegina-city/01.webp',
+      alt: { el: 'Αίγινα: αρχαιολογική άποψη', en: 'Aegina: archaeological view' },
+      caption: { el: 'Αίγινα · Αρχαιολογική άποψη', en: 'Aegina · Archaeological view' },
+      license: 'CC BY-SA 4.0',
+    },
+  );
 });
 
 test('adaptRelease rejects duplicate ids and records without valid points', () => {

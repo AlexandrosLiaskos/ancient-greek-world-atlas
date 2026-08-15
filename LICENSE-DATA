@@ -28,6 +28,11 @@ https://creativecommons.org/licenses/by/3.0/
 Each Pleiades alignment retains its canonical URI and source record so that
 attribution can travel with the data.
 
+The optimized image files under assets/media are third-party works obtained
+from Wikimedia Commons. They are not covered by the repository's CC BY 4.0
+data licence. Each file retains the licence, creator, source link and required
+credit recorded in data/canonical/media.csv and THIRD_PARTY_MEDIA.md.
+
 The repository also contains citations, URLs and limited factual metadata for
 publications, museums, excavation projects and reference works. Those linked
 works remain under their respective rights and licenses. Their inclusion as

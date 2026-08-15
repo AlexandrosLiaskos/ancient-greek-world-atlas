@@ -159,6 +159,32 @@
         "match_type": {"type": "string", "required": true},
         "source_id": {"type": "string", "required": true, "foreign_key": "sources.source_id"}
       }
+    },
+    "media": {
+      "primary_key": "media_id",
+      "columns": {
+        "media_id": {"type": "string", "required": true},
+        "entity_id": {"type": "string", "required": true, "foreign_key": "entities.entity_id"},
+        "position": {"type": "integer", "required": true},
+        "role": {"type": "string", "required": true},
+        "file_path": {"type": "string", "required": true},
+        "source_url": {"type": "string", "required": true},
+        "original_url": {"type": "string", "required": true},
+        "title": {"type": "string", "required": true},
+        "creator": {"type": "string", "required": true},
+        "license": {"type": "string", "required": true},
+        "license_url": {"type": "string", "required": true},
+        "attribution": {"type": "string", "required": true},
+        "caption_el": {"type": "string", "required": true},
+        "caption_en": {"type": "string", "required": true},
+        "alt_el": {"type": "string", "required": true},
+        "alt_en": {"type": "string", "required": true},
+        "width": {"type": "integer", "required": true},
+        "height": {"type": "integer", "required": true},
+        "sha256": {"type": "string", "required": true},
+        "retrieved_on": {"type": "date", "required": true},
+        "review_state": {"type": "string", "required": true, "vocabulary": "review_states"}
+      }
     }
   }
 }

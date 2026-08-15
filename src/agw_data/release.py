@@ -532,6 +532,13 @@ def build_release(raw_path: Path, root: Path) -> dict[str, list[dict[str, str]]]
                 }
             )
 
+    media_path = root / "data" / "research" / "media.csv"
+    media = read_csv(media_path) if media_path.exists() else []
+    entity_ids = set(entity_by_id)
+    unknown_media_entities = sorted({row.get("entity_id", "") for row in media} - entity_ids)
+    if unknown_media_entities:
+        raise ValueError(f"Media manifest references unknown entities: {unknown_media_entities}")
+
     release = {
         "sources": sources,
         "authorities": list(authorities.values()),
@@ -542,5 +549,6 @@ def build_release(raw_path: Path, root: Path) -> dict[str, list[dict[str, str]]]
         "relationships": relationships,
         "entity_sources": entity_sources,
         "external_ids": external_ids,
+        "media": media,
     }
     return {table: sorted(rows, key=lambda row: next(iter(row.values()))) for table, rows in release.items()}

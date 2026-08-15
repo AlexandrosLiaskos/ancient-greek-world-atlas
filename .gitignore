@@ -12,3 +12,5 @@ playwright-report/
 test-results/
 blob-report/
 _site/
+reports/media-candidates.json
+reports/media-review/

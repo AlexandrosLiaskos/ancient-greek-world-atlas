@@ -52,6 +52,23 @@ class ImportReleaseTests(unittest.TestCase):
             self.assertTrue(row["label_en"], row["entity_id"])
             self.assertEqual(bool(row["note_el"]), bool(row["note_en"]), row["entity_id"])
 
+    def test_media_manifest_covers_every_entity_with_an_ordered_primary_image(self) -> None:
+        self.assertIn("media", self.release)
+        media = self.release["media"]
+        entity_ids = {row["entity_id"] for row in self.release["entities"]}
+        covered = {row["entity_id"] for row in media}
+        self.assertEqual(covered, entity_ids)
+        self.assertGreaterEqual(len(media), len(entity_ids))
+        self.assertLessEqual(len(media), len(entity_ids) * 4)
+        for entity_id in entity_ids:
+            rows = sorted(
+                (row for row in media if row["entity_id"] == entity_id),
+                key=lambda row: int(row["position"]),
+            )
+            self.assertEqual([int(row["position"]) for row in rows], list(range(1, len(rows) + 1)))
+            self.assertEqual(rows[0]["role"], "primary")
+            self.assertTrue(all(row["role"] == "gallery" for row in rows[1:]))
+
 
 if __name__ == "__main__":
     unittest.main()

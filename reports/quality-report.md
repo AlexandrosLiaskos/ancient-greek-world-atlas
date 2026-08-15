@@ -17,6 +17,7 @@ Warnings preserve uncertainty and URL-access conditions; they do not invalidate 
 | `entities` | 226 |
 | `entity_sources` | 1589 |
 | `external_ids` | 184 |
+| `media` | 452 |
 | `names` | 671 |
 | `places` | 226 |
 | `relationships` | 326 |
@@ -27,6 +28,8 @@ Warnings preserve uncertainty and URL-access conditions; they do not invalidate 
 - Bilingual entity completeness: **100.0%** (226/226)
 - Complete seven-scope source support: **100.0%** (226/226)
 - Pleiades alignments matched: **184/184**
+- Entities with reviewed local media: **100.0%** (226/226)
+- Bilingual media items: **100.0%** (452/452)
 - Internal relationship targets: **88**
 - Stable authority targets: **238**
 

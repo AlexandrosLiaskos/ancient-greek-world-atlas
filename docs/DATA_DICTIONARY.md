@@ -190,6 +190,31 @@ Links to external identifier systems. / Συνδέσεις με εξωτερικ
 | `match_type` | yes | `exact` or `representative_center`. / Τύπος αντιστοίχισης. |
 | `source_id` | yes | Source record that defines the external identifier. / Πηγή εξωτερικού αναγνωριστικού. |
 
+## 10. `media.csv`
+
+Ordered, locally served record imagery with work-level rights metadata. / Ταξινομημένες τοπικές εικόνες εγγραφών με μεταδεδομένα δικαιωμάτων ανά έργο.
+
+| Column | Required | Meaning / Σημασία |
+|---|---:|---|
+| `media_id` | yes | Stable media primary key. / Σταθερό πρωτεύον κλειδί εικόνας. |
+| `entity_id` | yes | Owning atlas entity. / Οντότητα στην οποία ανήκει. |
+| `position` | yes | Contiguous display order from 1 to 4. / Συνεχής σειρά προβολής από 1 έως 4. |
+| `role` | yes | `primary` at position 1, otherwise `gallery`. / Κύρια εικόνα στη θέση 1, αλλιώς συλλογή. |
+| `file_path` | yes | Safe repository-relative WebP below `assets/media`. / Ασφαλής τοπική διαδρομή WebP. |
+| `source_url` | yes | Wikimedia Commons file page. / Σελίδα αρχείου Wikimedia Commons. |
+| `original_url` | yes | Original-resolution source URL. / URL πρωτότυπου αρχείου. |
+| `title` | yes | Commons work title. / Τίτλος έργου στο Commons. |
+| `creator` | yes | Cleaned creator credit. / Αναφορά δημιουργού. |
+| `license` | yes | Normalized reusable licence label. / Κανονικοποιημένη επαναχρησιμοποιήσιμη άδεια. |
+| `license_url` | yes | Canonical licence terms. / Κανονικό URL όρων άδειας. |
+| `attribution` | yes | Work-level credit line. / Πλήρης αναφορά έργου. |
+| `caption_el`, `caption_en` | yes | Greek and English captions. / Ελληνική και αγγλική λεζάντα. |
+| `alt_el`, `alt_en` | yes | Greek and English alternative text. / Δίγλωσσο εναλλακτικό κείμενο. |
+| `width`, `height` | yes | Optimized local pixel dimensions, each bounded by 1600. / Διαστάσεις τοπικού αρχείου. |
+| `sha256` | yes | Fixity checksum of the local WebP. / Άθροισμα ελέγχου τοπικού WebP. |
+| `retrieved_on` | yes | Commons retrieval date. / Ημερομηνία ανάκτησης. |
+| `review_state` | yes | Editorial state of the final image choice. / Κατάσταση επιμελητικού ελέγχου. |
+
 ## Controlled vocabularies / Ελεγχόμενα λεξιλόγια
 
 Each file in `data/vocabularies/` has the common columns `code`, `label_el`, `label_en`, `definition_el`, `definition_en`, and `sort_order`. The release includes vocabularies for:
@@ -223,6 +248,9 @@ These are versioned inputs to the deterministic build, not public entity tables:
 | `review-decisions.csv` | One decision for each submitted `needs_review` record. / Απόφαση για κάθε αρχική εκκρεμότητα. |
 | `relationship-overrides.csv` | Explicit internal relationship targets. / Ρητοί εσωτερικοί στόχοι σχέσεων. |
 | `candidates.csv` | Controlled expansion, deferral and exclusion ledger. / Μητρώο υποψηφίων επεκτάσεων. |
+| `media-search-overrides.csv` | Entity-specific Commons discovery aliases. / Ειδικά ερωτήματα αναζήτησης εικόνων. |
+| `media-overrides.csv` | Reviewed final Commons file choices and order. / Ελεγμένες τελικές επιλογές εικόνων και σειρά. |
+| `media.csv` | Generated, attribution-complete media manifest consumed by the canonical build. / Παραγόμενο μητρώο εικόνων με πλήρεις αναφορές. |
 
 ## Generated distribution files / Παραγόμενα αρχεία διανομής
 

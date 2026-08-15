@@ -1,6 +1,7 @@
 from __future__ import annotations
 
 import csv
+import hashlib
 import json
 import math
 import re
@@ -25,6 +26,19 @@ REQUIRED_SUPPORT_SCOPES = (
 
 PUBLIC_REVIEW_STATES = {"machine_checked", "reviewed", "verified"}
 ALLOWED_URL_STATUSES = {"ok", "redirected", "unavailable", "unchecked"}
+ALLOWED_MEDIA_LICENSES = {
+    "CC BY 2.0",
+    "CC BY 2.5",
+    "CC BY 3.0",
+    "CC BY 4.0",
+    "CC BY-SA 1.0",
+    "CC BY-SA 2.0",
+    "CC BY-SA 2.5",
+    "CC BY-SA 3.0",
+    "CC BY-SA 4.0",
+    "CC0 1.0",
+    "Public domain",
+}
 
 
 @dataclass(frozen=True)
@@ -169,6 +183,14 @@ def _count(rows: Iterable[dict[str, str]], field: str) -> dict[str, int]:
 
 def _pct(numerator: int, denominator: int) -> float:
     return round(100.0 * numerator / denominator, 2) if denominator else 100.0
+
+
+def _sha256(path: Path) -> str:
+    digest = hashlib.sha256()
+    with path.open("rb") as handle:
+        for block in iter(lambda: handle.read(1024 * 1024), b""):
+            digest.update(block)
+    return digest.hexdigest()
 
 
 def validate_release(
@@ -342,6 +364,145 @@ def validate_release(
                 "The record is reviewed but intentionally retains medium confidence.",
                 "Revisit only when stronger entity-specific evidence becomes available.",
             )
+
+    media = tables.get("media", [])
+    media_by_entity: dict[str, list[dict[str, str]]] = defaultdict(list)
+    media_root = (root / "assets" / "media").resolve()
+    for row in media:
+        record_id = row.get("media_id", "")
+        entity_id = row.get("entity_id", "")
+        media_by_entity[entity_id].append(row)
+        if row.get("review_state") not in PUBLIC_REVIEW_STATES:
+            _issue(
+                issues,
+                "error",
+                "PUBLIC_REVIEW_STATE",
+                "media",
+                record_id,
+                f"Public media remains {row.get('review_state')!r}.",
+                "Review the media selection and its attribution before release.",
+            )
+        if not all(str(row.get(field) or "").strip() for field in ("caption_el", "caption_en", "alt_el", "alt_en")):
+            _issue(
+                issues,
+                "error",
+                "BILINGUAL_MEDIA_TEXT",
+                "media",
+                record_id,
+                "Media captions and alternative text must be complete in Greek and English.",
+                "Supply all four public text fields.",
+            )
+        if row.get("license") not in ALLOWED_MEDIA_LICENSES:
+            _issue(
+                issues,
+                "error",
+                "MEDIA_LICENSE",
+                "media",
+                record_id,
+                f"Media licence {row.get('license')!r} is not on the reusable-media allowlist.",
+                "Use a verified reusable Commons file or document a deliberate licence-policy change.",
+            )
+        for field in ("source_url", "original_url", "license_url"):
+            if not str(row.get(field) or "").startswith("https://"):
+                _issue(
+                    issues,
+                    "error",
+                    "MEDIA_HTTPS_URL",
+                    "media",
+                    record_id,
+                    f"{field} must be an HTTPS URL.",
+                    "Record the canonical secure source or licence URL.",
+                )
+        try:
+            width = int(row.get("width", ""))
+            height = int(row.get("height", ""))
+            if width <= 0 or height <= 0 or max(width, height) > 1600:
+                raise ValueError
+        except (TypeError, ValueError):
+            _issue(
+                issues,
+                "error",
+                "MEDIA_DIMENSIONS",
+                "media",
+                record_id,
+                "Media dimensions must be positive and bounded to 1600 pixels.",
+                "Rebuild the optimized local WebP.",
+            )
+
+        local_file: Path | None = None
+        file_path = str(row.get("file_path") or "").strip()
+        try:
+            local_file = (root / file_path).resolve()
+            local_file.relative_to(media_root)
+            if local_file.suffix.casefold() != ".webp" or not local_file.is_file():
+                raise ValueError
+        except (OSError, ValueError):
+            local_file = None
+            _issue(
+                issues,
+                "error",
+                "MEDIA_FILE_PATH",
+                "media",
+                record_id,
+                f"Local media path is missing, unsafe, or not WebP: {file_path!r}.",
+                "Keep optimized files below assets/media and regenerate the manifest.",
+            )
+        expected_hash = str(row.get("sha256") or "").casefold()
+        if local_file and (not re.fullmatch(r"[0-9a-f]{64}", expected_hash) or _sha256(local_file) != expected_hash):
+            _issue(
+                issues,
+                "error",
+                "MEDIA_CHECKSUM",
+                "media",
+                record_id,
+                "Local media bytes do not match the recorded SHA-256 checksum.",
+                "Rebuild the media manifest from the reviewed source file.",
+            )
+
+    for entity in entities:
+        entity_id = entity["entity_id"]
+        entity_media = media_by_entity.get(entity_id, [])
+        if not 1 <= len(entity_media) <= 4:
+            _issue(
+                issues,
+                "error",
+                "MEDIA_ENTITY_COVERAGE",
+                "media",
+                entity_id,
+                f"Entity has {len(entity_media)} media items; the release requires one to four.",
+                "Curate at least one reviewed primary image and no more than four total items.",
+            )
+            continue
+        try:
+            positions = sorted(int(row["position"]) for row in entity_media)
+        except (KeyError, TypeError, ValueError):
+            positions = []
+        if positions != list(range(1, len(entity_media) + 1)):
+            _issue(
+                issues,
+                "error",
+                "MEDIA_POSITION_ORDER",
+                "media",
+                entity_id,
+                f"Media positions are not a unique contiguous sequence: {positions!r}.",
+                "Number the reviewed gallery from one without gaps or duplicates.",
+            )
+        for row in entity_media:
+            try:
+                position = int(row["position"])
+            except (KeyError, TypeError, ValueError):
+                continue
+            expected_role = "primary" if position == 1 else "gallery"
+            if row.get("role") != expected_role:
+                _issue(
+                    issues,
+                    "error",
+                    "MEDIA_ROLE_ORDER",
+                    "media",
+                    row.get("media_id", ""),
+                    f"Position {position} must use role {expected_role!r}.",
+                    "Keep exactly one primary image first and gallery images after it.",
+                )
 
     for place in places:
         record_id = place.get("place_id", "")
@@ -723,6 +884,11 @@ def validate_release(
     relation_internal = sum(bool(row.get("object_entity_id")) for row in tables.get("relationships", []))
     candidates_path = root / "data" / "research" / "candidates.csv"
     candidates = read_csv(candidates_path) if candidates_path.exists() else []
+    bilingual_media = sum(
+        all(str(row.get(field) or "").strip() for field in ("caption_el", "caption_en", "alt_el", "alt_en"))
+        for row in media
+    )
+    media_entities_covered = sum(bool(media_by_entity.get(row["entity_id"])) for row in entities)
     metrics = {
         "table_counts": {table: len(rows) for table, rows in sorted(tables.items())},
         "entities": {
@@ -750,6 +916,14 @@ def validate_release(
             "by_class": _count(sources, "source_class"),
             "by_url_status": _count(sources, "url_status"),
             "with_recorded_license": sum(bool(row.get("license")) for row in sources),
+        },
+        "media": {
+            "items": len(media),
+            "entities_covered": media_entities_covered,
+            "entities_covered_percent": _pct(media_entities_covered, entity_count),
+            "bilingual_items": bilingual_media,
+            "bilingual_items_percent": _pct(bilingual_media, len(media)),
+            "by_license": _count(media, "license"),
         },
         "coverage": {
             "bilingual_entities_complete": bilingual_complete,
@@ -826,6 +1000,8 @@ Warnings preserve uncertainty and URL-access conditions; they do not invalidate 
 - Bilingual entity completeness: **{metrics['coverage']['bilingual_entities_percent']}%** ({metrics['coverage']['bilingual_entities_complete']}/{metrics['table_counts']['entities']})
 - Complete seven-scope source support: **{metrics['coverage']['entities_with_all_source_scopes_percent']}%** ({metrics['coverage']['entities_with_all_source_scopes']}/{metrics['table_counts']['entities']})
 - Pleiades alignments matched: **{metrics['coverage']['pleiades_reconciled_matched']}/{metrics['coverage']['pleiades_identifiers']}**
+- Entities with reviewed local media: **{metrics['media']['entities_covered_percent']}%** ({metrics['media']['entities_covered']}/{metrics['table_counts']['entities']})
+- Bilingual media items: **{metrics['media']['bilingual_items_percent']}%** ({metrics['media']['bilingual_items']}/{metrics['media']['items']})
 - Internal relationship targets: **{metrics['relationships']['internal_targets']}**
 - Stable authority targets: **{metrics['relationships']['authority_targets']}**
 

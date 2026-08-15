@@ -39,6 +39,7 @@ class SchemaContractTests(unittest.TestCase):
             "sources",
             "entity_sources",
             "external_ids",
+            "media",
         }
         self.assertEqual(set(contract["tables"]), expected)
         for table in contract["tables"].values():
@@ -51,13 +52,16 @@ class SchemaContractTests(unittest.TestCase):
         self.assertIn("end_year <> 0", sql)
         self.assertIn("latitude BETWEEN -90 AND 90", sql)
         self.assertIn("longitude BETWEEN -180 AND 180", sql)
+        self.assertIn("position BETWEEN 1 AND 4", sql)
+        self.assertIn("position = 1 AND role = 'primary'", sql)
+        self.assertIn("position > 1 AND role = 'gallery'", sql)
 
         db = sqlite3.connect(":memory:")
         db.execute("PRAGMA foreign_keys = ON")
         db.executescript(sql)
         rows = db.execute("SELECT name FROM sqlite_master WHERE type = 'table'").fetchall()
         names = {row[0] for row in rows}
-        self.assertTrue({"entities", "places", "chronologies", "relationships"} <= names)
+        self.assertTrue({"entities", "places", "chronologies", "relationships", "media"} <= names)
         self.assertEqual(db.execute("PRAGMA foreign_key_check").fetchall(), [])
 
 

@@ -14,6 +14,37 @@ function publicPair(el, en) {
   return Object.freeze({ el: nonEmpty(el), en: nonEmpty(en) });
 }
 
+function localMediaPath(value) {
+  const path = nonEmpty(value).replaceAll('\\', '/').replace(/^\.\//, '');
+  if (!path.startsWith('assets/media/') || path.includes('..') || /^[a-z][a-z\d+.-]*:/i.test(path)) {
+    return '';
+  }
+  return `./${path}`;
+}
+
+function adaptMedia(rows = []) {
+  return Object.freeze(rows
+    .map((raw) => Object.freeze({
+      id: nonEmpty(raw.media_id),
+      position: numberOrNull(raw.position),
+      role: nonEmpty(raw.role),
+      src: localMediaPath(raw.file_path),
+      sourceUrl: nonEmpty(raw.source_url),
+      originalUrl: nonEmpty(raw.original_url),
+      title: nonEmpty(raw.title),
+      creator: nonEmpty(raw.creator),
+      license: nonEmpty(raw.license),
+      licenseUrl: nonEmpty(raw.license_url),
+      attribution: nonEmpty(raw.attribution),
+      caption: publicPair(raw.caption_el, raw.caption_en),
+      alt: publicPair(raw.alt_el, raw.alt_en),
+      width: numberOrNull(raw.width),
+      height: numberOrNull(raw.height),
+    }))
+    .filter(({ id, src, position }) => id && src && Number.isInteger(position))
+    .sort((a, b) => a.position - b.position));
+}
+
 function adaptAuthority(raw) {
   if (!raw || !nonEmpty(raw.authority_id)) throw new TypeError('Authority is missing an id.');
   return Object.freeze({
@@ -166,6 +197,7 @@ function adaptEntity(raw, authoritiesById) {
     startYear: starts.length ? Math.min(...starts) : null,
     endYear: ends.length ? Math.max(...ends) : null,
     relationships: adaptRelationships(raw.relationships),
+    media: adaptMedia(raw.media),
     sources: adaptSources(raw.source_support),
     externalIds: Object.freeze((raw.external_ids ?? []).map((external) => Object.freeze({
       id: nonEmpty(external.external_id),

@@ -27,6 +27,7 @@ INSERT_ORDER = (
     "relationships",
     "entity_sources",
     "external_ids",
+    "media",
 )
 
 
@@ -125,6 +126,7 @@ def _entity_json(tables: dict[str, list[dict[str, str]]], contract: dict, versio
     sources = {row["source_id"]: row for row in tables["sources"]}
     external_by_entity = _group(tables["external_ids"], "entity_id")
     external_by_place = _group(tables["external_ids"], "place_id")
+    media_by_entity = _group(tables["media"], "entity_id")
     place_schema = contract["places"]
 
     entities = []
@@ -167,6 +169,13 @@ def _entity_json(tables: dict[str, list[dict[str, str]]], contract: dict, versio
         item["external_ids"] = [
             _typed_row(row, contract["external_ids"])
             for row in sorted(external, key=lambda row: row["external_id"])
+        ]
+        item["media"] = [
+            _typed_row(row, contract["media"])
+            for row in sorted(
+                media_by_entity.get(entity_id, []),
+                key=lambda row: int(row["position"]),
+            )
         ]
         entities.append(item)
 

@@ -28,6 +28,7 @@ class ExportTests(unittest.TestCase):
             self.assertEqual(database.execute("PRAGMA foreign_key_check").fetchall(), [])
             self.assertEqual(database.execute("SELECT COUNT(*) FROM entities").fetchone()[0], 226)
             self.assertEqual(database.execute("SELECT COUNT(*) FROM relationships").fetchone()[0], 326)
+            self.assertEqual(database.execute("SELECT COUNT(*) FROM media").fetchone()[0], 452)
 
     def test_geojson_uses_longitude_latitude_order(self) -> None:
         payload = json.loads((self.dist / "ancient-greek-world.geojson").read_text(encoding="utf-8"))
@@ -46,6 +47,9 @@ class ExportTests(unittest.TestCase):
         self.assertEqual(len(athens["places"]), 1)
         self.assertEqual(len(athens["chronologies"]), 1)
         self.assertTrue(athens["source_support"])
+        self.assertEqual(len(athens["media"]), 2)
+        self.assertEqual([item["position"] for item in athens["media"]], [1, 2])
+        self.assertEqual(athens["media"][0]["role"], "primary")
 
     def test_linked_places_export_has_timespans_links_and_relations(self) -> None:
         payload = json.loads(

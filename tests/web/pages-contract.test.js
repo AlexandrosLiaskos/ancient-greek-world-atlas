@@ -39,6 +39,7 @@ test('the prepared Pages artifact is explicit, complete, and subpath-safe', asyn
     'LICENSE-CODE',
     'LICENSE-DATA',
     'README.md',
+    'THIRD_PARTY_MEDIA.md',
     'assets',
     'dist/ancient-greek-world.json',
     'index.html',
@@ -50,6 +51,7 @@ test('the prepared Pages artifact is explicit, complete, and subpath-safe', asyn
     'LICENSE-CODE',
     'LICENSE-DATA',
     'README.md',
+    'THIRD_PARTY_MEDIA.md',
     'assets',
     'dist',
     'index.html',
@@ -66,6 +68,7 @@ test('the prepared Pages artifact is explicit, complete, and subpath-safe', asyn
 
   for (const required of [
     'assets/fonts/gfs-solomos.woff2',
+    'THIRD_PARTY_MEDIA.md',
     'dist/ancient-greek-world.json',
     'src/web/app.js',
     'src/web/data.js',

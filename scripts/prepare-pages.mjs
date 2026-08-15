@@ -18,6 +18,7 @@ const PAGE_ENTRIES = Object.freeze([
   'LICENSE-CODE',
   'LICENSE-DATA',
   'README.md',
+  'THIRD_PARTY_MEDIA.md',
   'assets',
   'dist/ancient-greek-world.json',
   'index.html',

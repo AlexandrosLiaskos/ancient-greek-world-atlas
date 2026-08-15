@@ -95,6 +95,14 @@ The original database compilation, schema and editorial additions have their own
 
 Κενό πεδίο άδειας σημαίνει «δεν καταγράφηκε εδώ» και όχι «δημόσιος τομέας». Οι όροι τρίτων πηγών διατηρούνται ανεξάρτητα από την άδεια της πρωτότυπης σύνθεσης.
 
+## Media selection / Επιλογή εικόνων
+
+Public record images come from Wikimedia Commons and are admitted only when their file metadata declares Public Domain, CC0, CC BY or CC BY-SA terms. Automated discovery is only a candidate generator: homonyms, modern namesakes and biological taxa are excluded, while the two final works for each entity are explicitly reviewable in `media-overrides.csv`. Archaeological site views are preferred; ancient objects, plans or historical illustrations are used when they communicate a destroyed or poorly preserved site more honestly.
+
+Every accepted image is converted to a local WebP bounded to 1600 pixels. The canonical media row preserves its original and Commons URLs, creator, licence and licence URL, attribution, bilingual caption and alt text, dimensions, retrieval date and SHA-256 checksum. `THIRD_PARTY_MEDIA.md` is included in the deployed site so attribution travels with the files.
+
+Οι δημόσιες εικόνες προέρχονται από το Wikimedia Commons και γίνονται δεκτές μόνο με σαφείς επαναχρησιμοποιήσιμους όρους. Η αυτόματη αναζήτηση παράγει υποψηφίους· η τελική επιλογή ελέγχεται, αποκλείει ομώνυμα και σύγχρονες άσχετες τοποθεσίες και διατηρεί πλήρη αναφορά έργου και άδειας.
+
 ## Acceptance gate / Πύλη αποδοχής
 
 A public record must have:

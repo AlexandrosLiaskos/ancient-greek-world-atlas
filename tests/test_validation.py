@@ -89,6 +89,35 @@ class ValidationTests(unittest.TestCase):
         report = validate_release(self.canonical, root=ROOT)
         self.assertIn("RELATIONSHIP_TARGET_CARDINALITY", report.error_codes)
 
+    def test_validator_rejects_entity_without_media(self) -> None:
+        entity_id = self._read("entities")[0]["entity_id"]
+        self._mutate(
+            "media",
+            lambda rows: rows.__setitem__(
+                slice(None),
+                [row for row in rows if row["entity_id"] != entity_id],
+            ),
+        )
+        report = validate_release(self.canonical, root=ROOT)
+        self.assertIn("MEDIA_ENTITY_COVERAGE", report.error_codes)
+
+    def test_validator_rejects_unsafe_media_path(self) -> None:
+        self._mutate("media", lambda rows: rows[0].update(file_path="../README.md"))
+        report = validate_release(self.canonical, root=ROOT)
+        self.assertIn("MEDIA_FILE_PATH", report.error_codes)
+
+    def test_validator_rejects_wrong_media_checksum(self) -> None:
+        self._mutate("media", lambda rows: rows[0].update(sha256="0" * 64))
+        report = validate_release(self.canonical, root=ROOT)
+        self.assertIn("MEDIA_CHECKSUM", report.error_codes)
+
+    def test_media_metrics_report_complete_bilingual_local_coverage(self) -> None:
+        report = validate_release(self.canonical, root=ROOT)
+        self.assertEqual(report.metrics["media"]["items"], 452)
+        self.assertEqual(report.metrics["media"]["entities_covered"], 226)
+        self.assertEqual(report.metrics["media"]["entities_covered_percent"], 100.0)
+        self.assertEqual(report.metrics["media"]["bilingual_items_percent"], 100.0)
+
     def _read(self, table: str) -> list[dict[str, str]]:
         path = self.canonical / f"{table}.csv"
         with path.open(encoding="utf-8-sig", newline="") as handle:

@@ -122,7 +122,7 @@ Proxy and representative-centre points gain a secondary ring or dashed treatment
 
 ### Preview and details
 
-Map preview is compact and task-oriented: identity, class, place, chronology, uncertainty, and “View record”. The full record uses a native modal dialog on desktop and full-screen sheet on mobile, with clear sections for description, chronology, geography, relationships, sources, identifiers, and editorial status. It contains no empty media area.
+Map preview is compact and task-oriented: identity, class, place, chronology, uncertainty, and “View record”. The full record uses a native modal dialog on desktop and full-screen sheet on mobile, with a horizontally scrollable two-image gallery followed by clear sections for description, chronology, geography, relationships, sources, identifiers, and editorial status. Every image exposes its bilingual caption, creator, licence and source without obscuring the image.
 
 ## Motion
 
@@ -142,4 +142,3 @@ Dates never expose signed storage years. Location uncertainty is described expli
 - Tabs use roving tabindex; result changes use a restrained live region.
 - Text remains usable at 200% zoom and 320px width without horizontal page scrolling.
 - Keyboard, coarse pointer, fine pointer, reduced motion, long Greek strings, empty results, failed data, and failed map enhancement are release test cases.
-

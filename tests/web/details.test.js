@@ -16,6 +16,9 @@ test('details keep chronology qualifiers, spatial role, and source scopes', asyn
   assert.equal(details.place.coordinateText, '37.750149, 23.423668');
   assert.ok(details.sourceGroups.some((group) => group.scopes.includes('geometry')));
   assert.equal(details.editorial.lastReviewed, '2026-08-14');
+  assert.equal(details.media.length, 2);
+  assert.equal(details.media[0].alt, 'Aegina: archaeological view');
+  assert.equal(details.media[0].caption, 'Aegina · Archaeological view');
 });
 
 test('internal relationships navigate by entity id and authorities stay text', async () => {
@@ -91,7 +94,19 @@ test('detail renderer uses safe text, external-link protection, and relation but
   renderDetails(dialog, model, { onNavigateEntity: (id) => navigated.push(id) });
 
   assert.equal(title.textContent, 'Aegina');
-  assert.equal(content.querySelector('img'), null);
+  const images = content.querySelectorAll('.media-image');
+  assert.equal(images.length, 2);
+  assert.equal(images[0].getAttribute('src'), './assets/media/city-aegina-city/01.webp');
+  assert.equal(images[0].getAttribute('alt'), 'Aegina: archaeological view');
+  assert.equal(images[0].getAttribute('loading'), 'eager');
+  assert.equal(images[1].getAttribute('loading'), 'lazy');
+  assert.equal(content.querySelectorAll('.media-thumbnail').length, 2);
+  const thumbnailImages = content.querySelectorAll('.media-thumbnail-image');
+  assert.equal(thumbnailImages.length, 2);
+  assert.equal(thumbnailImages[0].getAttribute('src'), './assets/media/city-aegina-city/01.webp');
+  assert.equal(thumbnailImages[0].getAttribute('alt'), '');
+  assert.match(content.querySelector('.media-attribution').textContent, /Example Photographer/);
+  assert.equal(content.querySelector('.record-media').getAttribute('aria-label'), 'Images of Aegina');
   const relation = content.querySelector('[data-related-entity]');
   relation.dispatchEvent({ type: 'click' });
   assert.deepEqual(navigated, ['city-athens-attica']);
@@ -102,4 +117,3 @@ test('detail renderer uses safe text, external-link protection, and relation but
     assert.equal(link.rel, 'noopener noreferrer');
   }
 });
-

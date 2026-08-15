@@ -216,6 +216,38 @@ test.describe('mobile atlas', () => {
   });
 });
 
+test('record media is local, licensed, keyboard-visible, and horizontally navigable', async ({ page, isMobile }) => {
+  const failedMediaResponses = [];
+  page.on('response', (response) => {
+    if (response.url().includes('/assets/media/') && response.status() >= 400) {
+      failedMediaResponses.push(`${response.status()} ${response.url()}`);
+    }
+  });
+  await loadAtlas(page);
+  if (isMobile) {
+    await page.locator('#mobile-actions').getByRole('button', { name: 'Κατάλογος', exact: true }).tap();
+  }
+  await page.locator('#result-list [data-entity-id]').first().click();
+  const gallery = page.locator('.record-media');
+  await expect(gallery).toBeVisible();
+  await expect(gallery).toHaveAttribute('aria-label', /^Εικόνες:/);
+  await expect(gallery.locator('.media-slide')).toHaveCount(2);
+  const images = gallery.locator('.media-image');
+  await expect(images).toHaveCount(2);
+  await expect(images.first()).toHaveAttribute('src', /^\.\/assets\/media\//);
+  await expect(images.first()).toHaveAttribute('alt', /\S/);
+  await expect.poll(() => images.first().evaluate((image) => image.naturalWidth)).toBeGreaterThan(0);
+  await expect(gallery.locator('.media-thumbnail-image')).toHaveCount(2);
+  await expect(gallery.locator('.media-attribution a')).toHaveCount(4);
+
+  const track = gallery.locator('.media-track');
+  await track.focus();
+  await expect(track).toBeFocused();
+  await page.getByRole('button', { name: 'Επόμενη εικόνα' }).click();
+  await expect.poll(() => track.evaluate((element) => element.scrollLeft)).toBeGreaterThan(0);
+  expect(failedMediaResponses).toEqual([]);
+});
+
 test('captures responsive visual evidence', async ({ page, isMobile }, testInfo) => {
   await loadAtlas(page);
   await page.evaluate(() => document.fonts.ready);
@@ -225,6 +257,7 @@ test('captures responsive visual evidence', async ({ page, isMobile }, testInfo)
   } else {
     await page.screenshot({ path: testInfo.outputPath('atlas-desktop.png'), animations: 'disabled' });
     await page.locator('#result-list [data-entity-id]').first().click();
+    await expect.poll(() => page.locator('.media-image').first().evaluate((image) => image.naturalWidth)).toBeGreaterThan(0);
     await page.screenshot({ path: testInfo.outputPath('atlas-desktop-details.png'), animations: 'disabled' });
     await page.locator('#record-close').click();
     for (const [width, height] of [[1024, 768], [768, 1024]]) {
