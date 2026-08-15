@@ -100,10 +100,14 @@ test('the deployed frontend contains no secrets, backend configuration, or devel
 
 test('the Pages workflow uses the prepared artifact and least-privilege deployment permissions', async () => {
   const workflow = await readFile(resolve(repoRoot, '.github/workflows/pages.yml'), 'utf8');
+  const project = await readFile(resolve(repoRoot, 'pyproject.toml'), 'utf8');
   assert.match(workflow, /contents:\s*read/);
   assert.match(workflow, /pages:\s*write/);
   assert.match(workflow, /id-token:\s*write/);
+  assert.match(workflow, /actions\/setup-python@v7/);
+  assert.match(workflow, /python -m pip install \./);
   assert.match(workflow, /npm run prepare:pages/);
   assert.match(workflow, /path:\s*_site/);
+  assert.match(project, /Pillow>=10\.0,<13/);
   assert.doesNotMatch(workflow, /pull_request_target|contents:\s*write/);
 });

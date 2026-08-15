@@ -51,6 +51,7 @@ Node.js 22 or later and Python 3.11 or later are recommended.
 
 ```powershell
 npm install
+python -m pip install .
 npm run serve
 ```
 
