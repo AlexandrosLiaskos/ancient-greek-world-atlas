@@ -958,6 +958,13 @@
   border-bottom-color: var(--color-rule) !important;
 }
 
+/* The status bar covers the lower edge of the map; the basemap credit sits above it. */
+.map-stage .leaflet-bottom.leaflet-right {
+  right: auto;
+  bottom: 2rem;
+  left: 0;
+}
+
 .record-lede {
   display: grid;
   grid-template-columns: 1rem minmax(0, 1fr);

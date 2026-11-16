@@ -12,7 +12,14 @@ const transparentTile = Buffer.from(
 );
 
 async function stabilizeMapTiles(page) {
-  await page.route(/https:\/\/[^/]*(?:basemaps\.cartocdn\.com|tile\.openstreetmap\.org)\/.*/, (route) => (
+  await page.route('https://tiles.openfreemap.org/**', (route) => (
+    route.fulfill({
+      status: 200,
+      contentType: 'application/json',
+      body: JSON.stringify({ version: 8, sources: {}, layers: [] }),
+    })
+  ));
+  await page.route(/https:\/\/[^/]*tile\.openstreetmap\.org\/.*/, (route) => (
     route.fulfill({ status: 200, contentType: 'image/png', body: transparentTile })
   ));
 }

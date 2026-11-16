@@ -2,6 +2,12 @@
 
 All notable changes to the Ancient Greek World Atlas and its data foundation are documented here.
 
+## Unreleased
+
+### Fixed
+
+- Replaced the CARTO Positron raster basemap, whose keyless tile service now returns an "API key required" placeholder image, with the OpenFreeMap Positron vector style drawn with MapLibre GL JS, as in the Wonders of the Ancient Greek World WebGIS. The attribution now credits OpenFreeMap, OpenMapTiles and OpenStreetMap.
+
 ## 1.0.0 — 2026-08-15
 
 ### Added
