@@ -34,7 +34,7 @@ Chronology uses interval overlap: a record remains visible when any part of its 
 
 All geometries are points. They do not claim territorial extent or architectural footprint. Coordinate role and confidence remain visible in records and filters.
 
-The default basemap is CARTO Positron; OpenStreetMap is available from the layer control. If map libraries or tiles are unavailable, the catalogue, search, filters, statistics and scholarly records remain usable, and the interface shows a non-blocking notice.
+The default basemap is OpenFreeMap Positron, a vector style drawn with MapLibre GL JS through its Leaflet binding; OpenStreetMap is available from the layer control. In a browser without WebGL 2 the map opens on OpenStreetMap. If map libraries or tiles are unavailable, the catalogue, search, filters, statistics and scholarly records remain usable, and the interface shows a non-blocking notice.
 
 ## Record galleries / Συλλογές εικόνων
 
@@ -77,7 +77,7 @@ The document language, page title, descriptions, labels, status announcements, d
 
 ## Privacy and runtime / Απόρρητο και λειτουργία
 
-The public application has no account system, analytics, cookies, secrets or backend connection. It loads the checked-in `dist/ancient-greek-world.json` release, the bundled GFS Solomos font, Leaflet libraries and the selected public tile service. No user query or filter is sent to an application server.
+The public application has no account system, analytics, cookies, secrets or backend connection. It loads the checked-in `dist/ancient-greek-world.json` release, the bundled GFS Solomos font, Leaflet and MapLibre GL JS libraries and the selected public tile service. No user query or filter is sent to an application server.
 
 ## Local and deployment checks
 

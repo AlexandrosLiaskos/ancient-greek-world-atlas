@@ -14,13 +14,9 @@ const SHAPES = Object.freeze({
 
 const BASEMAP_DEFINITIONS = Object.freeze({
   positron: Object.freeze({
-    label: 'CARTO Positron',
-    url: 'https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png',
-    options: Object.freeze({
-      attribution: '&copy; OpenStreetMap contributors &copy; CARTO',
-      maxZoom: 20,
-      subdomains: 'abcd',
-    }),
+    label: 'OpenFreeMap Positron',
+    style: 'https://tiles.openfreemap.org/styles/positron',
+    attribution: '<a href="https://openfreemap.org/" target="_blank" rel="noopener noreferrer">OpenFreeMap</a> &middot; <a href="https://www.openmaptiles.org/" target="_blank" rel="noopener noreferrer">&copy; OpenMapTiles</a> &middot; Data from <a href="https://www.openstreetmap.org/copyright" target="_blank" rel="noopener noreferrer">OpenStreetMap</a>',
   }),
   osm: Object.freeze({
     label: 'OpenStreetMap',
@@ -31,6 +27,18 @@ const BASEMAP_DEFINITIONS = Object.freeze({
     }),
   }),
 });
+
+// The vector basemap needs MapLibre GL JS, its Leaflet binding and WebGL 2.
+function supportsVectorBasemap(L) {
+  if (typeof L.maplibreGL !== 'function' || !globalThis.maplibregl) return false;
+  try {
+    const context = globalThis.document.createElement('canvas').getContext('webgl2');
+    context?.getExtension('WEBGL_lose_context')?.loseContext();
+    return Boolean(context);
+  } catch {
+    return false;
+  }
+}
 
 function escapeAttribute(value) {
   return String(value ?? '')
@@ -234,12 +242,48 @@ export function createAtlasMap(options) {
     : { latitude: 38.4, longitude: 24.5, zoom: 4 };
   map.setView([initialViewport.latitude, initialViewport.longitude], initialViewport.zoom, { animate: false });
 
-  const layers = Object.fromEntries(Object.entries(BASEMAP_DEFINITIONS).map(([id, definition]) => {
+  const vectorBasemap = supportsVectorBasemap(L);
+  const layers = Object.fromEntries(Object.entries(BASEMAP_DEFINITIONS).flatMap(([id, definition]) => {
+    if (definition.style) {
+      if (!vectorBasemap) return [];
+      // The credit is set here so that it does not wait for the vector style to load.
+      const layer = L.maplibreGL({ style: definition.style, attributionControl: false });
+      layer.on?.('add', () => {
+        map.attributionControl?.addAttribution(definition.attribution);
+        watchVectorErrors(layer);
+      });
+      layer.on?.('remove', () => map.attributionControl?.removeAttribution(definition.attribution));
+      return [[id, layer]];
+    }
     const layer = L.tileLayer(definition.url, { ...definition.options });
     layer.on?.('tileerror', onTileError);
-    return [id, layer];
+    return [[id, layer]];
   }));
-  layers[activeBasemap].addTo(map);
+
+  // MapLibre reports failed style and tile requests on its own map object.
+  function watchVectorErrors(layer) {
+    const vectorMap = layer.getMaplibreMap?.();
+    if (!vectorMap || vectorMap.atlasErrorsWatched) return;
+    vectorMap.atlasErrorsWatched = true;
+    vectorMap.on('error', (event) => {
+      const error = event?.error;
+      if (error?.status || /fetch|network|load failed/i.test(error?.message ?? '')) onTileError(event);
+    });
+  }
+
+  // Without WebGL 2 or the MapLibre libraries the map opens on OpenStreetMap.
+  if (!Object.hasOwn(layers, activeBasemap)) activeBasemap = 'osm';
+  try {
+    layers[activeBasemap].addTo(map);
+  } catch (error) {
+    if (!BASEMAP_DEFINITIONS[activeBasemap].style) throw error;
+    const failed = layers[activeBasemap];
+    if (typeof failed.getEvents === 'function') map.off(failed.getEvents(), failed);
+    try { map.removeLayer(failed); } catch { /* The vector renderer did not finish starting. */ }
+    delete layers[activeBasemap];
+    activeBasemap = 'osm';
+    layers[activeBasemap].addTo(map);
+  }
 
   const zoomControl = L.control?.zoom?.({ position: 'topleft' })?.addTo(map);
   const controlLayers = Object.fromEntries(Object.entries(layers).map(([id, layer]) => [BASEMAP_DEFINITIONS[id].label, layer]));
