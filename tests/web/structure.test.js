@@ -25,6 +25,9 @@ test('the page exposes every mount point required by the atlas', async () => {
     'mobile-actions',
     'record-dialog',
     'about-dialog',
+    'about-visits-label',
+    'about-visits-count',
+    'about-visits-note',
     'app-status',
   ]) {
     assert.match(html, new RegExp(`id=["']${id}["']`), id);

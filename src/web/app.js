@@ -20,6 +20,7 @@ import {
   parseUrlState,
   serializeUrlState,
 } from './url-state.js';
+import { renderVisits, startVisits } from './visits.js';
 
 const TAB_NAMES = Object.freeze(['catalogue', 'filters', 'search', 'statistics']);
 
@@ -142,6 +143,7 @@ function translateShell(document, elements, lang, { selected = false } = {}) {
   setText(document, 'about-spatial', lang === 'el'
     ? 'Τα σημεία δηλώνουν αρχαιολογικές θέσεις, τεκμηριωμένες προσεγγίσεις ή αντιπροσωπευτικά κέντρα· δεν αποτελούν πολιτικά όρια.'
     : 'Points represent archaeological sites, documented approximations, or representative centres; they are not political boundaries.');
+  renderVisits(document, lang);
   if (!selected) setText(document, 'record-title', message(lang, 'record'));
   setAria(elements.recordClose, 'label', message(lang, 'closeRecord'));
 }
@@ -477,4 +479,5 @@ if (typeof globalThis.window !== 'undefined'
   && typeof globalThis.document !== 'undefined'
   && globalThis.document.querySelector?.('#app')) {
   bootstrap().catch(() => {});
+  startVisits(globalThis.document, globalThis.window);
 }
