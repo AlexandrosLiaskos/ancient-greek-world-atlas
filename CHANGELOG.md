@@ -4,6 +4,10 @@ All notable changes to the Ancient Greek World Atlas and its data foundation are
 
 ## Unreleased
 
+### Added
+
+- Added the number of recorded page visits to the About dialog, in Greek and English. A browser session is counted once by the visit counter of the NKUA server; no cookies are used and only the total is stored.
+
 ### Fixed
 
 - Replaced the CARTO Positron raster basemap, whose keyless tile service now returns an "API key required" placeholder image, with the OpenFreeMap Positron vector style drawn with MapLibre GL JS, as in the Wonders of the Ancient Greek World WebGIS. The attribution now credits OpenFreeMap, OpenMapTiles and OpenStreetMap.

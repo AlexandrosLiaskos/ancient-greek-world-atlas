@@ -77,7 +77,9 @@ The document language, page title, descriptions, labels, status announcements, d
 
 ## Privacy and runtime / Απόρρητο και λειτουργία
 
-The public application has no account system, analytics, cookies, secrets or backend connection. It loads the checked-in `dist/ancient-greek-world.json` release, the bundled GFS Solomos font, Leaflet and MapLibre GL JS libraries and the selected public tile service. No user query or filter is sent to an application server.
+The public application has no account system, analytics, cookies or secrets. It loads the checked-in `dist/ancient-greek-world.json` release, the bundled GFS Solomos font, Leaflet and MapLibre GL JS libraries and the selected public tile service. No user query or filter is sent to an application server.
+
+The only other request goes to the visit counter of the NKUA server (`https://evelpidou.nkua.cloud/api/visits/ancient-greek-world-atlas`). The first request of a browser session records one visit; later requests in the same session only read the total, which the About dialog shows as “Recorded page visits”. The counter stores the total and nothing about a visitor, and the atlas works unchanged when the counter cannot be reached.
 
 ## Local and deployment checks
 
